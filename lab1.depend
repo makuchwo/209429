@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1425752733 source:c:\users\1\desktop\lab1\main.cpp
+	<iostream>
+	<windows.h>
+	<fstream>
+	"generuj.hh"
+
+1425585535 c:\users\1\desktop\lab1\odliczaj.hh
+
+1425656652 source:c:\users\1\desktop\lab1\odliczaj.cpp
+	<iostream>
+	<time.h>
+	<conio.h>
+	<windows.h>
+
+1425752670 source:c:\users\1\desktop\lab1\generuj.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<ctime>
+	"generuj.hh"
+
+1425752670 c:\users\1\desktop\lab1\generuj.hh
+	<Windows.h>
+
+1425646994 source:c:\users\1\desktop\lab1\wykonuj.cpp
+	<iostream>
+	<fstream>
+	"wykonuj.hh"
+
+1425652459 c:\users\1\desktop\lab1\wykonuj.hh
+	"generuj.hh"
+
+1425921615 source:c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\lab1\generuj.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<ctime>
+	"generuj.hh"
+
+1425924477 c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\lab1\generuj.hh
+	<Windows.h>
+
+1425923322 source:c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\lab1\main.cpp
+	<iostream>
+	<windows.h>
+	<fstream>
+	"generuj.hh"
+
