@@ -1,1 +1,1 @@
-# 209429  
+plik wykonywalny w katalogu bin.
