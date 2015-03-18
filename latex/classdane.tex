@@ -1,0 +1,170 @@
+\hypertarget{classdane}{}\subsection{Dokumentacja klasy dane}
+\label{classdane}\index{dane@{dane}}
+
+
+{\ttfamily \#include $<$generuj.\+hh$>$}
+
+\subsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdane_a343d935dd2271b07694c830de41a3479}{dane} (long int wielkosc)
+\item 
+\hyperlink{classdane_ae013323d9e999cb4bd3a7fdbf51c4401}{$\sim$dane} ()
+\item 
+void \hyperlink{classdane_a3c63af736de15303e468404b892ff749}{generuj} ()
+\item 
+int \hyperlink{classdane_a9ae56a861bc8e17b33eaa92feba8fab7}{Wez} (int i) const 
+\item 
+int \hyperlink{classdane_a86a56a87d2cb77716fae2e0ff753ef82}{Wez\+Rozmiar} () const 
+\item 
+int \hyperlink{classdane_a97c3ef4d2c3cde0e701e30122c8c22fc}{Zapisz\+Do\+Pliku} (const char $\ast$nazwa)
+\item 
+double \hyperlink{classdane_ad217ab46050e5f3a16d92e69056e75f4}{licz} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+long int $\ast$ \hyperlink{classdane_a99cb90f61c23e390b594c688bd52ebf5}{tablica}
+\item 
+long int \hyperlink{classdane_abc9b63b1b2caa22fd4c71a8504d01ae6}{rozmiar}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+Klasa modeluje pojecie zbioru danych. Jej artybutem jest generowanie liczb pseldolosowych z zakresu 0-\/9 oraz pomiar zlozonosci obliczeniowej bazujacej na tych liczbach. 
+
+Definicja w linii 23 pliku generuj.\+hh.
+
+
+
+\subsubsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{classdane_a343d935dd2271b07694c830de41a3479}{}\index{dane@{dane}!dane@{dane}}
+\index{dane@{dane}!dane@{dane}}
+\paragraph[{dane}]{\setlength{\rightskip}{0pt plus 5cm}dane\+::dane (
+\begin{DoxyParamCaption}
+\item[{long int}]{wielkosc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classdane_a343d935dd2271b07694c830de41a3479}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em wielkosc} & -\/ liczba elementow tablicy, dla ktorej zostanie przydzielona pamiec. \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 33 pliku generuj.\+hh.
+
+\hypertarget{classdane_ae013323d9e999cb4bd3a7fdbf51c4401}{}\index{dane@{dane}!````~dane@{$\sim$dane}}
+\index{````~dane@{$\sim$dane}!dane@{dane}}
+\paragraph[{$\sim$dane}]{\setlength{\rightskip}{0pt plus 5cm}dane\+::$\sim$dane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classdane_ae013323d9e999cb4bd3a7fdbf51c4401}
+
+
+Definicja w linii 34 pliku generuj.\+hh.
+
+
+
+\subsubsection{Dokumentacja funkcji składowych}
+\hypertarget{classdane_a3c63af736de15303e468404b892ff749}{}\index{dane@{dane}!generuj@{generuj}}
+\index{generuj@{generuj}!dane@{dane}}
+\paragraph[{generuj}]{\setlength{\rightskip}{0pt plus 5cm}void dane\+::generuj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classdane_a3c63af736de15303e468404b892ff749}
+wypelnia tablice liczbami pseldolosowymi z zakresu 0-\/9. 
+
+Definicja w linii 23 pliku generuj.\+cpp.
+
+\hypertarget{classdane_ad217ab46050e5f3a16d92e69056e75f4}{}\index{dane@{dane}!licz@{licz}}
+\index{licz@{licz}!dane@{dane}}
+\paragraph[{licz}]{\setlength{\rightskip}{0pt plus 5cm}double dane\+::licz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classdane_ad217ab46050e5f3a16d92e69056e75f4}
+Wykonuje operacje na tablicy polegajace na wymnozeniu kazdego elementu przez 2. Mierzy czas wykonywanych operacji z dokladnoscia do e-\/06s. \begin{DoxyReturn}{Zwraca}
+tm -\/ zmierzony czas. 
+\end{DoxyReturn}
+
+
+Definicja w linii 31 pliku generuj.\+cpp.
+
+\hypertarget{classdane_a9ae56a861bc8e17b33eaa92feba8fab7}{}\index{dane@{dane}!Wez@{Wez}}
+\index{Wez@{Wez}!dane@{dane}}
+\paragraph[{Wez}]{\setlength{\rightskip}{0pt plus 5cm}int dane\+::\+Wez (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classdane_a9ae56a861bc8e17b33eaa92feba8fab7}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em i} & -\/ indeks tablicy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+zwraca element tablicy. 
+\end{DoxyReturn}
+
+
+Definicja w linii 46 pliku generuj.\+hh.
+
+\hypertarget{classdane_a86a56a87d2cb77716fae2e0ff753ef82}{}\index{dane@{dane}!Wez\+Rozmiar@{Wez\+Rozmiar}}
+\index{Wez\+Rozmiar@{Wez\+Rozmiar}!dane@{dane}}
+\paragraph[{Wez\+Rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}int dane\+::\+Wez\+Rozmiar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classdane_a86a56a87d2cb77716fae2e0ff753ef82}
+\begin{DoxyReturn}{Zwraca}
+Zwraca rozmiar tablicy. 
+\end{DoxyReturn}
+
+
+Definicja w linii 51 pliku generuj.\+hh.
+
+\hypertarget{classdane_a97c3ef4d2c3cde0e701e30122c8c22fc}{}\index{dane@{dane}!Zapisz\+Do\+Pliku@{Zapisz\+Do\+Pliku}}
+\index{Zapisz\+Do\+Pliku@{Zapisz\+Do\+Pliku}!dane@{dane}}
+\paragraph[{Zapisz\+Do\+Pliku}]{\setlength{\rightskip}{0pt plus 5cm}int dane\+::\+Zapisz\+Do\+Pliku (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nazwa}
+\end{DoxyParamCaption}
+)}\label{classdane_a97c3ef4d2c3cde0e701e30122c8c22fc}
+Zapisuje elementy tablicy w pliku o zadanej nazwie. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em nazwa} & -\/ nazwa pliku do zapisu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+0 -\/ Poprawny zapis. -\/1 -\/ Niepoprawny zapis. 
+\end{DoxyReturn}
+
+
+Definicja w linii 44 pliku generuj.\+cpp.
+
+
+
+\subsubsection{Dokumentacja atrybutów składowych}
+\hypertarget{classdane_abc9b63b1b2caa22fd4c71a8504d01ae6}{}\index{dane@{dane}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!dane@{dane}}
+\paragraph[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}long int dane\+::rozmiar\hspace{0.3cm}{\ttfamily [private]}}\label{classdane_abc9b63b1b2caa22fd4c71a8504d01ae6}
+
+
+Definicja w linii 26 pliku generuj.\+hh.
+
+\hypertarget{classdane_a99cb90f61c23e390b594c688bd52ebf5}{}\index{dane@{dane}!tablica@{tablica}}
+\index{tablica@{tablica}!dane@{dane}}
+\paragraph[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}long int$\ast$ dane\+::tablica\hspace{0.3cm}{\ttfamily [private]}}\label{classdane_a99cb90f61c23e390b594c688bd52ebf5}
+
+
+Definicja w linii 25 pliku generuj.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{generuj_8hh}{generuj.\+hh}\item 
+\hyperlink{generuj_8cpp}{generuj.\+cpp}\end{DoxyCompactItemize}

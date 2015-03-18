@@ -1,0 +1,76 @@
+\begin{theindex}
+
+  \item {$\sim$dane}
+    \subitem {dane}, \hyperpage{3}
+
+  \indexspace
+
+  \item {dane}, \hyperpage{2}
+    \subitem {$\sim$dane}, \hyperpage{3}
+    \subitem {dane}, \hyperpage{3}
+    \subitem {generuj}, \hyperpage{3}
+    \subitem {licz}, \hyperpage{3}
+    \subitem {rozmiar}, \hyperpage{5}
+    \subitem {tablica}, \hyperpage{5}
+    \subitem {Wez}, \hyperpage{3}
+    \subitem {Wez\+Rozmiar}, \hyperpage{3}
+    \subitem {Zapisz\+Do\+Pliku}, \hyperpage{3}
+
+  \indexspace
+
+  \item {end\+Timer}
+    \subitem {generuj.\+cpp}, \hyperpage{5}
+    \subitem {generuj.\+hh}, \hyperpage{6}
+
+  \indexspace
+
+  \item {generuj}
+    \subitem {dane}, \hyperpage{3}
+  \item {generuj.\+cpp}, \hyperpage{5}
+    \subitem {end\+Timer}, \hyperpage{5}
+    \subitem {start\+Timer}, \hyperpage{5}
+  \item {generuj.\+hh}, \hyperpage{6}
+    \subitem {end\+Timer}, \hyperpage{6}
+    \subitem {start\+Timer}, \hyperpage{6}
+
+  \indexspace
+
+  \item {licz}
+    \subitem {dane}, \hyperpage{3}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.\+cpp}, \hyperpage{7}
+  \item {main.\+cpp}, \hyperpage{6}
+    \subitem {main}, \hyperpage{7}
+
+  \indexspace
+
+  \item {rozmiar}
+    \subitem {dane}, \hyperpage{5}
+
+  \indexspace
+
+  \item {start\+Timer}
+    \subitem {generuj.\+cpp}, \hyperpage{5}
+    \subitem {generuj.\+hh}, \hyperpage{6}
+
+  \indexspace
+
+  \item {tablica}
+    \subitem {dane}, \hyperpage{5}
+
+  \indexspace
+
+  \item {Wez}
+    \subitem {dane}, \hyperpage{3}
+  \item {Wez\+Rozmiar}
+    \subitem {dane}, \hyperpage{3}
+
+  \indexspace
+
+  \item {Zapisz\+Do\+Pliku}
+    \subitem {dane}, \hyperpage{3}
+
+\end{theindex}
