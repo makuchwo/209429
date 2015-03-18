@@ -1,0 +1,171 @@
+\documentclass[twoside]{article}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 11\+:45\+:35 dla Program framework benchmarkujacy dla struktur danych Stos, Lista i Kolejka -\/ Laboratorium 2 programem Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 11\+:45\+:35 dla Program framework benchmarkujacy dla struktur danych Stos, Lista i Kolejka -\/ Laboratorium 2 programem Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarks=true,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Program framework benchmarkujacy dla struktur danych Stos, Lista i Kolejka -\/ Laboratorium 2 }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.9.1}\\
+\vspace*{0.5cm}
+{\small Śr, 18 mar 2015 11:45:35}\\
+\end{center}
+\end{titlepage}
+\tableofcontents
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\section{Program framework benchmarkujacy dla struktur danych Stos, Lista i Kolejka}
+\label{index}\hypertarget{index}{}\input{index}
+\section{Indeks klas}
+\input{annotated}
+\section{Dokumentacja klas}
+\input{class_kolejka}
+\input{class_lista}
+\input{class_stos}
+
+
+\title{Laboratorium 2 - Sprawozdanie}
+\author{Wojciech Makuch}
+
+	\maketitle
+	\section{Zadanie}
+	Program framework benchmarkujacy dla zaimpleentowanych struktur Stos, Lista, Kolejka.
+	\section{Realizacja}
+	Program zawiera 3 struktury danych. Każda z nich zawiera 3 podstawowe metody: połóż element, zdejmij element, zwróć rozmiar. Struktua Stos zbudowana za pomocą tablicy z realokacją pamięci, Lista ze wskaźnikiem na następny element, oraz Kolejka z indeksami na pierwszy i ostatni element. Wszystki struktury danych działają prawidłowo.
+	Ponadto program zawiera fnkcje wypęłniającą struktury liczbami psełdolosowymi oraz zliczającą czas dla przeprowadzenia testów złożonosci obliczeniowej ww struktur.
+	\section{Działanie}
+	Głowna funkcja programu kolejno tworzy struktury Stos, Lista, Koljaka(a po zakończeniu operacji na nich, zwalnia pamięć), następnie za pomącą funkcji zliczającej czas wykonuje testy złożonosci obliczeniowej. Uzyskae wyniki program wyświetla na ekranie oray zapisuje do pliku o nazwie \textsl{Pomiar\_czasu2.txt.}
+	\section{Wyniki}
+	Najszybsze działanie algorytmu wypęłniania struktur liczbami pesęłdolosowymi wykonuje lista, następnie Kolajka, a na samym konsu Stos. Lista ponadto może pomieścić najwięcej elementów, najniej - Kolejka. Na wykresie w skali logarytmicznej pokazano zależność wykonanym operacji do czasu. Widać, że krzywe mozna przybliżyć prostymi, z czego wniosek, że złożoność obliczeniowa wynosi O(n).  
+	 \begin{figure}
+	 	\centering
+		\includegraphics[width=14cm]{Wykres.pdf}
+		\caption{Wykres złożoności obliczeniowej.}
+	 \end{figure}
+	 \section{Komentarz}
+	 	Do utworzenia dokumentacji wykorzystano system Doxygen.
+	 	Funkcja pomiaru czasu dla systemu Windows pobrana ze strony dr. J. Mierzwy. Program skompilowano w środowisku Code::Blocks. Do stworzonia wykresu posłużono się pakietem MS Excel, sprawozdanie napisano uzywając systemu \LaTeX.
+\end{document}

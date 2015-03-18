@@ -1,0 +1,99 @@
+\begin{theindex}
+
+  \item {$\sim$\+Kolejka}
+    \subitem {Kolejka}, \hyperpage{3}
+  \item {$\sim$\+Lista}
+    \subitem {Lista}, \hyperpage{5}
+  \item {$\sim$\+Stos}
+    \subitem {Stos}, \hyperpage{7}
+
+  \indexspace
+
+  \item {dane}
+    \subitem {Lista}, \hyperpage{5}
+  \item {dequeue}
+    \subitem {Kolejka}, \hyperpage{3}
+
+  \indexspace
+
+  \item {enqueue}
+    \subitem {Kolejka}, \hyperpage{3}
+
+  \indexspace
+
+  \item {f}
+    \subitem {Kolejka}, \hyperpage{4}
+
+  \indexspace
+
+  \item {Kolejka}
+    \subitem {$\sim$\+Kolejka}, \hyperpage{3}
+    \subitem {dequeue}, \hyperpage{3}
+    \subitem {enqueue}, \hyperpage{3}
+    \subitem {f}, \hyperpage{4}
+    \subitem {Kolejka}, \hyperpage{3}
+    \subitem {r}, \hyperpage{4}
+    \subitem {rozmiar}, \hyperpage{4}
+    \subitem {size}, \hyperpage{3}
+    \subitem {tab}, \hyperpage{4}
+  \item {Kolejka$<$ typ $>$}, \hyperpage{2}
+
+  \indexspace
+
+  \item {Lista}
+    \subitem {$\sim$\+Lista}, \hyperpage{5}
+    \subitem {dane}, \hyperpage{5}
+    \subitem {Lista}, \hyperpage{5}
+    \subitem {nastepny}, \hyperpage{6}
+    \subitem {pop}, \hyperpage{5}
+    \subitem {push}, \hyperpage{5}
+    \subitem {rozmiar}, \hyperpage{6}
+    \subitem {size}, \hyperpage{5}
+  \item {Lista$<$ typ $>$}, \hyperpage{4}
+
+  \indexspace
+
+  \item {nastepny}
+    \subitem {Lista}, \hyperpage{6}
+
+  \indexspace
+
+  \item {pop}
+    \subitem {Lista}, \hyperpage{5}
+    \subitem {Stos}, \hyperpage{7}
+  \item {push}
+    \subitem {Lista}, \hyperpage{5}
+    \subitem {Stos}, \hyperpage{7}
+
+  \indexspace
+
+  \item {r}
+    \subitem {Kolejka}, \hyperpage{4}
+  \item {rozmiar}
+    \subitem {Kolejka}, \hyperpage{4}
+    \subitem {Lista}, \hyperpage{6}
+    \subitem {Stos}, \hyperpage{7}
+
+  \indexspace
+
+  \item {size}
+    \subitem {Kolejka}, \hyperpage{3}
+    \subitem {Lista}, \hyperpage{5}
+    \subitem {Stos}, \hyperpage{7}
+  \item {Stos}
+    \subitem {$\sim$\+Stos}, \hyperpage{7}
+    \subitem {pop}, \hyperpage{7}
+    \subitem {push}, \hyperpage{7}
+    \subitem {rozmiar}, \hyperpage{7}
+    \subitem {size}, \hyperpage{7}
+    \subitem {Stos}, \hyperpage{6, 7}
+    \subitem {tab}, \hyperpage{7}
+  \item {Stos$<$ typ $>$}, \hyperpage{6}
+
+  \indexspace
+
+  \item {tab}
+    \subitem {Kolejka}, \hyperpage{4}
+    \subitem {Stos}, \hyperpage{7}
+
+\end{theindex}
