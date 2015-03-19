@@ -69,7 +69,7 @@ typ Lista<typ>::pop()
     rozmiar--;
     Lista<typ> *tmp=nastepny;
     nastepny=tmp->nastepny;
-    // nastepny=nastepny->nastepny; // 危ないしかし良いです -> translate.google.com :P
+    // nastepny=nastepny->nastepny; 
     return tmp->dane;
     delete tmp;
     }
