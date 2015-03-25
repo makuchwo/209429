@@ -75,8 +75,8 @@
 \fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
 \fancyfoot[LE]{\fancyplain{}{}}
 \fancyfoot[CE]{\fancyplain{}{}}
-\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 12\+:42\+:11 dla Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 programem Doxygen }}
-\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 12\+:42\+:11 dla Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 programem Doxygen }}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 25 mar 2015 13\+:12\+:53 dla Program framework benchmarkujacy dla struktury danych Stos programem Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 25 mar 2015 13\+:12\+:53 dla Program framework benchmarkujacy dla struktury danych Stos programem Doxygen }}
 \fancyfoot[CO]{\fancyplain{}{}}
 \fancyfoot[RO]{\fancyplain{}{}}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -125,11 +125,11 @@
 \begin{titlepage}
 \vspace*{7cm}
 \begin{center}%
-{\Large Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 }\\
+{\Large Program framework benchmarkujacy dla struktury danych Stos \\[1ex]\large 1.\+1 }\\
 \vspace*{1cm}
 {\large Wygenerowano przez Doxygen 1.8.9.1}\\
 \vspace*{0.5cm}
-{\small Śr, 18 mar 2015 12:42:11}\\
+{\small Śr, 25 mar 2015 13:12:53}\\
 \end{center}
 \end{titlepage}
 \tableofcontents
@@ -137,39 +137,45 @@
 \hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
-\section{Program sluzacy do pomiaru zlozonosci obliczeniowej.}
+\section{Program framework benchmarkujacy dla struktury danych Stos}
 \label{index}\hypertarget{index}{}\input{index}
 \section{Indeks klas}
 \input{annotated}
 \section{Indeks plików}
 \input{files}
 \section{Dokumentacja klas}
-\input{classdane}
+\input{class_kolejka}
+\input{class_lista}
+\input{class_stos}
 \section{Dokumentacja plików}
-\input{generuj_8cpp}
-\input{generuj_8hh}
+\input{_kolejka_8hh}
+\input{_lista_8hh}
 \input{main_8cpp}
+\input{_stoper_8hh}
+\input{_stos_8hh}
 
 
+\title{Laboratorium 3 - Sprawozdanie}
 \author{Wojciech Makuch}
-\title{Laboratorium 1 - Sprawozdanie}
 
-\begin{document}
-	\maketitle
-	\section{Zadanie}
-			Napisać program generujący liczby psełdolosowe, a nastepnie liczący złożonosć obliczeniową wymnożenia każdego z tych elementów przez~2.
-		\section{Realizacja}
-		Program zawiera jedną klase przechowującą rozmiar oraz liczby psełdolowe. Klasa zawiera metody wypęłniające tablice, mnożące każdy z elementów przez 2, zliczając przy tym czas wykonania tej operacji. Ponadto program ma możliwość zapisania danych do pliku. Program nie posiada interfejsu z użytkownikiem.
-		\section{Działanie}
-		Główna funkcja programu w pętli wypelnia tablice liczbami psełdolosowymi z zakresu 10-10 000 000. Następnie zliczas czas wykonanych operacji i zapisuje w formie tabelki do pliku o nazwie Pomiar\_czasu2.txt.
-		\section{Wyniki}
-		Rysunek1 pokazuje wykres zaleznosci zlozonosci obliczeniowej w czasie. Z wykresu mozna zauwazyc, że złożoność obliczeniowa jest liniowa, czyli O(n).
-		 \begin{figure}
-	 	\centering
-	 	\includegraphics[width=14cm]{Wykres1.pdf}
-	 	\caption{Wykres złożoności obliczeniowej.}
-		 \end{figure}
-		\section{Komentarz}
-		Do utworzenia dokumentacji wykorzystano system Doxygen.
-		Funkcja pomiaru czasu dla systemu Windows pobrana ze strony dr. J. Mierzwy. Program skompilowano w środowisku Code::Blocks. Do stworzonia wykresu posłużono się pakietem MS Excel, sprawozdanie napisano uzywając systemu \LaTeX.
+\maketitle
+\section{Zadanie}
+Program framework benchmarkujacy dla zaimplentowanej struktury danych Stos.
+\section{Realizacja}
+Program zawiera 3 struktury danych. Każda z nich zawiera 3 podstawowe metody: połóż element, zdejmij element, zwróć rozmiar. Struktua Stos zbudowana za pomocą tablicy z realokacją pamięci, Lista ze wskaźnikiem na następny element, oraz Kolejka z indeksami na pierwszy i ostatni element. Wszystkie struktury danych działają prawidłowo.
+Ponadto program zawiera funkcje wypęłniającą struktury liczbami psełdolosowymi oraz zliczającą czas dla przeprowadzenia testów złożonosci obliczeniowej ww. struktur.
+\section{Działanie}
+Głowna funkcja programu działa tylko na strukturze typu Stos. Testuje jego 2 metody push() oraz push200(). Metoda push() polega na powiekszaniu alokowanej pamieci o 1 element, natomiast push200() polega na alokowaniu pamieci razy 200\%. Działanie programu polega na zliczeniu czasu wypelniania tej struktury liczbami pseudolosowymi oraz zapisania wyników do pliku o nazwie \textsl{Pomiar\_czasu2.txt.}
+\section{Wyniki}
+Podczas alokowania pamieci struktura typu stos obsługiwana przez metode push() może alokować pamięć na maksimum $10^{5}$ elementów. Natomiast dzięki metodzie push2000() rozmiar ten zostaje zwiększony do $10^{7}$. Ponadto można zauważyć dłuższy czas destrukcji struktury zaalokowanej przez push().Z danych dostarczonych przez program wynika, że metoda push200() działa o wiele szybciej i jest w stanie zaalokować więcej pamięci. Na Rys 1. pokazano w skali logarytmicznej wykres zależności ilości elementów od czasu potrzebnego na wypełnienie nimi struktury.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{wykres1}
+\caption{Wykres złożoności obliczeniowej}
+\label{fig:wykres1}
+\end{figure}
+Z wykresu można zauważyć, że złożoność obliczeniowa jest w przybliżeniu liniowa, czyli O(n). Ponadto złożoność metody push() rośnie o wiele szybciej, co znaczy, że program ma gorszą złożonoś obliczeniową. Dodatkowo na wykresie zaznaczono dla porównania przebieg idealnej funkcji liniowej. Widać, że metoda push200() ma nawet lepszą złożoność niż O(n). :)
+\section{Komentarz}
+Do utworzenia dokumentacji wykorzystano system Doxygen.
+Funkcja pomiaru czasu dla systemu Windows pobrana ze strony dr. J. Mierzwy. Program skompilowano w środowisku Code::Blocks. Do stworzonia wykresu posłużono się pakietem MS Excel, sprawozdanie napisano używając systemu \LaTeX.
 \end{document}

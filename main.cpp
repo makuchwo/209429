@@ -2,55 +2,60 @@
 #include <windows.h>
 #include <fstream>
 
-#include "generuj.hh"
+#include "Lista.hh"
+#include "Stos.hh"
+#include "Kolejka.hh"
+#include "Stoper.hh"
 
+/*!
+ *\mainpage Program framework benchmarkujacy dla struktury danych Stos
+ *\author Wojciech Makuch
+ *\date 16.03.2015
+ *\version 1.1
+ *Program przeprowadza operacje zliczania czasu wypelnienia struktury danych stos
+ *liczbami pseldolosowymi. Program sprawdza dzialanie i szybkosc obliczeniowa struktury
+ *danych przy alokacji pamieci zarowno o 1 element i razy 200%.
+ *Wyliczony czas podawany z dokladnoscia do us.
+ *Uzyskane dane program zapisuje do pliku o nazwie "Pomiar_czasu3.txt"
+ */
 
 using namespace std;
 
-/*!
-\mainpage Program sluzacy do pomiaru zlozonosci obliczeniowej.
-\author Wojcich Makuch
-\date 10.03.2015
-\version 1.0
+int main() {
 
-Zadaniem programu jest wygenerowanie tablic
-liczb pseldoloswych oraz pomiar zlozonosci obliczeniowej polegajacej
-na wymnozeniu kazdego z tych elementow przez 2.
-Program zapisuje dane w pliku o nazwie Pomiar_czasu1.txt.
-
-\section wartosci
-Program wykonuje obliczenia dla tablic o rozmiarach:
-10-10000000
-*/
-
-int main()
-{
-    int rozm=100000000;
-    int czas=0;
-       fstream plik;
-
-    plik.open("Pomiar_czasu1.txt",ios::out);
+    const char* nazwa_pliku="Pomiar_czasu3.txt";
+    fstream plik;
+    plik.open(nazwa_pliku,ios::out);
     if(!plik.good())
     {
-        cerr << "Blad otwarcia pliku do zapisu." << endl;
+        cerr << "Blad otwarcia pliku." << endl;
         return -1;
     }
-
-int i,j;
-for(i=10,j=50; i<=rozm, j<=rozm; i*=10,j*=10)
 {
-    dane *d=new dane(i);
-    dane *d2=new dane(j);
-    d->generuj();
-    d2->generuj();
-    czas=d->licz();
-    cout << i << "\t\t " << czas << endl;
-    plik << i << "\t\t " << czas << endl;
-    czas=d2->licz();
-    cout << j << "\t\t " << czas << endl;
-    plik << j << "\t\t " << czas << endl;
+    Stos<int> *s=new Stos<int>;
+
+    cout << "Powiekszanie o 1:" << endl;
+    plik << "ilosc element.\tczas" << endl;
+    for(int i=10;i<100001;i*=10)
+    {
+        cout << i << "\t\t" << licz(s,i) << endl;
+        plik << i << "\t\t" << licz(s,i) << endl;
+    }
 }
-    plik.close();
-    system("PAUSE");
+{
+    Stos<int> *s=new Stos<int>;
+
+    cout << "Powiekszanie 2x:" << endl;
+    plik << "ilosc element.\tczas" << endl;
+    for(int i=10;i<10000001;i*=10)
+    {
+        cout << i << "\t\t" << licz200(s,i) << endl;
+        plik << i << "\t\t" << licz200(s,i) << endl;
+    }
 }
 
+plik.close();
+cout << "Zapisano." << endl;
+    system("PAUSE");
+    return 0;
+}
