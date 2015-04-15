@@ -75,8 +75,8 @@
 \fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
 \fancyfoot[LE]{\fancyplain{}{}}
 \fancyfoot[CE]{\fancyplain{}{}}
-\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 12\+:42\+:11 dla Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 programem Doxygen }}
-\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 12\+:42\+:11 dla Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 programem Doxygen }}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 15 kwi 2015 14\+:45\+:29 dla program framework benchmarkujacy dla abstrakcyjnego typu danych\+: tablica haszujaca. programem Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 15 kwi 2015 14\+:45\+:29 dla program framework benchmarkujacy dla abstrakcyjnego typu danych\+: tablica haszujaca. programem Doxygen }}
 \fancyfoot[CO]{\fancyplain{}{}}
 \fancyfoot[RO]{\fancyplain{}{}}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -125,11 +125,11 @@
 \begin{titlepage}
 \vspace*{7cm}
 \begin{center}%
-{\Large Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 }\\
+{\Large program framework benchmarkujacy dla abstrakcyjnego typu danych\+: tablica haszujaca. \\[1ex]\large 1.\+0 }\\
 \vspace*{1cm}
 {\large Wygenerowano przez Doxygen 1.8.9.1}\\
 \vspace*{0.5cm}
-{\small Śr, 18 mar 2015 12:42:11}\\
+{\small Śr, 15 kwi 2015 14:45:29}\\
 \end{center}
 \end{titlepage}
 \tableofcontents
@@ -137,7 +137,7 @@
 \hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
-\section{Program sluzacy do pomiaru zlozonosci obliczeniowej.}
+\section{program framework benchmarkujacy dla abstrakcyjnego typu danych\+: tablica haszujaca.}
 \label{index}\hypertarget{index}{}\input{index}
 \section{Indeks klas}
 \input{annotated}
@@ -145,31 +145,57 @@
 \input{files}
 \section{Dokumentacja klas}
 \input{classdane}
+\input{classtablica}
 \section{Dokumentacja plików}
-\input{generuj_8cpp}
-\input{generuj_8hh}
+\input{benchmark_8cpp}
+\input{benchmark_8hh}
+\input{dane_8hh}
+\input{haszowanie_8cpp}
+\input{haszowanie_8hh}
+\input{losowy__lancuch_8hh}
 \input{main_8cpp}
 
 
+\title{Laboratorium 5 - Sprawozdanie}
 \author{Wojciech Makuch}
-\title{Laboratorium 1 - Sprawozdanie}
 
-\begin{document}
-	\maketitle
-	\section{Zadanie}
-			Napisać program generujący liczby psełdolosowe, a nastepnie liczący złożonosć obliczeniową wymnożenia każdego z tych elementów przez~2.
-		\section{Realizacja}
-		Program zawiera jedną klase przechowującą rozmiar oraz liczby psełdolowe. Klasa zawiera metody wypęłniające tablice, mnożące każdy z elementów przez 2, zliczając przy tym czas wykonania tej operacji. Ponadto program ma możliwość zapisania danych do pliku. Program nie posiada interfejsu z użytkownikiem.
-		\section{Działanie}
-		Główna funkcja programu w pętli wypelnia tablice liczbami psełdolosowymi z zakresu 10-10 000 000. Następnie zliczas czas wykonanych operacji i zapisuje w formie tabelki do pliku o nazwie Pomiar\_czasu2.txt.
-		\section{Wyniki}
-		Rysunek1 pokazuje wykres zaleznosci zlozonosci obliczeniowej w czasie. Z wykresu mozna zauwazyc, że złożoność obliczeniowa jest liniowa, czyli O(n).
-		 \begin{figure}
-	 	\centering
-	 	\includegraphics[width=14cm]{Wykres1.pdf}
-	 	\caption{Wykres złożoności obliczeniowej.}
-		 \end{figure}
-		\section{Komentarz}
-		Do utworzenia dokumentacji wykorzystano system Doxygen.
-		Funkcja pomiaru czasu dla systemu Windows pobrana ze strony dr. J. Mierzwy. Program skompilowano w środowisku Code::Blocks. Do stworzonia wykresu posłużono się pakietem MS Excel, sprawozdanie napisano uzywając systemu \LaTeX.
+
+\maketitle
+\section{Zadanie}
+Program framework benchmarkujacy dla zaimplementowanego abstrakcyjnego typu danych: tablica haszujaca.
+\section{Realizacja}
+Program wykonano na bazie zwyklej tablicy alokowanej dynamicznie o zadanym maksymalnym rozmiarze. Rozmiar nie może byc zmienny, ponieważ metody haszujace bazują na operacji dzielenia modulo przez ten rozmiar, jego zmiana spowodowałaby znaczne pogorszenie złożoności obliczeniowej. Program zwiera 2 struktury: pierwsza przechowuje dane(element, wartość), druga to tablica przechowujaca te dane. Program zawiera 2 metody haszujace. Pierwsza z nich bazuje na operacji dzielenia modulo przez maksymalny rozmiar wartosci liczbowej kodu ASCII klucza. Druga metoda wykorzystuje wzor q-(dodany wartosci klucza)/q, gdzie q jest polowa maksymalnego rozmiaru i q jest liczba nieparzysta. Zasada wypelniania tablicy jest nastepujaca:
+\begin{enumerate}
+	\item WezKlucz
+	\item i$\leftarrow$ PierwszeHaszowanie
+	\item jeśli tab[i]=0, to wypełnij komórke. \\
+	w przypadku przeciwnym:
+	\item $j\leftarrow$ DrugieHaszowanie
+	\item jeśli tab[i+j]=0, to wypełnij komórkę. \\
+	w przypadku przeciwnym:
+	\item Wypelnij najblizsza wolno komorkę.
+\end{enumerate}
+Ponadto program zawiera przeciązenie operatora [] pozwalającego odnieść się do wybranej komórki tablicy haszującej(asocjacyjnej) za pomocą klucza. Algorytm działa na tym samym schemacie, co wypłenianie.
+\section{Działanie}
+Program tak samo jak poprzednie nie udostępnia użytkownikowi interfesju. Po uruchomieniu jedynie wyswietla dane, które są jednocześnie zapisywane do pliku o nazwie \textsl{pomiar\_czas\_5.txt}. Główna funkcja programu wywołuje jednynie funkcje \textsl{benchmarkuj()}, która zawiera pętle zliczania i zpaisywania uzyskanych wyników.
+
+\section{Wyniki}
+Przetestowano czas wypełniania tablicy haszującej elementami losowymi. Uzyskane dane przedstawiono na rys 1. Wynika z nich wprost, że złożoność obliczeniowa wynosi $O(n^{2})$, lecz po aproksymacji widać, ze współczynik przy $x^{2}$ jest bardzo mały(0.0046), co oznacza, że wykres mozna również przyblizyć prostą. Wtedy złożoność obliczeniowa wyniesie $O(n)$. jest to najgorszy możliwy przypadek szukania pustej komórki przechodząc się kolejno po elementach tablicy, co dzieje się dosyć często przy wypełnianiu tablicy tak duzą ilocią elementów. Na rys 2. pokazano ten sam wykres dla mneijszej ilosci danych, Widać tu, że żadna funkcja nie jest ani rosnąca, ani malejąca. Może to sugerować złożoność obliczeniową O(1) dla małej ilości elementów.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.75]{Wykres1.pdf}
+\caption{Wykres złożoności obliczeniowej dla dużej ilości elementów.}
+\label{fig:wykres1}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.75]{Wykres2.pdf}
+	\caption{Wykres złożoności obliczeniowej dla małej ilości elementów}
+	\label{fig:wykres2}
+\end{figure}
+\section{Podsumowanie}
+Złozoność obliczeniowa algorytmu wypełniania tablicy haszującej w najgorszym przypadku dla dużej ilości elementów jest $O(n)$ lub $O(n^{2})$ natomiast w najlepszym przypadku dla małej ilości jest $O(1)$.
+\section{Komentarz}
+Do utworzenia dokumentacji wykorzystano system Doxygen.
+Funkcja pomiaru czasu dla systemu Windows pobrana ze strony dr. J. Mierzwy. Program skompilowano w środowisku Code::Blocks. Do stworzonia wykresu posłużono się pakietem MS Excel, sprawozdanie napisano używając systemu \LaTeX.
 \end{document}

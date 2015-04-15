@@ -1,0 +1,174 @@
+\hypertarget{classtablica}{}\subsection{Dokumentacja klasy tablica}
+\label{classtablica}\index{tablica@{tablica}}
+
+
+definicja klasy tablica. Definiuje tablice haszujaca(asocjacyjna z mozliwoscia odwolania sie do jej elementu poprzez klucz). Tablica alokowana jest dynamicznie, rozmiar ustalany jest w konstruktorze. Tablica ma narzucony maksymalny rozmiar, poniewaz metoda haszujaca klucze na nim bazuje. Klasa zawiera 2 pola\+: tab -\/ tablice danych oraz zmienna rozmiar przechowujaca informacje o dlugosci tablicy.  
+
+
+
+
+{\ttfamily \#include $<$haszowanie.\+hh$>$}
+
+\subsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtablica_a5ee1754d39209bec5987d4cbdf19f210}{tablica} (int n)
+\begin{DoxyCompactList}\small\item\em definicja konstruktra 1-\/parametrowego \end{DoxyCompactList}\item 
+\hyperlink{classtablica_a75c3c78102abf0e2b70652c174e02012}{$\sim$tablica} ()
+\begin{DoxyCompactList}\small\item\em definicja destruktora \end{DoxyCompactList}\item 
+\hyperlink{classdane}{dane} \hyperlink{classtablica_aaed9c2371e7f19d46dc0179995df529a}{operator\mbox{[}$\,$\mbox{]}} (int i) const 
+\begin{DoxyCompactList}\small\item\em defiicja przeciazenia operatora \mbox{[}\mbox{]} \end{DoxyCompactList}\item 
+\hyperlink{classdane}{dane} \hyperlink{classtablica_a8daad41788563f20b42a169da7f3d2fc}{operator\mbox{[}$\,$\mbox{]}} (char $\ast$klucz) const 
+\begin{DoxyCompactList}\small\item\em definicja przeciazenia operatora \mbox{[}\mbox{]} pozwala na odwolanie sie do elementu tablicy za pomoca klucza \end{DoxyCompactList}\item 
+int \hyperlink{classtablica_a4ea08247dfa3fc56630be6cde3bfa3e1}{Haszowanie} (char $\ast$klucz) const 
+\begin{DoxyCompactList}\small\item\em definicja metody Haszowanie pierszy sposob haszowania klucza dodaje elementu klucza zrzutowane na inta, liczy reszte z dzielenia przez maksymalny rozmiar metoda nie zmienia stanu obiektu \end{DoxyCompactList}\item 
+int \hyperlink{classtablica_aa87cd29bc045e60e19ccf374112723e2}{Drugie\+Haszowanie} (char $\ast$klucz) const 
+\begin{DoxyCompactList}\small\item\em definicja metody Drugie\+Haszowanie drugi sposob haszowania klucza. wykorzystuje wzor 1-\/(dodany wartosci klucza)/q, gdzie q jest polowa maksymalnego rozmiaru i q jest liczba nieparzysta. metoda nie zmienia stanu obiektu. Drugie\+Haszowanie wykorzystuje sie w celu zminimalizowania ilosci wystapien kolizji. \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_a85187198b332fe2cc899166cba2fc9aa}{Wypelnij} (\hyperlink{classdane}{dane} element)
+\begin{DoxyCompactList}\small\item\em definicja metody Wypelnij Ustawia element w tablicy haszowania zgodnie z wartoscia klucza Jezeli dojdzie do 1. kolizji, zostaje wykorzystane drugie haszowanie i sprawdzana jest dostepnosc komorki i+j, gdzie i-\/wynik pierwszego haszowania, j -\/ wynik drugiego haszowania. Jezeli dochodzi do kolejnych kolizji tablica zostaje wypelniana poprzez przechodzenie z komorki do komorki o 1 dalej. \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_a8a6c216f7c281127ea2d8820bacb8431}{Wyswietl} () const 
+\begin{DoxyCompactList}\small\item\em definicja metody Wyswietl metoda pomocna przy tworzeniu programu. Wypisuje na strumien wyjsciowy zawartosc tablicy, przy odwolaniu sie do wartosci elementow(a nie do kluczy). Metoda nie zmienia stanu obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+
+
+Definicja w linii 19 pliku haszowanie.\+hh.
+
+
+
+\subsubsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{classtablica_a5ee1754d39209bec5987d4cbdf19f210}{}\index{tablica@{tablica}!tablica@{tablica}}
+\index{tablica@{tablica}!tablica@{tablica}}
+\paragraph[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}tablica\+::tablica (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\label{classtablica_a5ee1754d39209bec5987d4cbdf19f210}
+
+
+Definicja w linii 4 pliku haszowanie.\+cpp.
+
+\hypertarget{classtablica_a75c3c78102abf0e2b70652c174e02012}{}\index{tablica@{tablica}!````~tablica@{$\sim$tablica}}
+\index{````~tablica@{$\sim$tablica}!tablica@{tablica}}
+\paragraph[{$\sim$tablica}]{\setlength{\rightskip}{0pt plus 5cm}tablica\+::$\sim$tablica (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtablica_a75c3c78102abf0e2b70652c174e02012}
+
+
+Definicja w linii 10 pliku haszowanie.\+cpp.
+
+
+
+\subsubsection{Dokumentacja funkcji składowych}
+\hypertarget{classtablica_aa87cd29bc045e60e19ccf374112723e2}{}\index{tablica@{tablica}!Drugie\+Haszowanie@{Drugie\+Haszowanie}}
+\index{Drugie\+Haszowanie@{Drugie\+Haszowanie}!tablica@{tablica}}
+\paragraph[{Drugie\+Haszowanie}]{\setlength{\rightskip}{0pt plus 5cm}int tablica\+::\+Drugie\+Haszowanie (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{klucz}
+\end{DoxyParamCaption}
+) const}\label{classtablica_aa87cd29bc045e60e19ccf374112723e2}
+
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}klucz\mbox{]}} & zadany klucz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+kod bedacy wynikiem drugiego haszowania 
+\end{DoxyReturn}
+
+
+Definicja w linii 34 pliku haszowanie.\+cpp.
+
+\hypertarget{classtablica_a4ea08247dfa3fc56630be6cde3bfa3e1}{}\index{tablica@{tablica}!Haszowanie@{Haszowanie}}
+\index{Haszowanie@{Haszowanie}!tablica@{tablica}}
+\paragraph[{Haszowanie}]{\setlength{\rightskip}{0pt plus 5cm}int tablica\+::\+Haszowanie (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{klucz}
+\end{DoxyParamCaption}
+) const}\label{classtablica_a4ea08247dfa3fc56630be6cde3bfa3e1}
+
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}klucz\mbox{]}} & zadany klucz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+kod bedacy wnikiem pierwszego haszowania 
+\end{DoxyReturn}
+
+
+Definicja w linii 15 pliku haszowanie.\+cpp.
+
+\hypertarget{classtablica_aaed9c2371e7f19d46dc0179995df529a}{}\index{tablica@{tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tablica@{tablica}}
+\paragraph[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dane} tablica\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtablica_aaed9c2371e7f19d46dc0179995df529a}
+
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}i\mbox{]}} & komorka tablicy pozwala na odwolanie sie do elementu tablicy o indeksie i metoda nie pozwala na zmiane wartosci pol prywatnych \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+element tablicy 
+\end{DoxyReturn}
+
+
+Definicja w linii 41 pliku haszowanie.\+hh.
+
+\hypertarget{classtablica_a8daad41788563f20b42a169da7f3d2fc}{}\index{tablica@{tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tablica@{tablica}}
+\paragraph[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dane} tablica\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{klucz}
+\end{DoxyParamCaption}
+) const}\label{classtablica_a8daad41788563f20b42a169da7f3d2fc}
+
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}klucz\mbox{]}} & zadany klucz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+element tablicy 
+\end{DoxyReturn}
+
+
+Definicja w linii 96 pliku haszowanie.\+cpp.
+
+\hypertarget{classtablica_a85187198b332fe2cc899166cba2fc9aa}{}\index{tablica@{tablica}!Wypelnij@{Wypelnij}}
+\index{Wypelnij@{Wypelnij}!tablica@{tablica}}
+\paragraph[{Wypelnij}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\+::\+Wypelnij (
+\begin{DoxyParamCaption}
+\item[{{\bf dane}}]{element}
+\end{DoxyParamCaption}
+)}\label{classtablica_a85187198b332fe2cc899166cba2fc9aa}
+w 
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}element\mbox{]}} & dane przekazywane do tablicy \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 57 pliku haszowanie.\+cpp.
+
+\hypertarget{classtablica_a8a6c216f7c281127ea2d8820bacb8431}{}\index{tablica@{tablica}!Wyswietl@{Wyswietl}}
+\index{Wyswietl@{Wyswietl}!tablica@{tablica}}
+\paragraph[{Wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\+::\+Wyswietl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classtablica_a8a6c216f7c281127ea2d8820bacb8431}
+
+
+Definicja w linii 87 pliku haszowanie.\+cpp.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{haszowanie_8hh}{haszowanie.\+hh}\item 
+\hyperlink{haszowanie_8cpp}{haszowanie.\+cpp}\end{DoxyCompactItemize}

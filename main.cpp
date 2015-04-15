@@ -1,56 +1,34 @@
 #include <iostream>
-#include <windows.h>
+#include <cstdlib>
+
+#include "losowy_lancuch.hh"
+#include "haszowanie.hh"
+#include "dane.hh"
+#include "benchmark.hh"
+#include <cstdlib>
+#include <ctime>
 #include <fstream>
-
-#include "generuj.hh"
-
+#include <iostream>
 
 using namespace std;
 
 /*!
-\mainpage Program sluzacy do pomiaru zlozonosci obliczeniowej.
-\author Wojcich Makuch
-\date 10.03.2015
-\version 1.0
-
-Zadaniem programu jest wygenerowanie tablic
-liczb pseldoloswych oraz pomiar zlozonosci obliczeniowej polegajacej
-na wymnozeniu kazdego z tych elementow przez 2.
-Program zapisuje dane w pliku o nazwie Pomiar_czasu1.txt.
-
-\section wartosci
-Program wykonuje obliczenia dla tablic o rozmiarach:
-10-10000000
-*/
+ * \author Wojciech Makuch
+ * \date 15.04.2015
+ * \version 1.0
+ * \mainpage program framework benchmarkujacy dla abstrakcyjnego typu danych: tablica haszujaca.
+ * Program realizuje zadanie wyliczenia zlozonosci obliczeniowej dla abstakcyjnego typu danych jakim jest tablica haszujaca
+ * Uzyskane wyniki program zapisuje do pliku o nazwie \e pomiar_czasu_5.txt. \e
+ * Program zbudownay na klasach: dane - przechowujace klucz oraz wartosci danych, tablica - tworzacy tablice haszujaca(asocjacyjna z mozliwoscia przeszukania)
+ * Zlozonosc obliczeniowa liczona na podstawie wartosci lodowych otrzymanych z funkcji rand().
+ */
 
 int main()
 {
-    int rozm=100000000;
-    int czas=0;
-       fstream plik;
+    srand(time(NULL));
 
-    plik.open("Pomiar_czasu1.txt",ios::out);
-    if(!plik.good())
-    {
-        cerr << "Blad otwarcia pliku do zapisu." << endl;
-        return -1;
-    }
+    benchmarkuj("pomiar_czasu_5.txt");
+}
 
-int i,j;
-for(i=10,j=50; i<=rozm, j<=rozm; i*=10,j*=10)
-{
-    dane *d=new dane(i);
-    dane *d2=new dane(j);
-    d->generuj();
-    d2->generuj();
-    czas=d->licz();
-    cout << i << "\t\t " << czas << endl;
-    plik << i << "\t\t " << czas << endl;
-    czas=d2->licz();
-    cout << j << "\t\t " << czas << endl;
-    plik << j << "\t\t " << czas << endl;
-}
-    plik.close();
-    system("PAUSE");
-}
+
 

@@ -1,0 +1,93 @@
+# depslib dependency file v1.0
+1428673148 source:c:\users\1\desktop\nowy folder\lab5\main.cpp
+	<iostream>
+	<cstdlib>
+
+1428942426 source:c:\users\1\desktop\lab5\main.cpp
+	<iostream>
+	<cstdlib>
+	"losowy_znak.hh"
+	"losowy_lancuch.hh"
+	"haszowanie.hh"
+	"dane.hh"
+
+1428942542 c:\users\1\desktop\lab5\haszowanie.hh
+	"dane.hh"
+
+1428933097 c:\users\1\desktop\lab5\dane.hh
+
+1428942426 c:\users\1\desktop\lab5\losowy_znak.hh
+
+1428942426 c:\users\1\desktop\lab5\losowy_lancuch.hh
+
+1428942542 source:c:\users\1\desktop\lab5 - kopia\haszowanie.cpp
+	<iostream>
+	"haszowanie.hh"
+
+1428942542 c:\users\1\desktop\lab5 - kopia\haszowanie.hh
+	"dane.hh"
+
+1428933097 c:\users\1\desktop\lab5 - kopia\dane.hh
+
+1428943068 source:c:\users\1\desktop\lab5 - kopia\main.cpp
+	<iostream>
+	<cstdlib>
+	"losowy_znak.hh"
+	"losowy_lancuch.hh"
+	"haszowanie.hh"
+	"dane.hh"
+
+1428942426 c:\users\1\desktop\lab5 - kopia\losowy_znak.hh
+
+1428942426 c:\users\1\desktop\lab5 - kopia\losowy_lancuch.hh
+
+1428942542 source:c:\users\1\desktop\lab5 - kopia - kopia\haszowanie.cpp
+	<iostream>
+	"haszowanie.hh"
+
+1428942542 c:\users\1\desktop\lab5 - kopia - kopia\haszowanie.hh
+	"dane.hh"
+
+1428933097 c:\users\1\desktop\lab5 - kopia - kopia\dane.hh
+
+1429098307 source:c:\users\1\desktop\k1\haszowanie.cpp
+	<iostream>
+	"haszowanie.hh"
+
+1429105629 c:\users\1\desktop\k1\haszowanie.hh
+	"dane.hh"
+
+1429105629 c:\users\1\desktop\k1\dane.hh
+
+1429098872 source:c:\users\1\desktop\k1\main.cpp
+	<iostream>
+	<cstdlib>
+	"losowy_lancuch.hh"
+	"haszowanie.hh"
+	"dane.hh"
+	"benchmark.hh"
+	<cstdlib>
+	<ctime>
+	<fstream>
+	<iostream>
+
+1429105629 c:\users\1\desktop\k1\losowy_lancuch.hh
+	<cstdlib>
+
+1429105629 c:\users\1\desktop\k1\benchmark.hh
+	<windows.h>
+	<ctime>
+	<fstream>
+	"losowy_lancuch.hh"
+	"dane.hh"
+	"haszowanie.hh"
+
+1429098245 source:c:\users\1\desktop\k1\benchmark.cpp
+	<windows.h>
+	<ctime>
+	<fstream>
+	<iostream>
+	"losowy_lancuch.hh"
+	"dane.hh"
+	"haszowanie.hh"
+

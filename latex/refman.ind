@@ -1,76 +1,101 @@
 \begin{theindex}
 
-  \item {$\sim$dane}
-    \subitem {dane}, \hyperpage{3}
+  \item {$\sim$tablica}
+    \subitem {tablica}, \hyperpage{4}
 
   \indexspace
 
-  \item {dane}, \hyperpage{2}
-    \subitem {$\sim$dane}, \hyperpage{3}
+  \item {benchmark.\+cpp}, \hyperpage{6}
+    \subitem {benchmarkuj}, \hyperpage{6}
+    \subitem {end\+Timer}, \hyperpage{6}
+    \subitem {start\+Timer}, \hyperpage{7}
+    \subitem {zliczaj\+\_\+czas}, \hyperpage{7}
+  \item {benchmark.\+hh}, \hyperpage{7}
+    \subitem {benchmarkuj}, \hyperpage{7}
+    \subitem {end\+Timer}, \hyperpage{8}
+    \subitem {start\+Timer}, \hyperpage{8}
+    \subitem {zliczaj\+\_\+czas}, \hyperpage{8}
+  \item {benchmarkuj}
+    \subitem {benchmark.\+cpp}, \hyperpage{6}
+    \subitem {benchmark.\+hh}, \hyperpage{7}
+
+  \indexspace
+
+  \item {dane}, \hyperpage{3}
     \subitem {dane}, \hyperpage{3}
-    \subitem {generuj}, \hyperpage{3}
-    \subitem {licz}, \hyperpage{3}
-    \subitem {rozmiar}, \hyperpage{5}
+    \subitem {Wez\+Klucz}, \hyperpage{3}
+    \subitem {Wez\+Wartosc}, \hyperpage{3}
+  \item {dane.\+hh}, \hyperpage{8}
+  \item {Drugie\+Haszowanie}
     \subitem {tablica}, \hyperpage{5}
-    \subitem {Wez}, \hyperpage{3}
-    \subitem {Wez\+Rozmiar}, \hyperpage{3}
-    \subitem {Zapisz\+Do\+Pliku}, \hyperpage{3}
 
   \indexspace
 
   \item {end\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {benchmark.\+cpp}, \hyperpage{6}
+    \subitem {benchmark.\+hh}, \hyperpage{8}
 
   \indexspace
 
-  \item {generuj}
-    \subitem {dane}, \hyperpage{3}
-  \item {generuj.\+cpp}, \hyperpage{5}
-    \subitem {end\+Timer}, \hyperpage{5}
-    \subitem {start\+Timer}, \hyperpage{5}
-  \item {generuj.\+hh}, \hyperpage{6}
-    \subitem {end\+Timer}, \hyperpage{6}
-    \subitem {start\+Timer}, \hyperpage{6}
+  \item {Haszowanie}
+    \subitem {tablica}, \hyperpage{5}
+  \item {haszowanie.\+cpp}, \hyperpage{8}
+  \item {haszowanie.\+hh}, \hyperpage{8}
 
   \indexspace
 
-  \item {licz}
-    \subitem {dane}, \hyperpage{3}
+  \item {losowy\+\_\+lancuch.\+hh}, \hyperpage{9}
+    \subitem {Losowy\+Lancuch}, \hyperpage{9}
+    \subitem {Losowy\+Znak}, \hyperpage{9}
+  \item {Losowy\+Lancuch}
+    \subitem {losowy\+\_\+lancuch.\+hh}, \hyperpage{9}
+  \item {Losowy\+Znak}
+    \subitem {losowy\+\_\+lancuch.\+hh}, \hyperpage{9}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\+cpp}, \hyperpage{7}
-  \item {main.\+cpp}, \hyperpage{6}
-    \subitem {main}, \hyperpage{7}
+    \subitem {main.\+cpp}, \hyperpage{10}
+  \item {main.\+cpp}, \hyperpage{9}
+    \subitem {main}, \hyperpage{10}
 
   \indexspace
 
-  \item {rozmiar}
-    \subitem {dane}, \hyperpage{5}
+  \item {operator[]}
+    \subitem {tablica}, \hyperpage{5}
 
   \indexspace
 
   \item {start\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {benchmark.\+cpp}, \hyperpage{7}
+    \subitem {benchmark.\+hh}, \hyperpage{8}
 
   \indexspace
 
-  \item {tablica}
-    \subitem {dane}, \hyperpage{5}
+  \item {tablica}, \hyperpage{4}
+    \subitem {$\sim$tablica}, \hyperpage{4}
+    \subitem {Drugie\+Haszowanie}, \hyperpage{5}
+    \subitem {Haszowanie}, \hyperpage{5}
+    \subitem {operator[]}, \hyperpage{5}
+    \subitem {tablica}, \hyperpage{4}
+    \subitem {Wypelnij}, \hyperpage{5}
+    \subitem {Wyswietl}, \hyperpage{6}
 
   \indexspace
 
-  \item {Wez}
+  \item {Wez\+Klucz}
     \subitem {dane}, \hyperpage{3}
-  \item {Wez\+Rozmiar}
+  \item {Wez\+Wartosc}
     \subitem {dane}, \hyperpage{3}
+  \item {Wypelnij}
+    \subitem {tablica}, \hyperpage{5}
+  \item {Wyswietl}
+    \subitem {tablica}, \hyperpage{6}
 
   \indexspace
 
-  \item {Zapisz\+Do\+Pliku}
-    \subitem {dane}, \hyperpage{3}
+  \item {zliczaj\+\_\+czas}
+    \subitem {benchmark.\+cpp}, \hyperpage{7}
+    \subitem {benchmark.\+hh}, \hyperpage{8}
 
 \end{theindex}

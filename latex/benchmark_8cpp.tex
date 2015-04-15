@@ -1,0 +1,85 @@
+\hypertarget{benchmark_8cpp}{}\subsection{Dokumentacja pliku benchmark.\+cpp}
+\label{benchmark_8cpp}\index{benchmark.\+cpp@{benchmark.\+cpp}}
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}losowy\+\_\+lancuch.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dane.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}haszowanie.\+hh\char`\"{}}\\*
+\subsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{benchmark_8cpp_a4fbb2a5fceb3efd577419fc87c6f3d07}{start\+Timer} ()
+\begin{DoxyCompactList}\small\item\em definicja funkcji Start\+Timer Rozpoczyna pomiar czasu Funkcja pobrana ze strony \href{http://jaroslaw.mierzwa.staff.iiar.pwr.wroc.pl/}{\tt http\+://jaroslaw.\+mierzwa.\+staff.\+iiar.\+pwr.\+wroc.\+pl/} \end{DoxyCompactList}\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{benchmark_8cpp_abd320a48742faf3aa6ad1a7e7c6b518b}{end\+Timer} ()
+\begin{DoxyCompactList}\small\item\em definicja funkcji end\+Timer Konczy pomiar czasu Funkcja pobrana ze strony \href{http://jaroslaw.mierzwa.staff.iiar.pwr.wroc.pl/}{\tt http\+://jaroslaw.\+mierzwa.\+staff.\+iiar.\+pwr.\+wroc.\+pl/} \end{DoxyCompactList}\item 
+double \hyperlink{benchmark_8cpp_abf839fc896fdc6ef6aa9b471db7aa032}{zliczaj\+\_\+czas} (int N)
+\begin{DoxyCompactList}\small\item\em definicja funkcji zliczaj\+\_\+czas funkcja benchmarkujaca zliczajaca czas wypelnienia tablicy haszujacej elementami losowymi. funkcja tworzy obiekt zadajac mu maksymalny rozmiar wynoszacy 150 000. \end{DoxyCompactList}\item 
+int \hyperlink{benchmark_8cpp_ab611a50968dd58e80c442b968b3d39db}{benchmarkuj} (char $\ast$nazwa\+\_\+pliku)
+\begin{DoxyCompactList}\small\item\em definicja funkcji benchmarkuj Tworzy plik o zadanej nazwie. Wykonuje w petlach funkcje zliczaj czas, wyniki wysyla odpowiednio do strumienia wyjsciowego oraz do pliku. Po zakonczeniu dzialania funkcja zamyka plik \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Dokumentacja funkcji}
+\hypertarget{benchmark_8cpp_ab611a50968dd58e80c442b968b3d39db}{}\index{benchmark.\+cpp@{benchmark.\+cpp}!benchmarkuj@{benchmarkuj}}
+\index{benchmarkuj@{benchmarkuj}!benchmark.\+cpp@{benchmark.\+cpp}}
+\paragraph[{benchmarkuj}]{\setlength{\rightskip}{0pt plus 5cm}int benchmarkuj (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nazwa\+\_\+pliku}
+\end{DoxyParamCaption}
+)}\label{benchmark_8cpp_ab611a50968dd58e80c442b968b3d39db}
+
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}nazwa\+\_\+pliku\mbox{]}} & nazwa pliku otwartego do zapisu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+0, gdzy funkcja zostanie wyonana poprawie 
+
+-\/1, w przypadku przeciwnym. 
+\end{DoxyReturn}
+
+
+Definicja w linii 50 pliku benchmark.\+cpp.
+
+\hypertarget{benchmark_8cpp_abd320a48742faf3aa6ad1a7e7c6b518b}{}\index{benchmark.\+cpp@{benchmark.\+cpp}!end\+Timer@{end\+Timer}}
+\index{end\+Timer@{end\+Timer}!benchmark.\+cpp@{benchmark.\+cpp}}
+\paragraph[{end\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R end\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{benchmark_8cpp_abd320a48742faf3aa6ad1a7e7c6b518b}
+
+
+Definicja w linii 19 pliku benchmark.\+cpp.
+
+\hypertarget{benchmark_8cpp_a4fbb2a5fceb3efd577419fc87c6f3d07}{}\index{benchmark.\+cpp@{benchmark.\+cpp}!start\+Timer@{start\+Timer}}
+\index{start\+Timer@{start\+Timer}!benchmark.\+cpp@{benchmark.\+cpp}}
+\paragraph[{start\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R start\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{benchmark_8cpp_a4fbb2a5fceb3efd577419fc87c6f3d07}
+
+
+Definicja w linii 10 pliku benchmark.\+cpp.
+
+\hypertarget{benchmark_8cpp_abf839fc896fdc6ef6aa9b471db7aa032}{}\index{benchmark.\+cpp@{benchmark.\+cpp}!zliczaj\+\_\+czas@{zliczaj\+\_\+czas}}
+\index{zliczaj\+\_\+czas@{zliczaj\+\_\+czas}!benchmark.\+cpp@{benchmark.\+cpp}}
+\paragraph[{zliczaj\+\_\+czas}]{\setlength{\rightskip}{0pt plus 5cm}double zliczaj\+\_\+czas (
+\begin{DoxyParamCaption}
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}\label{benchmark_8cpp_abf839fc896fdc6ef6aa9b471db7aa032}
+
+\begin{DoxyParams}{Parametry}
+{\em \mbox{[}\+N\mbox{]}} & ilosc elementow wypelniajacych tablice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+czas wypelniania elementami losowymi 
+\end{DoxyReturn}
+
+
+Definicja w linii 30 pliku benchmark.\+cpp.
+
