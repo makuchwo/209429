@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1429184488 source:c:\users\1\desktop\nowy folder\sortowanie_scalanie\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
