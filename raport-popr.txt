@@ -1,0 +1,3 @@
+Algorytm sortowania przez scalanie.
+
+program juz sortuje, ale ma problem ze zwolnienim pamiêci, dlatego nie chce dzia³aæ dla du¿ej iloœc liczb.

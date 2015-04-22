@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1429717753 source:c:\users\1\desktop\scal\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"stoper.hh"
+	"sort.hh"
+
+1429715928 c:\users\1\desktop\scal\stoper.hh
+	<windows.h>
+	<ctime>
+	<fstream>
+	"sort.hh"
+
+1429718038 c:\users\1\desktop\scal\sort.hh
+
