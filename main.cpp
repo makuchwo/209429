@@ -1,56 +1,120 @@
 #include <iostream>
-#include <windows.h>
-#include <fstream>
-
-#include "generuj.hh"
-
+#include <ctime>
+#include "list.hh"
+#include "benchmark.hh"
+#include "csort.hh"
+#include "heap_sort.hh"
+#include "quick_sort.hh"
+#include "merge_sort.hh"
 
 using namespace std;
 
+
 /*!
-\mainpage Program sluzacy do pomiaru zlozonosci obliczeniowej.
-\author Wojcich Makuch
-\date 10.03.2015
-\version 1.0
+ *\mainpage modyfkacja sortowania - benchmark - obserwator
+ *\author Wojcich Makuch
+ *\date 12.05.2015
+ *\version 2.0
+ *program wzbogacono o menu, pozwalajace spradzic poprawnosc algorytmow.
+ *wszystkie klasy, metody, zmienne itp. zaimplementowano w jezyku angielskim.
+ */
 
-Zadaniem programu jest wygenerowanie tablic
-liczb pseldoloswych oraz pomiar zlozonosci obliczeniowej polegajacej
-na wymnozeniu kazdego z tych elementow przez 2.
-Program zapisuje dane w pliku o nazwie Pomiar_czasu1.txt.
-
-\section wartosci
-Program wykonuje obliczenia dla tablic o rozmiarach:
-10-10000000
-*/
 
 int main()
 {
-    int rozm=100000000;
-    int czas=0;
-       fstream plik;
+    srand(time(NULL));
+    CList *L=new CList;
+    CSort *S1=new CQuickSort;
+    CSort *S2=new CHeapSort;
+    CSort *S3=new CMergeSort;
 
-    plik.open("Pomiar_czasu1.txt",ios::out);
-    if(!plik.good())
+    char choice;
+    int size;
+
+    cout << "c - zaladuj liste liczbami pseudolosowymi" << endl;
+    cout << "p - wyswietl liste" << endl;
+    cout << "q - quick sort" << endl;
+    cout << "h - heap sort" << endl;
+    cout << "m - merge sort" << endl;
+    cout << "x - benchmarkuj qucik sorta" << endl;
+    cout << "y - benchmarkuj heap sorta" << endl;
+    cout << "z - benchmarkuj merge sorta" << endl;
+    cout << "d - usun liste" << endl;
+    cout << "e - wyjscie z programu" << endl;
+    do
     {
-        cerr << "Blad otwarcia pliku do zapisu." << endl;
-        return -1;
+        cout << "o - opcje/menu" << endl;
+        if(choice=='o') {
+    cout << "c - zaladuj liste liczbami pseudolosowymi" << endl;
+    cout << "p - wyswietl liste" << endl;
+    cout << "q - quick sort" << endl;
+    cout << "h - heap sort" << endl;
+    cout << "m - merge sort" << endl;
+    cout << "x - benchmarkuj qucik sorta" << endl;
+    cout << "y - benchmarkuj heap sorta" << endl;
+    cout << "z - benchmarkuj merge sorta" << endl;
+    cout << "d - usun liste" << endl;
+    cout << "e - wyjscie z programu" << endl;
+        }
+    cin >> choice;
+    switch(choice)
+    {
+    case 'x':
+        S1->benchmarking(L);
+        cout << "zapisano" << endl;
+        break;
+    case 'y':
+        S2->benchmarking(L);
+        cout << "zapisano." << endl;
+        break;
+    case 'z':
+        S3->benchmarking(L);
+        cout << "zapisano." << endl;
+        break;
+    case 'c':
+    cout << "wprowadz ilosc liczb psudolosowych:" << endl;
+    cin >> size;
+    for(int i=0; i<size; i++)
+    {
+        L->push(rand()%10);
     }
-
-int i,j;
-for(i=10,j=50; i<=rozm, j<=rozm; i*=10,j*=10)
-{
-    dane *d=new dane(i);
-    dane *d2=new dane(j);
-    d->generuj();
-    d2->generuj();
-    czas=d->licz();
-    cout << i << "\t\t " << czas << endl;
-    plik << i << "\t\t " << czas << endl;
-    czas=d2->licz();
-    cout << j << "\t\t " << czas << endl;
-    plik << j << "\t\t " << czas << endl;
+    cout << "zaladowano" << endl;
+    break;
+    case 'p':
+    L->print();
+    break;
+    case 'q':
+        if(L->is_empty())
+        {
+            cout << "lista jest pusta." << endl;
+            break;
+        } else
+    S1->sort(L,0,size-1);
+    cout << "posortowano." << endl;
+    break;
+    case 'h':
+        if(L->is_empty())
+        {
+            cout << "lista jest pusta." << endl;
+            break;
+        } else
+    S2->sort(L,0,size-1);
+    cout << "posortowano." << endl;
+    break;
+    case 'm':
+        if(L->is_empty())
+        {
+            cout << "Lista jest pusta" << endl;
+            break;
+        } else
+        S3->sort(L,0,size-1);
+        cout << "posortowano." << endl;
+        break;
+    case 'd':
+        L->~CList();
+        cout << "usunieto." << endl;
+        break;
+    }
+}while(choice!='e');
+    return 0;
 }
-    plik.close();
-    system("PAUSE");
-}
-

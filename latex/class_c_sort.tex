@@ -1,0 +1,74 @@
+\hypertarget{class_c_sort}{}\subsection{C\+Sort Class Reference}
+\label{class_c_sort}\index{C\+Sort@{C\+Sort}}
+
+
+definicja klasy abstrakcyjnej \hyperlink{class_c_sort}{C\+Sort} jest klasa bazowa dla konkretnych typow sortowan. jest przykladem klasy obserwowanej.  
+
+
+
+
+{\ttfamily \#include $<$csort.\+hh$>$}
+
+
+
+Inherits \hyperlink{class_c_benchmark}{C\+Benchmark}.
+
+
+
+Inherited by \hyperlink{class_c_heap_sort}{C\+Heap\+Sort}, \hyperlink{class_c_merge_sort}{C\+Merge\+Sort}, and \hyperlink{class_c_quick_sort}{C\+Quick\+Sort}.
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_sort_a2c87a533501c9e2102444e4ce6b69527}{sort} (\hyperlink{class_c_list}{C\+List} $\ast$, int, int)=0
+\begin{DoxyCompactList}\small\item\em definicja metody sort sortuje elementy na liscie. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_sort_a600cf20261b3e00b148f8d4b773dd1b9}{benchmarking} (\hyperlink{class_c_list}{C\+List} $\ast$list)=0
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+definicja klasy abstrakcyjnej \hyperlink{class_c_sort}{C\+Sort} jest klasa bazowa dla konkretnych typow sortowan. jest przykladem klasy obserwowanej. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_c_sort_a600cf20261b3e00b148f8d4b773dd1b9}{}\index{C\+Sort@{C\+Sort}!benchmarking@{benchmarking}}
+\index{benchmarking@{benchmarking}!C\+Sort@{C\+Sort}}
+\paragraph[{benchmarking}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+Sort\+::benchmarking (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_c_sort_a600cf20261b3e00b148f8d4b773dd1b9}
+
+
+Implemented in \hyperlink{class_c_heap_sort_ae5ef55ad47223dc1308ce9ffbe11648a}{C\+Heap\+Sort}, \hyperlink{class_c_merge_sort_add3bb6f2c5f822eb1d435a0652bdf431}{C\+Merge\+Sort}, and \hyperlink{class_c_quick_sort_ac60e09cc11c7c08dfc3ffc75d43502a7}{C\+Quick\+Sort}.
+
+\hypertarget{class_c_sort_a2c87a533501c9e2102444e4ce6b69527}{}\index{C\+Sort@{C\+Sort}!sort@{sort}}
+\index{sort@{sort}!C\+Sort@{C\+Sort}}
+\paragraph[{sort}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+Sort\+::sort (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_c_sort_a2c87a533501c9e2102444e4ce6b69527}
+
+
+definicja metody sort sortuje elementy na liscie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ sortowana lista \\
+\hline
+{\em left} & -\/ indeks pierwszego elementu listy sortowanej. \\
+\hline
+{\em right} & -\/ indeks ostatniego elementu listy sortowanej. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_c_heap_sort_a31374a3fb22fdab6dfdd0ca0db1c5973}{C\+Heap\+Sort}, \hyperlink{class_c_merge_sort_a5becc6aef876cfc13abe746dea5a4f70}{C\+Merge\+Sort}, and \hyperlink{class_c_quick_sort_a94cdaa98ea0a6ce6b1c214466f311d97}{C\+Quick\+Sort}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{csort_8hh}{csort.\+hh}\end{DoxyCompactItemize}

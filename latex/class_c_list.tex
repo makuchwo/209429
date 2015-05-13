@@ -1,0 +1,220 @@
+\hypertarget{class_c_list}{}\subsection{C\+List Class Reference}
+\label{class_c_list}\index{C\+List@{C\+List}}
+
+
+klasa lista -\/ A\+D\+T modeluje prost¹ liste jednokierunkowa zwiera metody niezbedne do implementacji sortowania  
+
+
+
+
+{\ttfamily \#include $<$list.\+hh$>$}
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_list_ae6434f79bc2d54fbd3617214a313af97}{C\+List} ()
+\item 
+\hyperlink{class_c_list_a34a40e8ab96400a4ec186b29de56da5a}{$\sim$\+C\+List} ()
+\item 
+void \hyperlink{class_c_list_abcf376342791b5a361dbb16b2f3c18e7}{print} () const 
+\begin{DoxyCompactList}\small\item\em definicja funkcji wyswietlajacej wyswietla na strumieniu wyjsciowym ciag elementow zapisanych na liscie \end{DoxyCompactList}\item 
+void \hyperlink{class_c_list_a5cac185c7d3bddaef565557c3b2fbc52}{push} (int element)
+\begin{DoxyCompactList}\small\item\em definicja metody push dodaje nowy element na liste \end{DoxyCompactList}\item 
+int \hyperlink{class_c_list_ac62395d2e755a624dca890266679c0e4}{pop} ()
+\begin{DoxyCompactList}\small\item\em definicja metody pop usuwa element z lsity \end{DoxyCompactList}\item 
+int \hyperlink{class_c_list_a47ef53b4cfb22f2bd03021f73259c7f3}{get\+\_\+value} (int i) const 
+\begin{DoxyCompactList}\small\item\em definicja metody get\+\_\+value odowluje sie do wybranego elemntu listy \end{DoxyCompactList}\item 
+int \& \hyperlink{class_c_list_a95c54088a50836e6ae48b041c98b1019}{get\+\_\+value} (int i)
+\begin{DoxyCompactList}\small\item\em definicja przeciazenia get\+\_\+value \end{DoxyCompactList}\item 
+void \hyperlink{class_c_list_a8da32b78baee180c05201e2efa67622e}{swap} (int i, int j)
+\begin{DoxyCompactList}\small\item\em definicja metody swap zamienia elementy listy \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_list_a317015b03da2b120c97bb27f8cd744c0}{is\+\_\+empty} ()
+\begin{DoxyCompactList}\small\item\em definicja metody is\+\_\+empty \end{DoxyCompactList}\item 
+int \hyperlink{class_c_list_af2a1d2a860b6d8f2a93077c8571ad3a1}{get\+\_\+size} ()
+\begin{DoxyCompactList}\small\item\em definicja metody get\+\_\+size \end{DoxyCompactList}\item 
+void \hyperlink{class_c_list_a3c96b4974b942fe5b7867a4fc2e4d277}{pull} (int i)
+\begin{DoxyCompactList}\small\item\em definicja metody pull wypelnia liste liczbami pesudolosowymi \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_list_a72784f3a1dd907527c1f4398582faa26}{value}
+\item 
+\hyperlink{class_c_list}{C\+List} $\ast$ \hyperlink{class_c_list_a623dc92ae6bd3d600508527c0db3ddbf}{next}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+klasa lista -\/ A\+D\+T modeluje prost¹ liste jednokierunkowa zwiera metody niezbedne do implementacji sortowania 
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_list_ae6434f79bc2d54fbd3617214a313af97}{}\index{C\+List@{C\+List}!C\+List@{C\+List}}
+\index{C\+List@{C\+List}!C\+List@{C\+List}}
+\paragraph[{C\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+List\+::\+C\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_list_ae6434f79bc2d54fbd3617214a313af97}
+\hypertarget{class_c_list_a34a40e8ab96400a4ec186b29de56da5a}{}\index{C\+List@{C\+List}!````~C\+List@{$\sim$\+C\+List}}
+\index{````~C\+List@{$\sim$\+C\+List}!C\+List@{C\+List}}
+\paragraph[{$\sim$\+C\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+List\+::$\sim$\+C\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_list_a34a40e8ab96400a4ec186b29de56da5a}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_c_list_af2a1d2a860b6d8f2a93077c8571ad3a1}{}\index{C\+List@{C\+List}!get\+\_\+size@{get\+\_\+size}}
+\index{get\+\_\+size@{get\+\_\+size}!C\+List@{C\+List}}
+\paragraph[{get\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}int C\+List\+::get\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_list_af2a1d2a860b6d8f2a93077c8571ad3a1}
+
+
+definicja metody get\+\_\+size 
+
+\begin{DoxyReturn}{Returns}
+ilosc elementow na liscie 
+\end{DoxyReturn}
+\hypertarget{class_c_list_a47ef53b4cfb22f2bd03021f73259c7f3}{}\index{C\+List@{C\+List}!get\+\_\+value@{get\+\_\+value}}
+\index{get\+\_\+value@{get\+\_\+value}!C\+List@{C\+List}}
+\paragraph[{get\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}int C\+List\+::get\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}\label{class_c_list_a47ef53b4cfb22f2bd03021f73259c7f3}
+
+
+definicja metody get\+\_\+value odowluje sie do wybranego elemntu listy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ indeks komórki listy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+element o indeksie i 
+\end{DoxyReturn}
+\hypertarget{class_c_list_a95c54088a50836e6ae48b041c98b1019}{}\index{C\+List@{C\+List}!get\+\_\+value@{get\+\_\+value}}
+\index{get\+\_\+value@{get\+\_\+value}!C\+List@{C\+List}}
+\paragraph[{get\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}int \& C\+List\+::get\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{class_c_list_a95c54088a50836e6ae48b041c98b1019}
+
+
+definicja przeciazenia get\+\_\+value 
+
+\begin{DoxyReturn}{Returns}
+referencje do elementu na lsicie 
+\end{DoxyReturn}
+\hypertarget{class_c_list_a317015b03da2b120c97bb27f8cd744c0}{}\index{C\+List@{C\+List}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!C\+List@{C\+List}}
+\paragraph[{is\+\_\+empty}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+List\+::is\+\_\+empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_list_a317015b03da2b120c97bb27f8cd744c0}
+
+
+definicja metody is\+\_\+empty 
+
+\begin{DoxyReturn}{Returns}
+true -\/ gdy lista jest pusta 
+
+false -\/ w przypadku przeciwnym 
+\end{DoxyReturn}
+\hypertarget{class_c_list_ac62395d2e755a624dca890266679c0e4}{}\index{C\+List@{C\+List}!pop@{pop}}
+\index{pop@{pop}!C\+List@{C\+List}}
+\paragraph[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int C\+List\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_list_ac62395d2e755a624dca890266679c0e4}
+
+
+definicja metody pop usuwa element z lsity 
+
+\begin{DoxyReturn}{Returns}
+usuwany element 
+\end{DoxyReturn}
+\hypertarget{class_c_list_abcf376342791b5a361dbb16b2f3c18e7}{}\index{C\+List@{C\+List}!print@{print}}
+\index{print@{print}!C\+List@{C\+List}}
+\paragraph[{print}]{\setlength{\rightskip}{0pt plus 5cm}void C\+List\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_list_abcf376342791b5a361dbb16b2f3c18e7}
+
+
+definicja funkcji wyswietlajacej wyswietla na strumieniu wyjsciowym ciag elementow zapisanych na liscie 
+
+\hypertarget{class_c_list_a3c96b4974b942fe5b7867a4fc2e4d277}{}\index{C\+List@{C\+List}!pull@{pull}}
+\index{pull@{pull}!C\+List@{C\+List}}
+\paragraph[{pull}]{\setlength{\rightskip}{0pt plus 5cm}void C\+List\+::pull (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{class_c_list_a3c96b4974b942fe5b7867a4fc2e4d277}
+
+
+definicja metody pull wypelnia liste liczbami pesudolosowymi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ ilosc elementow \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_list_a5cac185c7d3bddaef565557c3b2fbc52}{}\index{C\+List@{C\+List}!push@{push}}
+\index{push@{push}!C\+List@{C\+List}}
+\paragraph[{push}]{\setlength{\rightskip}{0pt plus 5cm}void C\+List\+::push (
+\begin{DoxyParamCaption}
+\item[{int}]{element}
+\end{DoxyParamCaption}
+)}\label{class_c_list_a5cac185c7d3bddaef565557c3b2fbc52}
+
+
+definicja metody push dodaje nowy element na liste 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & -\/ dodawana komorka do listy \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_list_a8da32b78baee180c05201e2efa67622e}{}\index{C\+List@{C\+List}!swap@{swap}}
+\index{swap@{swap}!C\+List@{C\+List}}
+\paragraph[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void C\+List\+::swap (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\label{class_c_list_a8da32b78baee180c05201e2efa67622e}
+
+
+definicja metody swap zamienia elementy listy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ inkeks do pierwszego elementu \\
+\hline
+{\em j} & -\/ indeks do drugiego elementu \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{class_c_list_a623dc92ae6bd3d600508527c0db3ddbf}{}\index{C\+List@{C\+List}!next@{next}}
+\index{next@{next}!C\+List@{C\+List}}
+\paragraph[{next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+List}$\ast$ C\+List\+::next\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_list_a623dc92ae6bd3d600508527c0db3ddbf}
+\hypertarget{class_c_list_a72784f3a1dd907527c1f4398582faa26}{}\index{C\+List@{C\+List}!value@{value}}
+\index{value@{value}!C\+List@{C\+List}}
+\paragraph[{value}]{\setlength{\rightskip}{0pt plus 5cm}int C\+List\+::value\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_list_a72784f3a1dd907527c1f4398582faa26}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{list_8hh}{list.\+hh}\item 
+\hyperlink{list_8cpp}{list.\+cpp}\end{DoxyCompactItemize}

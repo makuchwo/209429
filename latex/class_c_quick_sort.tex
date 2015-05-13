@@ -1,0 +1,104 @@
+\hypertarget{class_c_quick_sort}{}\subsection{C\+Quick\+Sort Class Reference}
+\label{class_c_quick_sort}\index{C\+Quick\+Sort@{C\+Quick\+Sort}}
+
+
+defnijca klasy \hyperlink{class_c_sort}{C\+Sort} definiuje sortowanie szybkie jest przykaladem klasy obserwowanej  
+
+
+
+
+{\ttfamily \#include $<$quick\+\_\+sort.\+hh$>$}
+
+
+
+Inherits \hyperlink{class_c_sort}{C\+Sort}.
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_quick_sort_a9918875ff4f1ca8430d761e5f3ac4a9c}{sorting} (\hyperlink{class_c_list}{C\+List} $\ast$list, int left, int right)
+\begin{DoxyCompactList}\small\item\em defnicja metody sorting implementacja algortymu quicksort bez timerow \end{DoxyCompactList}\item 
+void \hyperlink{class_c_quick_sort_a94cdaa98ea0a6ce6b1c214466f311d97}{sort} (\hyperlink{class_c_list}{C\+List} $\ast$list, int left, int right)
+\begin{DoxyCompactList}\small\item\em definicja metody sort implementacja algorytmu quicksort z wykorzystaniem timerow \end{DoxyCompactList}\item 
+void \hyperlink{class_c_quick_sort_ac60e09cc11c7c08dfc3ffc75d43502a7}{benchmarking} (\hyperlink{class_c_list}{C\+List} $\ast$list)
+\begin{DoxyCompactList}\small\item\em feinicja metody benchmarking sortuje listy w zakresie 1-\/ 10 000 wykonujac metode sort, zapisuje dane z licznikw czasu do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+defnijca klasy \hyperlink{class_c_sort}{C\+Sort} definiuje sortowanie szybkie jest przykaladem klasy obserwowanej 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_c_quick_sort_ac60e09cc11c7c08dfc3ffc75d43502a7}{}\index{C\+Quick\+Sort@{C\+Quick\+Sort}!benchmarking@{benchmarking}}
+\index{benchmarking@{benchmarking}!C\+Quick\+Sort@{C\+Quick\+Sort}}
+\paragraph[{benchmarking}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Quick\+Sort\+::benchmarking (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_quick_sort_ac60e09cc11c7c08dfc3ffc75d43502a7}
+
+
+feinicja metody benchmarking sortuje listy w zakresie 1-\/ 10 000 wykonujac metode sort, zapisuje dane z licznikw czasu do pliku 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ benchmarkowana lista \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sort_a600cf20261b3e00b148f8d4b773dd1b9}{C\+Sort}.
+
+\hypertarget{class_c_quick_sort_a94cdaa98ea0a6ce6b1c214466f311d97}{}\index{C\+Quick\+Sort@{C\+Quick\+Sort}!sort@{sort}}
+\index{sort@{sort}!C\+Quick\+Sort@{C\+Quick\+Sort}}
+\paragraph[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Quick\+Sort\+::sort (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{left, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_quick_sort_a94cdaa98ea0a6ce6b1c214466f311d97}
+
+
+definicja metody sort implementacja algorytmu quicksort z wykorzystaniem timerow 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ sortowana lista \\
+\hline
+{\em left} & -\/ indeks na 1 element sortowanej listy \\
+\hline
+{\em right} & -\/ indeks na prawy element sortowanej listy \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sort_a2c87a533501c9e2102444e4ce6b69527}{C\+Sort}.
+
+\hypertarget{class_c_quick_sort_a9918875ff4f1ca8430d761e5f3ac4a9c}{}\index{C\+Quick\+Sort@{C\+Quick\+Sort}!sorting@{sorting}}
+\index{sorting@{sorting}!C\+Quick\+Sort@{C\+Quick\+Sort}}
+\paragraph[{sorting}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Quick\+Sort\+::sorting (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{left, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}\label{class_c_quick_sort_a9918875ff4f1ca8430d761e5f3ac4a9c}
+
+
+defnicja metody sorting implementacja algortymu quicksort bez timerow 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ sortowana lista \\
+\hline
+{\em left} & -\/ indeks na 1 element sortowanej listy \\
+\hline
+{\em right} & -\/ indeks na prawy element sortowanej listy \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{quick__sort_8hh}{quick\+\_\+sort.\+hh}\item 
+\hyperlink{quick__sort_8cpp}{quick\+\_\+sort.\+cpp}\end{DoxyCompactItemize}

@@ -1,76 +1,159 @@
 \begin{theindex}
 
-  \item {$\sim$dane}
-    \subitem {dane}, \hyperpage{3}
+  \item {$\sim$\+C\+List}
+    \subitem {C\+List}, \hyperpage{7}
 
   \indexspace
 
-  \item {dane}, \hyperpage{2}
-    \subitem {$\sim$dane}, \hyperpage{3}
-    \subitem {dane}, \hyperpage{3}
-    \subitem {generuj}, \hyperpage{3}
-    \subitem {licz}, \hyperpage{3}
-    \subitem {rozmiar}, \hyperpage{5}
-    \subitem {tablica}, \hyperpage{5}
-    \subitem {Wez}, \hyperpage{3}
-    \subitem {Wez\+Rozmiar}, \hyperpage{3}
-    \subitem {Zapisz\+Do\+Pliku}, \hyperpage{3}
+  \item {benchmark.\+cpp}, \hyperpage{14}
+  \item {benchmark.\+hh}, \hyperpage{14}
+  \item {benchmarking}
+    \subitem {C\+Heap\+Sort}, \hyperpage{5}
+    \subitem {C\+Merge\+Sort}, \hyperpage{10}
+    \subitem {C\+Quick\+Sort}, \hyperpage{11}
+    \subitem {C\+Sort}, \hyperpage{12}
+  \item {build\+\_\+heap}
+    \subitem {C\+Heap\+Sort}, \hyperpage{6}
+
+  \indexspace
+
+  \item {C\+Benchmark}, \hyperpage{3}
+    \subitem {end\+Timer}, \hyperpage{3}
+    \subitem {performance\+Count\+End}, \hyperpage{4}
+    \subitem {performance\+Count\+Start}, \hyperpage{4}
+    \subitem {put\+\_\+time\+\_\+to\+\_\+file}, \hyperpage{3}
+    \subitem {start\+\_\+timer}, \hyperpage{3}
+    \subitem {start\+Timer}, \hyperpage{4}
+    \subitem {stop\+\_\+timer}, \hyperpage{4}
+  \item {C\+Heap\+Sort}, \hyperpage{4}
+    \subitem {benchmarking}, \hyperpage{5}
+    \subitem {build\+\_\+heap}, \hyperpage{6}
+    \subitem {down\+\_\+heap}, \hyperpage{6}
+    \subitem {sort}, \hyperpage{6}
+    \subitem {sorting}, \hyperpage{6}
+    \subitem {up\+\_\+heap}, \hyperpage{6}
+  \item {C\+List}, \hyperpage{7}
+    \subitem {$\sim$\+C\+List}, \hyperpage{7}
+    \subitem {C\+List}, \hyperpage{7}
+    \subitem {get\+\_\+size}, \hyperpage{7}
+    \subitem {get\+\_\+value}, \hyperpage{7}, \hyperpage{9}
+    \subitem {is\+\_\+empty}, \hyperpage{9}
+    \subitem {next}, \hyperpage{10}
+    \subitem {pop}, \hyperpage{9}
+    \subitem {print}, \hyperpage{9}
+    \subitem {pull}, \hyperpage{9}
+    \subitem {push}, \hyperpage{9}
+    \subitem {swap}, \hyperpage{9}
+    \subitem {value}, \hyperpage{10}
+  \item {C\+Merge\+Sort}, \hyperpage{10}
+    \subitem {benchmarking}, \hyperpage{10}
+    \subitem {sort}, \hyperpage{10}
+    \subitem {sorting}, \hyperpage{11}
+  \item {C\+Quick\+Sort}, \hyperpage{11}
+    \subitem {benchmarking}, \hyperpage{11}
+    \subitem {sort}, \hyperpage{12}
+    \subitem {sorting}, \hyperpage{12}
+  \item {C\+Sort}, \hyperpage{12}
+    \subitem {benchmarking}, \hyperpage{12}
+    \subitem {sort}, \hyperpage{12}
+  \item {csort.\+hh}, \hyperpage{14}
+
+  \indexspace
+
+  \item {down\+\_\+heap}
+    \subitem {C\+Heap\+Sort}, \hyperpage{6}
 
   \indexspace
 
   \item {end\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {C\+Benchmark}, \hyperpage{3}
 
   \indexspace
 
-  \item {generuj}
-    \subitem {dane}, \hyperpage{3}
-  \item {generuj.\+cpp}, \hyperpage{5}
-    \subitem {end\+Timer}, \hyperpage{5}
-    \subitem {start\+Timer}, \hyperpage{5}
-  \item {generuj.\+hh}, \hyperpage{6}
-    \subitem {end\+Timer}, \hyperpage{6}
-    \subitem {start\+Timer}, \hyperpage{6}
+  \item {get\+\_\+size}
+    \subitem {C\+List}, \hyperpage{7}
+  \item {get\+\_\+value}
+    \subitem {C\+List}, \hyperpage{7}, \hyperpage{9}
 
   \indexspace
 
-  \item {licz}
-    \subitem {dane}, \hyperpage{3}
+  \item {heap\+\_\+sort.\+cpp}, \hyperpage{14}
+  \item {heap\+\_\+sort.\+hh}, \hyperpage{14}
+
+  \indexspace
+
+  \item {is\+\_\+empty}
+    \subitem {C\+List}, \hyperpage{9}
+
+  \indexspace
+
+  \item {list.\+cpp}, \hyperpage{15}
+  \item {list.\+hh}, \hyperpage{15}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\+cpp}, \hyperpage{7}
-  \item {main.\+cpp}, \hyperpage{6}
-    \subitem {main}, \hyperpage{7}
+    \subitem {main.\+cpp}, \hyperpage{15}
+  \item {main.\+cpp}, \hyperpage{15}
+    \subitem {main}, \hyperpage{15}
+  \item {merge\+\_\+sort.\+cpp}, \hyperpage{15}
+  \item {merge\+\_\+sort.\+hh}, \hyperpage{15}
 
   \indexspace
 
-  \item {rozmiar}
-    \subitem {dane}, \hyperpage{5}
+  \item {next}
+    \subitem {C\+List}, \hyperpage{10}
 
   \indexspace
 
+  \item {performance\+Count\+End}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {performance\+Count\+Start}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {pop}
+    \subitem {C\+List}, \hyperpage{9}
+  \item {print}
+    \subitem {C\+List}, \hyperpage{9}
+  \item {pull}
+    \subitem {C\+List}, \hyperpage{9}
+  \item {push}
+    \subitem {C\+List}, \hyperpage{9}
+  \item {put\+\_\+time\+\_\+to\+\_\+file}
+    \subitem {C\+Benchmark}, \hyperpage{3}
+
+  \indexspace
+
+  \item {quick\+\_\+sort.\+cpp}, \hyperpage{16}
+  \item {quick\+\_\+sort.\+hh}, \hyperpage{16}
+
+  \indexspace
+
+  \item {sort}
+    \subitem {C\+Heap\+Sort}, \hyperpage{6}
+    \subitem {C\+Merge\+Sort}, \hyperpage{10}
+    \subitem {C\+Quick\+Sort}, \hyperpage{12}
+    \subitem {C\+Sort}, \hyperpage{12}
+  \item {sorting}
+    \subitem {C\+Heap\+Sort}, \hyperpage{6}
+    \subitem {C\+Merge\+Sort}, \hyperpage{11}
+    \subitem {C\+Quick\+Sort}, \hyperpage{12}
+  \item {start\+\_\+timer}
+    \subitem {C\+Benchmark}, \hyperpage{3}
   \item {start\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {stop\+\_\+timer}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {swap}
+    \subitem {C\+List}, \hyperpage{9}
 
   \indexspace
 
-  \item {tablica}
-    \subitem {dane}, \hyperpage{5}
+  \item {up\+\_\+heap}
+    \subitem {C\+Heap\+Sort}, \hyperpage{6}
 
   \indexspace
 
-  \item {Wez}
-    \subitem {dane}, \hyperpage{3}
-  \item {Wez\+Rozmiar}
-    \subitem {dane}, \hyperpage{3}
-
-  \indexspace
-
-  \item {Zapisz\+Do\+Pliku}
-    \subitem {dane}, \hyperpage{3}
+  \item {value}
+    \subitem {C\+List}, \hyperpage{10}
 
 \end{theindex}

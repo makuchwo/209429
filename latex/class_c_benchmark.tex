@@ -1,0 +1,111 @@
+\hypertarget{class_c_benchmark}{}\subsection{C\+Benchmark Class Reference}
+\label{class_c_benchmark}\index{C\+Benchmark@{C\+Benchmark}}
+
+
+{\ttfamily \#include $<$benchmark.\+hh$>$}
+
+
+
+Inherited by \hyperlink{class_c_sort}{C\+Sort}.
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_c_benchmark_aa6f22bf0b316b51db8f439c7420a1666}{start\+\_\+timer} ()
+\begin{DoxyCompactList}\small\item\em definicja metody start\+\_\+timer rozpoczyna pomiar czasu zapisuje dane do zmiennej performance\+Count\+Start korzysta z metdoy Start\+Timer() \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_benchmark_a945aaa453776cd11395166b470d11778}{stop\+\_\+timer} ()
+\begin{DoxyCompactList}\small\item\em definicja metody stop\+\_\+timer konczy pomiar czasu zapsiuje dane do zmiennej performance\+Count\+End korzysta z metody end\+Timer \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_benchmark_acb3046f4f9fdff7c17c7633baf41cf36}{put\+\_\+time\+\_\+to\+\_\+file} (int size\+\_\+of\+\_\+list)
+\begin{DoxyCompactList}\small\item\em definicja metody put\+\_\+time\+\_\+to\+\_\+file otiwra plik o nazwie \textquotesingle{}timing.\+txt\textquotesingle{} zapisuje do niego ilosc elementow listy oraz czas przeprowadzenia operacji przez klasy obserwowane zamyka plik. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{class_c_benchmark_a43dd8d9d01499e28f1dc899ea6f3ed97}{start\+Timer} ()
+\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{class_c_benchmark_aab174262b346c522bdbc1df87ed93532}{end\+Timer} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{class_c_benchmark_a54ec1bb4f1e570341e14adfc6312f1b7}{performance\+Count\+Start}
+\item 
+L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R \hyperlink{class_c_benchmark_ae72cb7dad8bf32730109776d546af2ad}{performance\+Count\+End}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+definicja klasy \hyperlink{class_c_benchmark}{C\+Benchmark} definijue stoper zliczajacy czas wykoania operacji przez inne klasy jest przykladem wzorca obserwatora obserwuje klase \hyperlink{class_c_sort}{C\+Sort} i zlicza czas sortowania listy 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_c_benchmark_aab174262b346c522bdbc1df87ed93532}{}\index{C\+Benchmark@{C\+Benchmark}!end\+Timer@{end\+Timer}}
+\index{end\+Timer@{end\+Timer}!C\+Benchmark@{C\+Benchmark}}
+\paragraph[{end\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R C\+Benchmark\+::end\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_benchmark_aab174262b346c522bdbc1df87ed93532}
+\hypertarget{class_c_benchmark_acb3046f4f9fdff7c17c7633baf41cf36}{}\index{C\+Benchmark@{C\+Benchmark}!put\+\_\+time\+\_\+to\+\_\+file@{put\+\_\+time\+\_\+to\+\_\+file}}
+\index{put\+\_\+time\+\_\+to\+\_\+file@{put\+\_\+time\+\_\+to\+\_\+file}!C\+Benchmark@{C\+Benchmark}}
+\paragraph[{put\+\_\+time\+\_\+to\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Benchmark\+::put\+\_\+time\+\_\+to\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{int}]{size\+\_\+of\+\_\+list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_benchmark_acb3046f4f9fdff7c17c7633baf41cf36}
+
+
+definicja metody put\+\_\+time\+\_\+to\+\_\+file otiwra plik o nazwie \textquotesingle{}timing.\+txt\textquotesingle{} zapisuje do niego ilosc elementow listy oraz czas przeprowadzenia operacji przez klasy obserwowane zamyka plik. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+of\+\_\+list} & -\/ rozmiar listy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+czas przeprowadzenia operacji 
+
+-\/1 w przypadu bledu otwarcia pliku 
+\end{DoxyReturn}
+\hypertarget{class_c_benchmark_aa6f22bf0b316b51db8f439c7420a1666}{}\index{C\+Benchmark@{C\+Benchmark}!start\+\_\+timer@{start\+\_\+timer}}
+\index{start\+\_\+timer@{start\+\_\+timer}!C\+Benchmark@{C\+Benchmark}}
+\paragraph[{start\+\_\+timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Benchmark\+::start\+\_\+timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_benchmark_aa6f22bf0b316b51db8f439c7420a1666}
+
+
+definicja metody start\+\_\+timer rozpoczyna pomiar czasu zapisuje dane do zmiennej performance\+Count\+Start korzysta z metdoy Start\+Timer() 
+
+\hypertarget{class_c_benchmark_a43dd8d9d01499e28f1dc899ea6f3ed97}{}\index{C\+Benchmark@{C\+Benchmark}!start\+Timer@{start\+Timer}}
+\index{start\+Timer@{start\+Timer}!C\+Benchmark@{C\+Benchmark}}
+\paragraph[{start\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R C\+Benchmark\+::start\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_benchmark_a43dd8d9d01499e28f1dc899ea6f3ed97}
+\hypertarget{class_c_benchmark_a945aaa453776cd11395166b470d11778}{}\index{C\+Benchmark@{C\+Benchmark}!stop\+\_\+timer@{stop\+\_\+timer}}
+\index{stop\+\_\+timer@{stop\+\_\+timer}!C\+Benchmark@{C\+Benchmark}}
+\paragraph[{stop\+\_\+timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Benchmark\+::stop\+\_\+timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_benchmark_a945aaa453776cd11395166b470d11778}
+
+
+definicja metody stop\+\_\+timer konczy pomiar czasu zapsiuje dane do zmiennej performance\+Count\+End korzysta z metody end\+Timer 
+
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{class_c_benchmark_ae72cb7dad8bf32730109776d546af2ad}{}\index{C\+Benchmark@{C\+Benchmark}!performance\+Count\+End@{performance\+Count\+End}}
+\index{performance\+Count\+End@{performance\+Count\+End}!C\+Benchmark@{C\+Benchmark}}
+\paragraph[{performance\+Count\+End}]{\setlength{\rightskip}{0pt plus 5cm}L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R C\+Benchmark\+::performance\+Count\+End\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_benchmark_ae72cb7dad8bf32730109776d546af2ad}
+\hypertarget{class_c_benchmark_a54ec1bb4f1e570341e14adfc6312f1b7}{}\index{C\+Benchmark@{C\+Benchmark}!performance\+Count\+Start@{performance\+Count\+Start}}
+\index{performance\+Count\+Start@{performance\+Count\+Start}!C\+Benchmark@{C\+Benchmark}}
+\paragraph[{performance\+Count\+Start}]{\setlength{\rightskip}{0pt plus 5cm}L\+A\+R\+G\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R C\+Benchmark\+::performance\+Count\+Start\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_benchmark_a54ec1bb4f1e570341e14adfc6312f1b7}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{benchmark_8hh}{benchmark.\+hh}\item 
+\hyperlink{benchmark_8cpp}{benchmark.\+cpp}\end{DoxyCompactItemize}

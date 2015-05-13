@@ -1,0 +1,170 @@
+\hypertarget{class_c_heap_sort}{}\subsection{C\+Heap\+Sort Class Reference}
+\label{class_c_heap_sort}\index{C\+Heap\+Sort@{C\+Heap\+Sort}}
+
+
+definicja klasy \hyperlink{class_c_heap_sort}{C\+Heap\+Sort} definiuje sortowanie przez kopcowanie przyklad klasy obserwowanej  
+
+
+
+
+{\ttfamily \#include $<$heap\+\_\+sort.\+hh$>$}
+
+
+
+Inherits \hyperlink{class_c_sort}{C\+Sort}.
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_heap_sort_af859772c7f50bb824b66cc6ec11b72b0}{sorting} (\hyperlink{class_c_list}{C\+List} $\ast$list, int useless, int last)
+\begin{DoxyCompactList}\small\item\em definicja metody sorting sortuje wykorzystujac algorytm heapsort tworzy kopiec zamienia najwiekszy element z najwiekszym(wysyla najwiekszy na koniec listy przywraca wlasciwosc kopca korzystajac z metody up\+\_\+heap \end{DoxyCompactList}\item 
+void \hyperlink{class_c_heap_sort_a31374a3fb22fdab6dfdd0ca0db1c5973}{sort} (\hyperlink{class_c_list}{C\+List} $\ast$list, int useless, int last)
+\begin{DoxyCompactList}\small\item\em definicja metody sort implemetacja metody abstakcyjnej wykorzystuje heapsort z wykorzystaniem timerow \end{DoxyCompactList}\item 
+void \hyperlink{class_c_heap_sort_a388bdc396f69e678ea3f3e5a86a09aae}{build\+\_\+heap} (\hyperlink{class_c_list}{C\+List} $\ast$list, int last)
+\begin{DoxyCompactList}\small\item\em definicja metody build\+\_\+heap tworzy kopiec z listy wykorzystuje metode down\+\_\+heap \end{DoxyCompactList}\item 
+void \hyperlink{class_c_heap_sort_afb9acabdd2839321148916259f347a24}{down\+\_\+heap} (\hyperlink{class_c_list}{C\+List} $\ast$list, int parent, int last)
+\begin{DoxyCompactList}\small\item\em definicja metody max\+\_\+heapify przywraca wlasciwosc kopca zakladajac korzen -\/ najwiekszy element \end{DoxyCompactList}\item 
+void \hyperlink{class_c_heap_sort_a4b2aa9fa2e1f6284c72a943ce3f84dac}{up\+\_\+heap} (\hyperlink{class_c_list}{C\+List} $\ast$list, int last)
+\begin{DoxyCompactList}\small\item\em definicja metody up\+\_\+heap przywraca wlasciwosc kopca zakladajac korzen -\/ najwiekszy element \end{DoxyCompactList}\item 
+void \hyperlink{class_c_heap_sort_ae5ef55ad47223dc1308ce9ffbe11648a}{benchmarking} (\hyperlink{class_c_list}{C\+List} $\ast$list)
+\begin{DoxyCompactList}\small\item\em feinicja metody benchmarking sortuje listy w zakresie 1-\/ 10 000 wykonujac metode sort, zapisuje dane z licznikw czasu do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+definicja klasy \hyperlink{class_c_heap_sort}{C\+Heap\+Sort} definiuje sortowanie przez kopcowanie przyklad klasy obserwowanej 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_c_heap_sort_ae5ef55ad47223dc1308ce9ffbe11648a}{}\index{C\+Heap\+Sort@{C\+Heap\+Sort}!benchmarking@{benchmarking}}
+\index{benchmarking@{benchmarking}!C\+Heap\+Sort@{C\+Heap\+Sort}}
+\paragraph[{benchmarking}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Heap\+Sort\+::benchmarking (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_heap_sort_ae5ef55ad47223dc1308ce9ffbe11648a}
+
+
+feinicja metody benchmarking sortuje listy w zakresie 1-\/ 10 000 wykonujac metode sort, zapisuje dane z licznikw czasu do pliku 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ benchmarkowana lista \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sort_a600cf20261b3e00b148f8d4b773dd1b9}{C\+Sort}.
+
+\hypertarget{class_c_heap_sort_a388bdc396f69e678ea3f3e5a86a09aae}{}\index{C\+Heap\+Sort@{C\+Heap\+Sort}!build\+\_\+heap@{build\+\_\+heap}}
+\index{build\+\_\+heap@{build\+\_\+heap}!C\+Heap\+Sort@{C\+Heap\+Sort}}
+\paragraph[{build\+\_\+heap}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Heap\+Sort\+::build\+\_\+heap (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}\label{class_c_heap_sort_a388bdc396f69e678ea3f3e5a86a09aae}
+
+
+definicja metody build\+\_\+heap tworzy kopiec z listy wykorzystuje metode down\+\_\+heap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ modyfkowana lista \\
+\hline
+{\em last} & -\/ maksymalny rozmiar kopca \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_heap_sort_afb9acabdd2839321148916259f347a24}{}\index{C\+Heap\+Sort@{C\+Heap\+Sort}!down\+\_\+heap@{down\+\_\+heap}}
+\index{down\+\_\+heap@{down\+\_\+heap}!C\+Heap\+Sort@{C\+Heap\+Sort}}
+\paragraph[{down\+\_\+heap}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Heap\+Sort\+::down\+\_\+heap (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{parent, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}\label{class_c_heap_sort_afb9acabdd2839321148916259f347a24}
+
+
+definicja metody max\+\_\+heapify przywraca wlasciwosc kopca zakladajac korzen -\/ najwiekszy element 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ modyfikowana lista \\
+\hline
+{\em parent} & -\/ \textquotesingle{}korzen poddrzewa\textquotesingle{} \\
+\hline
+{\em last} & -\/ maksymalny rozmiar drzewa algorytm przyraca wlasciwosc kopca zaczynajac od korzenia \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_heap_sort_a31374a3fb22fdab6dfdd0ca0db1c5973}{}\index{C\+Heap\+Sort@{C\+Heap\+Sort}!sort@{sort}}
+\index{sort@{sort}!C\+Heap\+Sort@{C\+Heap\+Sort}}
+\paragraph[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Heap\+Sort\+::sort (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{useless, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_heap_sort_a31374a3fb22fdab6dfdd0ca0db1c5973}
+
+
+definicja metody sort implemetacja metody abstakcyjnej wykorzystuje heapsort z wykorzystaniem timerow 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ sortowana lista \\
+\hline
+{\em useless} & -\/ useless \\
+\hline
+{\em last} & -\/ maksymany romziar listy \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sort_a2c87a533501c9e2102444e4ce6b69527}{C\+Sort}.
+
+\hypertarget{class_c_heap_sort_af859772c7f50bb824b66cc6ec11b72b0}{}\index{C\+Heap\+Sort@{C\+Heap\+Sort}!sorting@{sorting}}
+\index{sorting@{sorting}!C\+Heap\+Sort@{C\+Heap\+Sort}}
+\paragraph[{sorting}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Heap\+Sort\+::sorting (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{useless, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}\label{class_c_heap_sort_af859772c7f50bb824b66cc6ec11b72b0}
+
+
+definicja metody sorting sortuje wykorzystujac algorytm heapsort tworzy kopiec zamienia najwiekszy element z najwiekszym(wysyla najwiekszy na koniec listy przywraca wlasciwosc kopca korzystajac z metody up\+\_\+heap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ sortowana lista \\
+\hline
+{\em useless} & -\/ useless \\
+\hline
+{\em last} & -\/ maksymany romziar listy \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_heap_sort_a4b2aa9fa2e1f6284c72a943ce3f84dac}{}\index{C\+Heap\+Sort@{C\+Heap\+Sort}!up\+\_\+heap@{up\+\_\+heap}}
+\index{up\+\_\+heap@{up\+\_\+heap}!C\+Heap\+Sort@{C\+Heap\+Sort}}
+\paragraph[{up\+\_\+heap}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Heap\+Sort\+::up\+\_\+heap (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{last}
+\end{DoxyParamCaption}
+)}\label{class_c_heap_sort_a4b2aa9fa2e1f6284c72a943ce3f84dac}
+
+
+definicja metody up\+\_\+heap przywraca wlasciwosc kopca zakladajac korzen -\/ najwiekszy element 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ modyfikowana lista \\
+\hline
+{\em last} & -\/ maksymalny rozmiar kopca \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{heap__sort_8hh}{heap\+\_\+sort.\+hh}\item 
+\hyperlink{heap__sort_8cpp}{heap\+\_\+sort.\+cpp}\end{DoxyCompactItemize}

@@ -1,38 +1,82 @@
-\contentsline {section}{\numberline {1}Program sluzacy do pomiaru zlozonosci obliczeniowej.}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}wartosci}{2}{subsection.1.1}
-\contentsline {section}{\numberline {2}Indeks klas}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Lista klas}{2}{subsection.2.1}
-\contentsline {section}{\numberline {3}Indeks plik\IeC {\'o}w}{2}{section.3}
-\contentsline {subsection}{\numberline {3.1}Lista plik\IeC {\'o}w}{2}{subsection.3.1}
-\contentsline {section}{\numberline {4}Dokumentacja klas}{2}{section.4}
-\contentsline {subsection}{\numberline {4.1}Dokumentacja klasy dane}{2}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{3}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Dokumentacja konstruktora i destruktora}{3}{subsubsection.4.1.2}
-\contentsline {paragraph}{\numberline {4.1.2.1}dane}{3}{paragraph.4.1.2.1}
-\contentsline {paragraph}{\numberline {4.1.2.2}$\sim $dane}{3}{paragraph.4.1.2.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Dokumentacja funkcji sk\IeC {\l }adowych}{3}{subsubsection.4.1.3}
-\contentsline {paragraph}{\numberline {4.1.3.1}generuj}{3}{paragraph.4.1.3.1}
-\contentsline {paragraph}{\numberline {4.1.3.2}licz}{3}{paragraph.4.1.3.2}
-\contentsline {paragraph}{\numberline {4.1.3.3}Wez}{3}{paragraph.4.1.3.3}
-\contentsline {paragraph}{\numberline {4.1.3.4}Wez\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Rozmiar}{3}{paragraph.4.1.3.4}
-\contentsline {paragraph}{\numberline {4.1.3.5}Zapisz\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Do\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pliku}{4}{paragraph.4.1.3.5}
-\contentsline {subsubsection}{\numberline {4.1.4}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{5}{subsubsection.4.1.4}
-\contentsline {paragraph}{\numberline {4.1.4.1}rozmiar}{5}{paragraph.4.1.4.1}
-\contentsline {paragraph}{\numberline {4.1.4.2}tablica}{5}{paragraph.4.1.4.2}
-\contentsline {section}{\numberline {5}Dokumentacja plik\IeC {\'o}w}{5}{section.5}
-\contentsline {subsection}{\numberline {5.1}Dokumentacja pliku generuj.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{5}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Dokumentacja funkcji}{5}{subsubsection.5.1.1}
-\contentsline {paragraph}{\numberline {5.1.1.1}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Timer}{5}{paragraph.5.1.1.1}
-\contentsline {paragraph}{\numberline {5.1.1.2}start\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Timer}{6}{paragraph.5.1.1.2}
-\contentsline {subsection}{\numberline {5.2}Dokumentacja pliku generuj.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh}{6}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Dokumentacja funkcji}{6}{subsubsection.5.2.1}
-\contentsline {paragraph}{\numberline {5.2.1.1}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Timer}{6}{paragraph.5.2.1.1}
-\contentsline {paragraph}{\numberline {5.2.1.2}start\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Timer}{6}{paragraph.5.2.1.2}
-\contentsline {subsection}{\numberline {5.3}Dokumentacja pliku main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{6}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Dokumentacja funkcji}{7}{subsubsection.5.3.1}
-\contentsline {paragraph}{\numberline {5.3.1.1}main}{7}{paragraph.5.3.1.1}
-\contentsline {section}{\numberline {6}Zadanie}{8}{section.6}
-\contentsline {section}{\numberline {7}Realizacja}{8}{section.7}
-\contentsline {section}{\numberline {8}Dzia\IeC {\l }anie}{8}{section.8}
-\contentsline {section}{\numberline {9}Wyniki}{8}{section.9}
-\contentsline {section}{\numberline {10}Komentarz}{8}{section.10}
+\contentsline {section}{\numberline {1}modyfkacja sortowania -\/ benchmark -\/ obserwator}{1}{section.1}
+\contentsline {section}{\numberline {2}Hierarchical Index}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Class Hierarchy}{1}{subsection.2.1}
+\contentsline {section}{\numberline {3}Class Index}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Class List}{2}{subsection.3.1}
+\contentsline {section}{\numberline {4}File Index}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}File List}{2}{subsection.4.1}
+\contentsline {section}{\numberline {5}Class Documentation}{3}{section.5}
+\contentsline {subsection}{\numberline {5.1}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Benchmark Class Reference}{3}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Detailed Description}{3}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Member Function Documentation}{3}{subsubsection.5.1.2}
+\contentsline {paragraph}{\numberline {5.1.2.1}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Timer}{3}{paragraph.5.1.2.1}
+\contentsline {paragraph}{\numberline {5.1.2.2}put\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}time\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}to\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}file}{3}{paragraph.5.1.2.2}
+\contentsline {paragraph}{\numberline {5.1.2.3}start\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}timer}{4}{paragraph.5.1.2.3}
+\contentsline {paragraph}{\numberline {5.1.2.4}start\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Timer}{4}{paragraph.5.1.2.4}
+\contentsline {paragraph}{\numberline {5.1.2.5}stop\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}timer}{4}{paragraph.5.1.2.5}
+\contentsline {subsubsection}{\numberline {5.1.3}Member Data Documentation}{4}{subsubsection.5.1.3}
+\contentsline {paragraph}{\numberline {5.1.3.1}performance\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Count\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}End}{4}{paragraph.5.1.3.1}
+\contentsline {paragraph}{\numberline {5.1.3.2}performance\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Count\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Start}{4}{paragraph.5.1.3.2}
+\contentsline {subsection}{\numberline {5.2}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Heap\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sort Class Reference}{4}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Detailed Description}{4}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Member Function Documentation}{5}{subsubsection.5.2.2}
+\contentsline {paragraph}{\numberline {5.2.2.1}benchmarking}{5}{paragraph.5.2.2.1}
+\contentsline {paragraph}{\numberline {5.2.2.2}build\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}heap}{6}{paragraph.5.2.2.2}
+\contentsline {paragraph}{\numberline {5.2.2.3}down\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}heap}{6}{paragraph.5.2.2.3}
+\contentsline {paragraph}{\numberline {5.2.2.4}sort}{6}{paragraph.5.2.2.4}
+\contentsline {paragraph}{\numberline {5.2.2.5}sorting}{6}{paragraph.5.2.2.5}
+\contentsline {paragraph}{\numberline {5.2.2.6}up\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}heap}{6}{paragraph.5.2.2.6}
+\contentsline {subsection}{\numberline {5.3}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List Class Reference}{7}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Detailed Description}{7}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Constructor \& Destructor Documentation}{7}{subsubsection.5.3.2}
+\contentsline {paragraph}{\numberline {5.3.2.1}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List}{7}{paragraph.5.3.2.1}
+\contentsline {paragraph}{\numberline {5.3.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List}{7}{paragraph.5.3.2.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Member Function Documentation}{7}{subsubsection.5.3.3}
+\contentsline {paragraph}{\numberline {5.3.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}size}{7}{paragraph.5.3.3.1}
+\contentsline {paragraph}{\numberline {5.3.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}value}{8}{paragraph.5.3.3.2}
+\contentsline {paragraph}{\numberline {5.3.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}value}{9}{paragraph.5.3.3.3}
+\contentsline {paragraph}{\numberline {5.3.3.4}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}empty}{9}{paragraph.5.3.3.4}
+\contentsline {paragraph}{\numberline {5.3.3.5}pop}{9}{paragraph.5.3.3.5}
+\contentsline {paragraph}{\numberline {5.3.3.6}print}{9}{paragraph.5.3.3.6}
+\contentsline {paragraph}{\numberline {5.3.3.7}pull}{9}{paragraph.5.3.3.7}
+\contentsline {paragraph}{\numberline {5.3.3.8}push}{9}{paragraph.5.3.3.8}
+\contentsline {paragraph}{\numberline {5.3.3.9}swap}{9}{paragraph.5.3.3.9}
+\contentsline {subsubsection}{\numberline {5.3.4}Member Data Documentation}{10}{subsubsection.5.3.4}
+\contentsline {paragraph}{\numberline {5.3.4.1}next}{10}{paragraph.5.3.4.1}
+\contentsline {paragraph}{\numberline {5.3.4.2}value}{10}{paragraph.5.3.4.2}
+\contentsline {subsection}{\numberline {5.4}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Merge\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sort Class Reference}{10}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Detailed Description}{10}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Member Function Documentation}{10}{subsubsection.5.4.2}
+\contentsline {paragraph}{\numberline {5.4.2.1}benchmarking}{10}{paragraph.5.4.2.1}
+\contentsline {paragraph}{\numberline {5.4.2.2}sort}{10}{paragraph.5.4.2.2}
+\contentsline {paragraph}{\numberline {5.4.2.3}sorting}{11}{paragraph.5.4.2.3}
+\contentsline {subsection}{\numberline {5.5}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Quick\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sort Class Reference}{11}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Detailed Description}{11}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Member Function Documentation}{11}{subsubsection.5.5.2}
+\contentsline {paragraph}{\numberline {5.5.2.1}benchmarking}{11}{paragraph.5.5.2.1}
+\contentsline {paragraph}{\numberline {5.5.2.2}sort}{12}{paragraph.5.5.2.2}
+\contentsline {paragraph}{\numberline {5.5.2.3}sorting}{12}{paragraph.5.5.2.3}
+\contentsline {subsection}{\numberline {5.6}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sort Class Reference}{12}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Detailed Description}{12}{subsubsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}Member Function Documentation}{12}{subsubsection.5.6.2}
+\contentsline {paragraph}{\numberline {5.6.2.1}benchmarking}{12}{paragraph.5.6.2.1}
+\contentsline {paragraph}{\numberline {5.6.2.2}sort}{13}{paragraph.5.6.2.2}
+\contentsline {section}{\numberline {6}File Documentation}{14}{section.6}
+\contentsline {subsection}{\numberline {6.1}benchmark.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{14}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}benchmark.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh File Reference}{14}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}csort.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh File Reference}{14}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}heap\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sort.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{14}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}heap\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sort.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh File Reference}{14}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}list.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{15}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}list.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh File Reference}{15}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{15}{subsection.6.8}
+\contentsline {subsubsection}{\numberline {6.8.1}Function Documentation}{15}{subsubsection.6.8.1}
+\contentsline {paragraph}{\numberline {6.8.1.1}main}{15}{paragraph.6.8.1.1}
+\contentsline {subsection}{\numberline {6.9}merge\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sort.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{15}{subsection.6.9}
+\contentsline {subsection}{\numberline {6.10}merge\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sort.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh File Reference}{15}{subsection.6.10}
+\contentsline {subsection}{\numberline {6.11}quick\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sort.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{16}{subsection.6.11}
+\contentsline {subsection}{\numberline {6.12}quick\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sort.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh File Reference}{16}{subsection.6.12}
+\contentsline {section}{\numberline {7}Zadanie}{17}{section.7}
+\contentsline {section}{\numberline {8}Realizacja}{17}{section.8}
+\contentsline {section}{\numberline {9}Dzialanie}{17}{section.9}
+\contentsline {section}{\numberline {10}Komentarz}{17}{section.10}

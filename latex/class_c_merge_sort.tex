@@ -1,0 +1,104 @@
+\hypertarget{class_c_merge_sort}{}\subsection{C\+Merge\+Sort Class Reference}
+\label{class_c_merge_sort}\index{C\+Merge\+Sort@{C\+Merge\+Sort}}
+
+
+definicja klasy \hyperlink{class_c_merge_sort}{C\+Merge\+Sort} definiuje sortowanie przez scalanie jest przykadem klasy obserwowanej implementuje metode abstakcyjna sort  
+
+
+
+
+{\ttfamily \#include $<$merge\+\_\+sort.\+hh$>$}
+
+
+
+Inherits \hyperlink{class_c_sort}{C\+Sort}.
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_merge_sort_a93fee6618c382c29957c35affabd9e6b}{sorting} (\hyperlink{class_c_list}{C\+List} $\ast$list, int left, int right)
+\begin{DoxyCompactList}\small\item\em definicja metody sorting sortuje liste poprzez algorytm sortowania przez scalanie \end{DoxyCompactList}\item 
+void \hyperlink{class_c_merge_sort_a5becc6aef876cfc13abe746dea5a4f70}{sort} (\hyperlink{class_c_list}{C\+List} $\ast$list, int left, int right)
+\begin{DoxyCompactList}\small\item\em definicja metody sort implementacja metody czysto abstrakcyjnej korzysta z metody sorting korzysta z timerow \end{DoxyCompactList}\item 
+void \hyperlink{class_c_merge_sort_add3bb6f2c5f822eb1d435a0652bdf431}{benchmarking} (\hyperlink{class_c_list}{C\+List} $\ast$list)
+\begin{DoxyCompactList}\small\item\em feinicja metody benchmarking sortuje listy w zakresie 1-\/ 10 000 wykonujac metode sort, zapisuje dane z licznikw czasu do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+definicja klasy \hyperlink{class_c_merge_sort}{C\+Merge\+Sort} definiuje sortowanie przez scalanie jest przykadem klasy obserwowanej implementuje metode abstakcyjna sort 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_c_merge_sort_add3bb6f2c5f822eb1d435a0652bdf431}{}\index{C\+Merge\+Sort@{C\+Merge\+Sort}!benchmarking@{benchmarking}}
+\index{benchmarking@{benchmarking}!C\+Merge\+Sort@{C\+Merge\+Sort}}
+\paragraph[{benchmarking}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Merge\+Sort\+::benchmarking (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_merge_sort_add3bb6f2c5f822eb1d435a0652bdf431}
+
+
+feinicja metody benchmarking sortuje listy w zakresie 1-\/ 10 000 wykonujac metode sort, zapisuje dane z licznikw czasu do pliku 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ benchmarkowana lista \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sort_a600cf20261b3e00b148f8d4b773dd1b9}{C\+Sort}.
+
+\hypertarget{class_c_merge_sort_a5becc6aef876cfc13abe746dea5a4f70}{}\index{C\+Merge\+Sort@{C\+Merge\+Sort}!sort@{sort}}
+\index{sort@{sort}!C\+Merge\+Sort@{C\+Merge\+Sort}}
+\paragraph[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Merge\+Sort\+::sort (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{left, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_merge_sort_a5becc6aef876cfc13abe746dea5a4f70}
+
+
+definicja metody sort implementacja metody czysto abstrakcyjnej korzysta z metody sorting korzysta z timerow 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ sortowana lista \\
+\hline
+{\em left} & -\/ indeks na 1-\/szy element \\
+\hline
+{\em right} & -\/ indeks na ostatni element sortowanej listy \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_c_sort_a2c87a533501c9e2102444e4ce6b69527}{C\+Sort}.
+
+\hypertarget{class_c_merge_sort_a93fee6618c382c29957c35affabd9e6b}{}\index{C\+Merge\+Sort@{C\+Merge\+Sort}!sorting@{sorting}}
+\index{sorting@{sorting}!C\+Merge\+Sort@{C\+Merge\+Sort}}
+\paragraph[{sorting}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Merge\+Sort\+::sorting (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+List} $\ast$}]{list, }
+\item[{int}]{left, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}\label{class_c_merge_sort_a93fee6618c382c29957c35affabd9e6b}
+
+
+definicja metody sorting sortuje liste poprzez algorytm sortowania przez scalanie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & -\/ sortowana lista \\
+\hline
+{\em left} & -\/ indeks na 1-\/szy element \\
+\hline
+{\em right} & -\/ indeks na ostatni element sortowanej listy \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{merge__sort_8hh}{merge\+\_\+sort.\+hh}\item 
+\hyperlink{merge__sort_8cpp}{merge\+\_\+sort.\+cpp}\end{DoxyCompactItemize}

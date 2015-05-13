@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1431525225 source:c:\users\1\desktop\sort\list.cpp
+	"list.hh"
+	<iostream>
+	<cstdlib>
+
+1431525915 c:\users\1\desktop\sort\list.hh
+
+1431278973 source:c:\users\1\desktop\sort\benchmark.cpp
+	"benchmark.hh"
+	<windows.h>
+	<fstream>
+	<iostream>
+
+1431450264 c:\users\1\desktop\sort\benchmark.hh
+	<windows.h>
+
+1431525606 source:c:\users\1\desktop\sort\main.cpp
+	<iostream>
+	<ctime>
+	"list.hh"
+	"benchmark.hh"
+	"csort.hh"
+	"heap_sort.hh"
+	"quick_sort.hh"
+	"merge_sort.hh"
+
+1431523659 c:\users\1\desktop\sort\csort.hh
+	"list.hh"
+	"benchmark.hh"
+
+1431525915 c:\users\1\desktop\sort\heap_sort.hh
+	"list.hh"
+	"csort.hh"
+
+1431525463 source:c:\users\1\desktop\sort\heap_sort.cpp
+	"heap_sort.hh"
+
+1431525915 c:\users\1\desktop\sort\quick_sort.hh
+	"list.hh"
+	"benchmark.hh"
+	"csort.hh"
+
+1431525460 source:c:\users\1\desktop\sort\quick_sort.cpp
+	"quick_sort.hh"
+
+1431525915 c:\users\1\desktop\sort\merge_sort.hh
+	"list.hh"
+	"csort.hh"
+
+1431525460 source:c:\users\1\desktop\sort\merge_sort.cpp
+	<iostream>
+	"list.hh"
+	"merge_sort.hh"
+

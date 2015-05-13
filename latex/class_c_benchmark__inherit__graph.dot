@@ -1,0 +1,14 @@
+digraph "CBenchmark"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CBenchmark",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CSort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_sort.html",tooltip="definicja klasy abstrakcyjnej CSort jest klasa bazowa dla konkretnych typow sortowan. jest przykladem klasy obserwowanej. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CHeapSort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_heap_sort.html",tooltip="definicja klasy CHeapSort definiuje sortowanie przez kopcowanie przyklad klasy obserwowanej ..."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CMergeSort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_merge_sort.html",tooltip="definicja klasy CMergeSort definiuje sortowanie przez scalanie jest przykadem klasy obserwowanej impl..."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="CQuickSort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_quick_sort.html",tooltip="defnijca klasy CSort definiuje sortowanie szybkie jest przykaladem klasy obserwowanej ..."];
+}
