@@ -1,0 +1,218 @@
+\hypertarget{class_c_tree}{}\subsection{Dokumentacja klasy C\+Tree}
+\label{class_c_tree}\index{C\+Tree@{C\+Tree}}
+
+
+definicja klasy drzewo Definiuje binarne drzewo zbudowane z wezlow galezi.  
+
+
+
+
+{\ttfamily \#include $<$tree.\+hh$>$}
+
+Diagram dziedziczenia dla C\+Tree\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_tree}
+\end{center}
+\end{figure}
+\subsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_tree_a7d55c8fced3e483517850d43f3a36d21}{C\+Tree} ()
+\begin{DoxyCompactList}\small\item\em definicja konstruktora bezparametrycznego Ustawia korzen na N\+U\+L\+L. \end{DoxyCompactList}\item 
+\hyperlink{class_c_tree_a03282df290b747bb7a400919ec366af5}{$\sim$\+C\+Tree} ()
+\begin{DoxyCompactList}\small\item\em definicja destruktora klasy \hyperlink{class_c_tree}{C\+Tree} wywoluje rekurencujnie destruktr klasy \hyperlink{class_c_node}{C\+Node} dopuki nie usunie korzenia. Ustawia korzen na N\+U\+L\+L. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_tree_a2aa140e1294873c16a6c086561186dc9}{add} (int k)
+\begin{DoxyCompactList}\small\item\em definicja metdy add Tworzy nowy wezel, nastepnie dodaje go zgodnie z regula drzewa binarnego. Dodawany element zawsze staje sie lisciem. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_tree_a3570c57d0fb47bf3920ca0fd846d9bf3}{preorder} () const 
+\begin{DoxyCompactList}\small\item\em definicja metody preorder wywoluje metode preorder klasy \hyperlink{class_c_node}{C\+Node} Wyswietla kolejno lewa galez drzewa, a nastepnie prawa. \end{DoxyCompactList}\item 
+\hyperlink{class_c_node}{C\+Node} $\ast$ \hyperlink{class_c_tree_a728767cff939dca13a505c2427acf410}{find} (int k)
+\begin{DoxyCompactList}\small\item\em definicja metody find \end{DoxyCompactList}\item 
+\hyperlink{class_c_node}{C\+Node} $\ast$ \hyperlink{class_c_tree_a894b83cca3d899d797e99b93936afb4d}{get\+\_\+min} ()
+\begin{DoxyCompactList}\small\item\em definicja metody get\+\_\+min \end{DoxyCompactList}\item 
+\hyperlink{class_c_node}{C\+Node} $\ast$ \hyperlink{class_c_tree_adfae6615a57297695335bc6d48248c89}{get\+\_\+max} ()
+\begin{DoxyCompactList}\small\item\em definicja metody get\+\_\+max \end{DoxyCompactList}\item 
+void \hyperlink{class_c_tree_a866131d7d4560108e1c1784fd280c306}{fill\+\_\+random} (int x)
+\begin{DoxyCompactList}\small\item\em definicja metody fill\+\_\+random Dodaje do drzewa liczby pseudolowe w zakresie 1-\/10. Metoda obsewowana przez klase \hyperlink{class_c_benchmark}{C\+Benchmark} Zapisuje do pliku timing.\+txt czas dodawania elementow. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_tree_a703af3ff87ae4cee902075e88e65b21f}{benchmark\+\_\+add} ()
+\begin{DoxyCompactList}\small\item\em definicja metody benchmark\+\_\+add Wywoluje metode fill\+\_\+random zawiera petle benchmarkujace w zakresie 1-\/10, 10-\/100, ... , 10 000. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_tree_af61a453f2128222861b08aba83d32380}{find\+\_\+random} (int quantity)
+\begin{DoxyCompactList}\small\item\em definicja metody find\+\_\+random \end{DoxyCompactList}\item 
+int \hyperlink{class_c_tree_aa76d3a853d9bf213500ad7e6cfe0270d}{benchmark\+\_\+find} ()
+\begin{DoxyCompactList}\small\item\em definicja metody benchmark\+\_\+find Wywoluje metode find\+\_\+random. Zawiera petle benchmarkujace w zakresie 1-\/10, 10-\/100, ... , 10 000 000. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_node}{C\+Node} $\ast$ \hyperlink{class_c_tree_a01a3595bbd583c795eed909d0d92b81b}{root}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+definicja klasy drzewo Definiuje binarne drzewo zbudowane z wezlow galezi. 
+
+\subsubsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_c_tree_a7d55c8fced3e483517850d43f3a36d21}{}\index{C\+Tree@{C\+Tree}!C\+Tree@{C\+Tree}}
+\index{C\+Tree@{C\+Tree}!C\+Tree@{C\+Tree}}
+\paragraph[{C\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}C\+Tree\+::\+C\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_a7d55c8fced3e483517850d43f3a36d21}
+
+
+definicja konstruktora bezparametrycznego Ustawia korzen na N\+U\+L\+L. 
+
+korzen drzewa \hypertarget{class_c_tree_a03282df290b747bb7a400919ec366af5}{}\index{C\+Tree@{C\+Tree}!````~C\+Tree@{$\sim$\+C\+Tree}}
+\index{````~C\+Tree@{$\sim$\+C\+Tree}!C\+Tree@{C\+Tree}}
+\paragraph[{$\sim$\+C\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}C\+Tree\+::$\sim$\+C\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_a03282df290b747bb7a400919ec366af5}
+
+
+definicja destruktora klasy \hyperlink{class_c_tree}{C\+Tree} wywoluje rekurencujnie destruktr klasy \hyperlink{class_c_node}{C\+Node} dopuki nie usunie korzenia. Ustawia korzen na N\+U\+L\+L. 
+
+
+
+\subsubsection{Dokumentacja funkcji składowych}
+\hypertarget{class_c_tree_a2aa140e1294873c16a6c086561186dc9}{}\index{C\+Tree@{C\+Tree}!add@{add}}
+\index{add@{add}!C\+Tree@{C\+Tree}}
+\paragraph[{add}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Tree\+::add (
+\begin{DoxyParamCaption}
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_a2aa140e1294873c16a6c086561186dc9}
+
+
+definicja metdy add Tworzy nowy wezel, nastepnie dodaje go zgodnie z regula drzewa binarnego. Dodawany element zawsze staje sie lisciem. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em k} & dodawana wartosc \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_tree_a703af3ff87ae4cee902075e88e65b21f}{}\index{C\+Tree@{C\+Tree}!benchmark\+\_\+add@{benchmark\+\_\+add}}
+\index{benchmark\+\_\+add@{benchmark\+\_\+add}!C\+Tree@{C\+Tree}}
+\paragraph[{benchmark\+\_\+add}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Tree\+::benchmark\+\_\+add (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_a703af3ff87ae4cee902075e88e65b21f}
+
+
+definicja metody benchmark\+\_\+add Wywoluje metode fill\+\_\+random zawiera petle benchmarkujace w zakresie 1-\/10, 10-\/100, ... , 10 000. 
+
+\hypertarget{class_c_tree_aa76d3a853d9bf213500ad7e6cfe0270d}{}\index{C\+Tree@{C\+Tree}!benchmark\+\_\+find@{benchmark\+\_\+find}}
+\index{benchmark\+\_\+find@{benchmark\+\_\+find}!C\+Tree@{C\+Tree}}
+\paragraph[{benchmark\+\_\+find}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Tree\+::benchmark\+\_\+find (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_aa76d3a853d9bf213500ad7e6cfe0270d}
+
+
+definicja metody benchmark\+\_\+find Wywoluje metode find\+\_\+random. Zawiera petle benchmarkujace w zakresie 1-\/10, 10-\/100, ... , 10 000 000. 
+
+\hypertarget{class_c_tree_a866131d7d4560108e1c1784fd280c306}{}\index{C\+Tree@{C\+Tree}!fill\+\_\+random@{fill\+\_\+random}}
+\index{fill\+\_\+random@{fill\+\_\+random}!C\+Tree@{C\+Tree}}
+\paragraph[{fill\+\_\+random}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Tree\+::fill\+\_\+random (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_a866131d7d4560108e1c1784fd280c306}
+
+
+definicja metody fill\+\_\+random Dodaje do drzewa liczby pseudolowe w zakresie 1-\/10. Metoda obsewowana przez klase \hyperlink{class_c_benchmark}{C\+Benchmark} Zapisuje do pliku timing.\+txt czas dodawania elementow. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & ilosc elementow pseudolosowych \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_tree_a728767cff939dca13a505c2427acf410}{}\index{C\+Tree@{C\+Tree}!find@{find}}
+\index{find@{find}!C\+Tree@{C\+Tree}}
+\paragraph[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Node} $\ast$ C\+Tree\+::find (
+\begin{DoxyParamCaption}
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_a728767cff939dca13a505c2427acf410}
+
+
+definicja metody find 
+
+
+\begin{DoxyParams}{Parametry}
+{\em k} & szukany klucz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na wezel o szukanym kluczu. 
+\end{DoxyReturn}
+\hypertarget{class_c_tree_af61a453f2128222861b08aba83d32380}{}\index{C\+Tree@{C\+Tree}!find\+\_\+random@{find\+\_\+random}}
+\index{find\+\_\+random@{find\+\_\+random}!C\+Tree@{C\+Tree}}
+\paragraph[{find\+\_\+random}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Tree\+::find\+\_\+random (
+\begin{DoxyParamCaption}
+\item[{int}]{quantity}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_af61a453f2128222861b08aba83d32380}
+
+
+definicja metody find\+\_\+random 
+
+
+\begin{DoxyParams}{Parametry}
+{\em quantity} & ilosc szukanych elementow Przeszukuje drzewo binarne. Metoda obserwowana przez klase \hyperlink{class_c_benchmark}{C\+Benchmark}. Zapisuje do pliku timing.\+txt czas przeszuiwania drzewa. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_tree_adfae6615a57297695335bc6d48248c89}{}\index{C\+Tree@{C\+Tree}!get\+\_\+max@{get\+\_\+max}}
+\index{get\+\_\+max@{get\+\_\+max}!C\+Tree@{C\+Tree}}
+\paragraph[{get\+\_\+max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Node} $\ast$ C\+Tree\+::get\+\_\+max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_adfae6615a57297695335bc6d48248c89}
+
+
+definicja metody get\+\_\+max 
+
+\begin{DoxyReturn}{Zwraca}
+wezel o najwiekszym elemencie. 
+\end{DoxyReturn}
+\hypertarget{class_c_tree_a894b83cca3d899d797e99b93936afb4d}{}\index{C\+Tree@{C\+Tree}!get\+\_\+min@{get\+\_\+min}}
+\index{get\+\_\+min@{get\+\_\+min}!C\+Tree@{C\+Tree}}
+\paragraph[{get\+\_\+min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Node} $\ast$ C\+Tree\+::get\+\_\+min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_tree_a894b83cca3d899d797e99b93936afb4d}
+
+
+definicja metody get\+\_\+min 
+
+\begin{DoxyReturn}{Zwraca}
+wezel o najmniejszym kluczu 
+\end{DoxyReturn}
+\hypertarget{class_c_tree_a3570c57d0fb47bf3920ca0fd846d9bf3}{}\index{C\+Tree@{C\+Tree}!preorder@{preorder}}
+\index{preorder@{preorder}!C\+Tree@{C\+Tree}}
+\paragraph[{preorder}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Tree\+::preorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_tree_a3570c57d0fb47bf3920ca0fd846d9bf3}
+
+
+definicja metody preorder wywoluje metode preorder klasy \hyperlink{class_c_node}{C\+Node} Wyswietla kolejno lewa galez drzewa, a nastepnie prawa. 
+
+
+
+\subsubsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_c_tree_a01a3595bbd583c795eed909d0d92b81b}{}\index{C\+Tree@{C\+Tree}!root@{root}}
+\index{root@{root}!C\+Tree@{C\+Tree}}
+\paragraph[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Node}$\ast$ C\+Tree\+::root\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_tree_a01a3595bbd583c795eed909d0d92b81b}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tree_8hh}{tree.\+hh}\item 
+\hyperlink{tree_8cpp}{tree.\+cpp}\end{DoxyCompactItemize}

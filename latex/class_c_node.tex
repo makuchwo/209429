@@ -1,0 +1,105 @@
+\hypertarget{class_c_node}{}\subsection{Dokumentacja klasy C\+Node}
+\label{class_c_node}\index{C\+Node@{C\+Node}}
+
+
+definicja klasy \hyperlink{class_c_node}{C\+Node} Definijue pojedynczy wezel drzewa binarnego. Jest zaprzyjazniona z klasa \hyperlink{class_c_tree}{C\+Tree}.  
+
+
+
+
+{\ttfamily \#include $<$node.\+hh$>$}
+
+\subsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_node_a92f7b783eb6349154976e1f8229898a5}{C\+Node} ()
+\begin{DoxyCompactList}\small\item\em definicja konstruktora bezparametrycznego Ustawia wskazniki na N\+U\+L\+L. \end{DoxyCompactList}\item 
+\hyperlink{class_c_node_ac9b30cb93e91a48dacc58821abfc44f0}{$\sim$\+C\+Node} ()
+\begin{DoxyCompactList}\small\item\em definicja destruktora klasy \hyperlink{class_c_node}{C\+Node} \end{DoxyCompactList}\item 
+void \hyperlink{class_c_node_a219ec84bd6f07c86e6f57c81a1224bcd}{preorder} () const 
+\begin{DoxyCompactList}\small\item\em definicja metody preorder Definiuje przechodzenie przez drzewo odwiedzajac wszystkielefe galzezie, nastepnie wszystkie prawe galezie. Jest wywolywana w klasie \hyperlink{class_c_tree}{C\+Tree}. Metoda nie zmienia stanu obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_node_ad08aa99402f6cfbbb9d9580d1f001441}{value}
+\item 
+\hyperlink{class_c_node}{C\+Node} $\ast$ \hyperlink{class_c_node_a486e2a7c35852d9e93f9b91af687697b}{up}
+\item 
+\hyperlink{class_c_node}{C\+Node} $\ast$ \hyperlink{class_c_node_a11360164aacc04d65f54860e98116e2f}{left}
+\item 
+\hyperlink{class_c_node}{C\+Node} $\ast$ \hyperlink{class_c_node_ac2fe09b3646c8a3ee913b2cfd5ab240a}{right}
+\end{DoxyCompactItemize}
+\subsubsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_node_a947b55db79ad1cb039daf0d7ccb25bf6}{C\+Tree}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+definicja klasy \hyperlink{class_c_node}{C\+Node} Definijue pojedynczy wezel drzewa binarnego. Jest zaprzyjazniona z klasa \hyperlink{class_c_tree}{C\+Tree}. 
+
+\subsubsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_c_node_a92f7b783eb6349154976e1f8229898a5}{}\index{C\+Node@{C\+Node}!C\+Node@{C\+Node}}
+\index{C\+Node@{C\+Node}!C\+Node@{C\+Node}}
+\paragraph[{C\+Node}]{\setlength{\rightskip}{0pt plus 5cm}C\+Node\+::\+C\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_node_a92f7b783eb6349154976e1f8229898a5}
+
+
+definicja konstruktora bezparametrycznego Ustawia wskazniki na N\+U\+L\+L. 
+
+wskaznik na prawego syna \hypertarget{class_c_node_ac9b30cb93e91a48dacc58821abfc44f0}{}\index{C\+Node@{C\+Node}!````~C\+Node@{$\sim$\+C\+Node}}
+\index{````~C\+Node@{$\sim$\+C\+Node}!C\+Node@{C\+Node}}
+\paragraph[{$\sim$\+C\+Node}]{\setlength{\rightskip}{0pt plus 5cm}C\+Node\+::$\sim$\+C\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_node_ac9b30cb93e91a48dacc58821abfc44f0}
+
+
+definicja destruktora klasy \hyperlink{class_c_node}{C\+Node} 
+
+
+
+\subsubsection{Dokumentacja funkcji składowych}
+\hypertarget{class_c_node_a219ec84bd6f07c86e6f57c81a1224bcd}{}\index{C\+Node@{C\+Node}!preorder@{preorder}}
+\index{preorder@{preorder}!C\+Node@{C\+Node}}
+\paragraph[{preorder}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Node\+::preorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_node_a219ec84bd6f07c86e6f57c81a1224bcd}
+
+
+definicja metody preorder Definiuje przechodzenie przez drzewo odwiedzajac wszystkielefe galzezie, nastepnie wszystkie prawe galezie. Jest wywolywana w klasie \hyperlink{class_c_tree}{C\+Tree}. Metoda nie zmienia stanu obiektu. 
+
+
+
+\subsubsection{Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{class_c_node_a947b55db79ad1cb039daf0d7ccb25bf6}{}\index{C\+Node@{C\+Node}!C\+Tree@{C\+Tree}}
+\index{C\+Tree@{C\+Tree}!C\+Node@{C\+Node}}
+\paragraph[{C\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+Tree}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_c_node_a947b55db79ad1cb039daf0d7ccb25bf6}
+
+
+\subsubsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_c_node_a11360164aacc04d65f54860e98116e2f}{}\index{C\+Node@{C\+Node}!left@{left}}
+\index{left@{left}!C\+Node@{C\+Node}}
+\paragraph[{left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Node}$\ast$ C\+Node\+::left\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_node_a11360164aacc04d65f54860e98116e2f}
+wskaznik na rodzica \hypertarget{class_c_node_ac2fe09b3646c8a3ee913b2cfd5ab240a}{}\index{C\+Node@{C\+Node}!right@{right}}
+\index{right@{right}!C\+Node@{C\+Node}}
+\paragraph[{right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Node}$\ast$ C\+Node\+::right\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_node_ac2fe09b3646c8a3ee913b2cfd5ab240a}
+wskaznik na lewego syna \hypertarget{class_c_node_a486e2a7c35852d9e93f9b91af687697b}{}\index{C\+Node@{C\+Node}!up@{up}}
+\index{up@{up}!C\+Node@{C\+Node}}
+\paragraph[{up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Node}$\ast$ C\+Node\+::up\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_node_a486e2a7c35852d9e93f9b91af687697b}
+przechowywane dane \hypertarget{class_c_node_ad08aa99402f6cfbbb9d9580d1f001441}{}\index{C\+Node@{C\+Node}!value@{value}}
+\index{value@{value}!C\+Node@{C\+Node}}
+\paragraph[{value}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Node\+::value\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_node_ad08aa99402f6cfbbb9d9580d1f001441}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{node_8hh}{node.\+hh}\item 
+\hyperlink{node_8cpp}{node.\+cpp}\end{DoxyCompactItemize}

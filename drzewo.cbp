@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="lab1" />
+		<Option title="drzewo" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/lab1" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/drzewo" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/lab1" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/drzewo" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -32,9 +32,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="generuj.cpp" />
-		<Unit filename="generuj.hh" />
+		<Unit filename="Red_black_node.cpp" />
+		<Unit filename="Red_black_node.hh" />
+		<Unit filename="Red_black_tree.cpp" />
+		<Unit filename="Red_black_tree.hh" />
+		<Unit filename="benchmark.cpp" />
+		<Unit filename="benchmark.hh" />
 		<Unit filename="main.cpp" />
+		<Unit filename="node.cpp" />
+		<Unit filename="node.hh" />
+		<Unit filename="tree.cpp" />
+		<Unit filename="tree.hh" />
 		<Extensions>
 			<code_completion />
 			<envvars />

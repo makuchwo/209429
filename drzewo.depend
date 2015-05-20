@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1432123312 source:c:\users\1\desktop\drzewo\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+	"tree.hh"
+	"benchmark.hh"
+	"node.hh"
+	"Red_black_node.hh"
+	"Red_black_tree.hh"
+
+1432124051 c:\users\1\desktop\drzewo\tree.hh
+	"benchmark.hh"
+	"node.hh"
+
+1432120819 source:c:\users\1\desktop\drzewo\tree.cpp
+	"tree.hh"
+	<iostream>
+
+1431956165 c:\users\1\desktop\drzewo\root.h
+	"tree.hh"
+	<cstring>
+
+1431958440 source:c:\users\1\desktop\drzewo\benchmark.cpp
+	"benchmark.hh"
+	<windows.h>
+	<fstream>
+	<iostream>
+
+1432127735 c:\users\1\desktop\drzewo\benchmark.hh
+	<windows.h>
+
+1431992928 c:\users\1\desktop\drzewo\croot.hh
+	"tree.hh"
+	"benchmark.hh"
+	<iostream>
+
+1432123143 c:\users\1\desktop\drzewo\node.hh
+	"benchmark.hh"
+
+1432056477 source:c:\users\1\desktop\drzewo\node.cpp
+	<iostream>
+	<cstdlib>
+	"tree.hh"
+	"benchmark.hh"
+
+1432124472 c:\users\1\desktop\drzewo\red_black_node.hh
+	<iostream>
+
+1432127826 c:\users\1\desktop\drzewo\red_black_tree.hh
+	"Red_black_node.hh"
+	"benchmark.hh"
+
+1432127681 source:c:\users\1\desktop\drzewo\red_black_tree.cpp
+	<iostream>
+	"Red_black_tree.hh"
+	"Red_black_node.hh"
+
+1432120426 source:c:\users\1\desktop\drzewo\red_black_node.cpp
+	"Red_black_node.hh"
+	<iostream>
+

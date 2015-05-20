@@ -1,0 +1,241 @@
+\hypertarget{class_c_red___black___tree}{}\subsection{Dokumentacja klasy C\+Red\+\_\+\+Black\+\_\+\+Tree}
+\label{class_c_red___black___tree}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+
+
+definicja klasy \hyperlink{class_c_red___black___tree}{C\+Red\+\_\+\+Black\+\_\+\+Tree} Definiuje Drzewo czerwono -\/ czarne Posiada wartownika na lisciach. Drzewo czerwono-\/czarne spelnia nastepujace wlasnosci 1) Każdy węzeł jest czerwony lub czarny. 2) Korzeń jest czarny. 3) Każdy liść jest czarny (Można traktować nil jako liść). 4) Jeśli węzeł jest czerwony, to jego synowie muszą być czarni. 5) Każda ścieżka z ustalonego węzła do liścia liczy tyle samo czarnych węzłów.  
+
+
+
+
+{\ttfamily \#include $<$Red\+\_\+black\+\_\+tree.\+hh$>$}
+
+Diagram dziedziczenia dla C\+Red\+\_\+\+Black\+\_\+\+Tree\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_red___black___tree}
+\end{center}
+\end{figure}
+\subsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_red___black___tree_a03a4710e80b0315403d8fcd447328152}{C\+Red\+\_\+\+Black\+\_\+\+Tree} ()
+\begin{DoxyCompactList}\small\item\em definicja konstruktora bezparametrycznego Ustawia wszystkie wskazniki wezla drzewa na wartownika \end{DoxyCompactList}\item 
+\hyperlink{class_c_red___black___tree_a90887157e491b6dd7dab8d94c2bfaa41}{$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Tree} ()
+\begin{DoxyCompactList}\small\item\em definicja destruktora klasy \end{DoxyCompactList}\item 
+\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$ \hyperlink{class_c_red___black___tree_a232c5b21a10f5556275eb0c056777994}{find} (int k)
+\begin{DoxyCompactList}\small\item\em definicja metody find \end{DoxyCompactList}\item 
+\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$ \hyperlink{class_c_red___black___tree_a304a7059598bc5cdcf7d46cf195444e0}{min} (\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$tmp)
+\begin{DoxyCompactList}\small\item\em definicja metody min \end{DoxyCompactList}\item 
+\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$ \hyperlink{class_c_red___black___tree_abe318b1c3d322bc8fe63c5137f7d099b}{max} (\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$r)
+\begin{DoxyCompactList}\small\item\em definicja metody max \end{DoxyCompactList}\item 
+void \hyperlink{class_c_red___black___tree_a02d506e4bb92993d2c4fc180c90ff4e5}{rotate\+\_\+left} (\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$prev)
+\begin{DoxyCompactList}\small\item\em definicja metody rotate\+\_\+left Wykonuje rotacje w lewo. zmienia this z prev, ustawiajac this jako lewego syna. Ustawia rodzica (up) na rodzica wezla this. Ustawia lewego syna this jako prawy syn prev. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_red___black___tree_ae87e5b2ab2e9a50820f0dd239aafe53d}{rotate\+\_\+right} (\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$prev)
+\begin{DoxyCompactList}\small\item\em definicja metody rotate\+\_\+right Wykonyje rotacje w prawo. zmienia this z prev, ustawiajac this jako prawego syna. Ustawia rodzica (up) na rodzica wezla this. Utawia prawego syna this jako lewy syn prav. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_red___black___tree_ad32e701bf765a0cab13e2a1e34a705da}{add} (int k)
+\begin{DoxyCompactList}\small\item\em definicja metody add Tworzy Wezel drzewa czerwono czarnego o kluczu k i dodaje do go drzewa zgodnie z regulal drzewa binarnego. Koloruje go na czerwono. Przywraca wlasciwosc dzewa czerwno czarnego zgodnie z przypadkami 1) Gdy ojciec i wuj sa czerwoni, zmien ich kolory. 2) Gdy lewy ojeciec i jego lewy syn sa czeroni, wykonaj obrot w prawo dziadka i ojca oraz zamien ich kolory. 3) Gdy lewy ojciec i jego prawy syn sa czerwoni, wykonaj obrot w lewo ojca i syna oraz wykonaj 2). 4) Gdy prawy ojciec i jego prawy syn sa czerwoni, wykonaj obrot w lewo dziadka i ojca, zamien ich kolory 5) Gdy prawy ojciec i jego prawy syn sa czerwoni, wykonaj obrot w prawo ojca i syna oraz wykonaj 4) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_red___black___tree_af9db0c92540ec68ee99853ffaea1d992}{fill\+\_\+random} (int x)
+\begin{DoxyCompactList}\small\item\em definicja metody fill\+\_\+random dziala analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} \end{DoxyCompactList}\item 
+int \hyperlink{class_c_red___black___tree_a570c1be75c7fd9077c68393bea80b019}{benchmark\+\_\+add} ()
+\begin{DoxyCompactList}\small\item\em definicja metody benchmark\+\_\+add Dzia³a analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} \end{DoxyCompactList}\item 
+void \hyperlink{class_c_red___black___tree_a538381769d077c7e99e077b356f7da4b}{find\+\_\+random} (int quantity)
+\begin{DoxyCompactList}\small\item\em definicja metody find\+\_\+random Dzia³a analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} \end{DoxyCompactList}\item 
+int \hyperlink{class_c_red___black___tree_a1d7ba7f00afaeca269eeb47c371fde04}{benchmark\+\_\+find} ()
+\begin{DoxyCompactList}\small\item\em definicja metody benchmark\+\_\+find Dziala analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} \hyperlink{class_c_red___black___tree_abfd1055bef2171bd6af469d0224997ae}{S}
+\item 
+\hyperlink{class_c_red___black___node}{C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$ \hyperlink{class_c_red___black___tree_ac431b055315c6869490c71869d40e29a}{root}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+definicja klasy \hyperlink{class_c_red___black___tree}{C\+Red\+\_\+\+Black\+\_\+\+Tree} Definiuje Drzewo czerwono -\/ czarne Posiada wartownika na lisciach. Drzewo czerwono-\/czarne spelnia nastepujace wlasnosci 1) Każdy węzeł jest czerwony lub czarny. 2) Korzeń jest czarny. 3) Każdy liść jest czarny (Można traktować nil jako liść). 4) Jeśli węzeł jest czerwony, to jego synowie muszą być czarni. 5) Każda ścieżka z ustalonego węzła do liścia liczy tyle samo czarnych węzłów. 
+
+\subsubsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_c_red___black___tree_a03a4710e80b0315403d8fcd447328152}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{C\+Red\+\_\+\+Black\+\_\+\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}C\+Red\+\_\+\+Black\+\_\+\+Tree\+::\+C\+Red\+\_\+\+Black\+\_\+\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a03a4710e80b0315403d8fcd447328152}
+
+
+definicja konstruktora bezparametrycznego Ustawia wszystkie wskazniki wezla drzewa na wartownika 
+
+wskaznik na korzen drzewa czerwono-\/czarnego. \hypertarget{class_c_red___black___tree_a90887157e491b6dd7dab8d94c2bfaa41}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!````~C\+Red\+\_\+\+Black\+\_\+\+Tree@{$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\index{````~C\+Red\+\_\+\+Black\+\_\+\+Tree@{$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Tree}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}C\+Red\+\_\+\+Black\+\_\+\+Tree\+::$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a90887157e491b6dd7dab8d94c2bfaa41}
+
+
+definicja destruktora klasy 
+
+
+
+\subsubsection{Dokumentacja funkcji składowych}
+\hypertarget{class_c_red___black___tree_ad32e701bf765a0cab13e2a1e34a705da}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!add@{add}}
+\index{add@{add}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{add}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Red\+\_\+\+Black\+\_\+\+Tree\+::add (
+\begin{DoxyParamCaption}
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_ad32e701bf765a0cab13e2a1e34a705da}
+
+
+definicja metody add Tworzy Wezel drzewa czerwono czarnego o kluczu k i dodaje do go drzewa zgodnie z regulal drzewa binarnego. Koloruje go na czerwono. Przywraca wlasciwosc dzewa czerwno czarnego zgodnie z przypadkami 1) Gdy ojciec i wuj sa czerwoni, zmien ich kolory. 2) Gdy lewy ojeciec i jego lewy syn sa czeroni, wykonaj obrot w prawo dziadka i ojca oraz zamien ich kolory. 3) Gdy lewy ojciec i jego prawy syn sa czerwoni, wykonaj obrot w lewo ojca i syna oraz wykonaj 2). 4) Gdy prawy ojciec i jego prawy syn sa czerwoni, wykonaj obrot w lewo dziadka i ojca, zamien ich kolory 5) Gdy prawy ojciec i jego prawy syn sa czerwoni, wykonaj obrot w prawo ojca i syna oraz wykonaj 4) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em k} & dodawany klucz do drzewa czerwono-\/czarnego \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_red___black___tree_a570c1be75c7fd9077c68393bea80b019}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!benchmark\+\_\+add@{benchmark\+\_\+add}}
+\index{benchmark\+\_\+add@{benchmark\+\_\+add}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{benchmark\+\_\+add}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Red\+\_\+\+Black\+\_\+\+Tree\+::benchmark\+\_\+add (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a570c1be75c7fd9077c68393bea80b019}
+
+
+definicja metody benchmark\+\_\+add Dzia³a analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} 
+
+\hypertarget{class_c_red___black___tree_a1d7ba7f00afaeca269eeb47c371fde04}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!benchmark\+\_\+find@{benchmark\+\_\+find}}
+\index{benchmark\+\_\+find@{benchmark\+\_\+find}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{benchmark\+\_\+find}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Red\+\_\+\+Black\+\_\+\+Tree\+::benchmark\+\_\+find (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a1d7ba7f00afaeca269eeb47c371fde04}
+
+
+definicja metody benchmark\+\_\+find Dziala analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} 
+
+\hypertarget{class_c_red___black___tree_af9db0c92540ec68ee99853ffaea1d992}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!fill\+\_\+random@{fill\+\_\+random}}
+\index{fill\+\_\+random@{fill\+\_\+random}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{fill\+\_\+random}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Red\+\_\+\+Black\+\_\+\+Tree\+::fill\+\_\+random (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_af9db0c92540ec68ee99853ffaea1d992}
+
+
+definicja metody fill\+\_\+random dziala analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ ilosc elementow pseudolosowych \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_red___black___tree_a232c5b21a10f5556275eb0c056777994}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!find@{find}}
+\index{find@{find}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$ C\+Red\+\_\+\+Black\+\_\+\+Tree\+::find (
+\begin{DoxyParamCaption}
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a232c5b21a10f5556275eb0c056777994}
+
+
+definicja metody find 
+
+
+\begin{DoxyParams}{Parametry}
+{\em k} & szukany klucz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na wezel przechowujacy klucz Przeszukuje drzewo czerwono-\/czarne. 
+\end{DoxyReturn}
+\hypertarget{class_c_red___black___tree_a538381769d077c7e99e077b356f7da4b}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!find\+\_\+random@{find\+\_\+random}}
+\index{find\+\_\+random@{find\+\_\+random}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{find\+\_\+random}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Red\+\_\+\+Black\+\_\+\+Tree\+::find\+\_\+random (
+\begin{DoxyParamCaption}
+\item[{int}]{quantity}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a538381769d077c7e99e077b356f7da4b}
+
+
+definicja metody find\+\_\+random Dzia³a analogicznie jak metoda klasy \hyperlink{class_c_tree}{C\+Tree} 
+
+\hypertarget{class_c_red___black___tree_abe318b1c3d322bc8fe63c5137f7d099b}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!max@{max}}
+\index{max@{max}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$ C\+Red\+\_\+\+Black\+\_\+\+Tree\+::max (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_abe318b1c3d322bc8fe63c5137f7d099b}
+
+
+definicja metody max 
+
+\begin{DoxyReturn}{Zwraca}
+wezel o najwiekszym kluczu 
+\end{DoxyReturn}
+\hypertarget{class_c_red___black___tree_a304a7059598bc5cdcf7d46cf195444e0}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!min@{min}}
+\index{min@{min}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$ C\+Red\+\_\+\+Black\+\_\+\+Tree\+::min (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$}]{tmp}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a304a7059598bc5cdcf7d46cf195444e0}
+
+
+definicja metody min 
+
+\begin{DoxyReturn}{Zwraca}
+wezel o najmniejszym kluczu 
+\end{DoxyReturn}
+\hypertarget{class_c_red___black___tree_a02d506e4bb92993d2c4fc180c90ff4e5}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!rotate\+\_\+left@{rotate\+\_\+left}}
+\index{rotate\+\_\+left@{rotate\+\_\+left}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{rotate\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Red\+\_\+\+Black\+\_\+\+Tree\+::rotate\+\_\+left (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$}]{prev}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_a02d506e4bb92993d2c4fc180c90ff4e5}
+
+
+definicja metody rotate\+\_\+left Wykonuje rotacje w lewo. zmienia this z prev, ustawiajac this jako lewego syna. Ustawia rodzica (up) na rodzica wezla this. Ustawia lewego syna this jako prawy syn prev. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em prev} & obracany wezel nadrzedny przy zalozeniu, ze obracanym wezlem podrzednym jest this. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_red___black___tree_ae87e5b2ab2e9a50820f0dd239aafe53d}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!rotate\+\_\+right@{rotate\+\_\+right}}
+\index{rotate\+\_\+right@{rotate\+\_\+right}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{rotate\+\_\+right}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Red\+\_\+\+Black\+\_\+\+Tree\+::rotate\+\_\+right (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} $\ast$}]{prev}
+\end{DoxyParamCaption}
+)}\label{class_c_red___black___tree_ae87e5b2ab2e9a50820f0dd239aafe53d}
+
+
+definicja metody rotate\+\_\+right Wykonyje rotacje w prawo. zmienia this z prev, ustawiajac this jako prawego syna. Ustawia rodzica (up) na rodzica wezla this. Utawia prawego syna this jako lewy syn prav. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em prev} & obracany wezel nadrzedny przy zalozeniu, ze obracanym wezlem podrzednym jest this. \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_c_red___black___tree_ac431b055315c6869490c71869d40e29a}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!root@{root}}
+\index{root@{root}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Red\+\_\+\+Black\+\_\+\+Node}$\ast$ C\+Red\+\_\+\+Black\+\_\+\+Tree\+::root\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_red___black___tree_ac431b055315c6869490c71869d40e29a}
+wartownik \hypertarget{class_c_red___black___tree_abfd1055bef2171bd6af469d0224997ae}{}\index{C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}!S@{S}}
+\index{S@{S}!C\+Red\+\_\+\+Black\+\_\+\+Tree@{C\+Red\+\_\+\+Black\+\_\+\+Tree}}
+\paragraph[{S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Red\+\_\+\+Black\+\_\+\+Node} C\+Red\+\_\+\+Black\+\_\+\+Tree\+::\+S\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_red___black___tree_abfd1055bef2171bd6af469d0224997ae}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_red__black__tree_8hh}{Red\+\_\+black\+\_\+tree.\+hh}\item 
+\hyperlink{_red__black__tree_8cpp}{Red\+\_\+black\+\_\+tree.\+cpp}\end{DoxyCompactItemize}

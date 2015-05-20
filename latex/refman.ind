@@ -1,76 +1,193 @@
 \begin{theindex}
 
-  \item {$\sim$dane}
-    \subitem {dane}, \hyperpage{3}
+  \item {$\sim$\+C\+Node}
+    \subitem {C\+Node}, \hyperpage{5}
+  \item {$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Node}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
+  \item {$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Tree}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+  \item {$\sim$\+C\+Tree}
+    \subitem {C\+Tree}, \hyperpage{11}
 
   \indexspace
 
-  \item {dane}, \hyperpage{2}
-    \subitem {$\sim$dane}, \hyperpage{3}
-    \subitem {dane}, \hyperpage{3}
-    \subitem {generuj}, \hyperpage{3}
-    \subitem {licz}, \hyperpage{3}
-    \subitem {rozmiar}, \hyperpage{5}
-    \subitem {tablica}, \hyperpage{5}
-    \subitem {Wez}, \hyperpage{3}
-    \subitem {Wez\+Rozmiar}, \hyperpage{3}
-    \subitem {Zapisz\+Do\+Pliku}, \hyperpage{3}
+  \item {add}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+    \subitem {C\+Tree}, \hyperpage{11}
+
+  \indexspace
+
+  \item {benchmark.\+cpp}, \hyperpage{12}
+  \item {benchmark.\+hh}, \hyperpage{12}
+  \item {benchmark\+\_\+add}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+    \subitem {C\+Tree}, \hyperpage{11}
+  \item {benchmark\+\_\+find}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+    \subitem {C\+Tree}, \hyperpage{11}
+
+  \indexspace
+
+  \item {C\+Benchmark}, \hyperpage{2}
+    \subitem {end\+Timer}, \hyperpage{3}
+    \subitem {performance\+Count\+End}, \hyperpage{4}
+    \subitem {performance\+Count\+Start}, \hyperpage{4}
+    \subitem {put\+\_\+time\+\_\+to\+\_\+file}, \hyperpage{3}
+    \subitem {start\+\_\+timer}, \hyperpage{3}
+    \subitem {start\+Timer}, \hyperpage{3}
+    \subitem {stop\+\_\+timer}, \hyperpage{4}
+  \item {C\+Node}, \hyperpage{4}
+    \subitem {$\sim$\+C\+Node}, \hyperpage{5}
+    \subitem {C\+Node}, \hyperpage{5}
+    \subitem {C\+Tree}, \hyperpage{5}
+    \subitem {left}, \hyperpage{5}
+    \subitem {preorder}, \hyperpage{5}
+    \subitem {right}, \hyperpage{5}
+    \subitem {up}, \hyperpage{5}
+    \subitem {value}, \hyperpage{5}
+  \item {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{5}
+    \subitem {$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{6}
+    \subitem {color}, \hyperpage{6}
+    \subitem {left}, \hyperpage{6}
+    \subitem {right}, \hyperpage{6}
+    \subitem {up}, \hyperpage{6}
+    \subitem {value}, \hyperpage{6}
+  \item {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{7}
+    \subitem {$\sim$\+C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+    \subitem {add}, \hyperpage{8}
+    \subitem {benchmark\+\_\+add}, \hyperpage{8}
+    \subitem {benchmark\+\_\+find}, \hyperpage{8}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+    \subitem {fill\+\_\+random}, \hyperpage{8}
+    \subitem {find}, \hyperpage{8}
+    \subitem {find\+\_\+random}, \hyperpage{9}
+    \subitem {max}, \hyperpage{9}
+    \subitem {min}, \hyperpage{9}
+    \subitem {root}, \hyperpage{9}
+    \subitem {rotate\+\_\+left}, \hyperpage{9}
+    \subitem {rotate\+\_\+right}, \hyperpage{9}
+    \subitem {S}, \hyperpage{9}
+  \item {C\+Tree}, \hyperpage{10}
+    \subitem {$\sim$\+C\+Tree}, \hyperpage{11}
+    \subitem {add}, \hyperpage{11}
+    \subitem {benchmark\+\_\+add}, \hyperpage{11}
+    \subitem {benchmark\+\_\+find}, \hyperpage{11}
+    \subitem {C\+Node}, \hyperpage{5}
+    \subitem {C\+Tree}, \hyperpage{11}
+    \subitem {fill\+\_\+random}, \hyperpage{11}
+    \subitem {find}, \hyperpage{11}
+    \subitem {find\+\_\+random}, \hyperpage{11}
+    \subitem {get\+\_\+max}, \hyperpage{12}
+    \subitem {get\+\_\+min}, \hyperpage{12}
+    \subitem {preorder}, \hyperpage{12}
+    \subitem {root}, \hyperpage{12}
+  \item {color}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
 
   \indexspace
 
   \item {end\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {C\+Benchmark}, \hyperpage{3}
 
   \indexspace
 
-  \item {generuj}
-    \subitem {dane}, \hyperpage{3}
-  \item {generuj.\+cpp}, \hyperpage{5}
-    \subitem {end\+Timer}, \hyperpage{5}
-    \subitem {start\+Timer}, \hyperpage{5}
-  \item {generuj.\+hh}, \hyperpage{6}
-    \subitem {end\+Timer}, \hyperpage{6}
-    \subitem {start\+Timer}, \hyperpage{6}
+  \item {fill\+\_\+random}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+    \subitem {C\+Tree}, \hyperpage{11}
+  \item {find}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{8}
+    \subitem {C\+Tree}, \hyperpage{11}
+  \item {find\+\_\+random}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{9}
+    \subitem {C\+Tree}, \hyperpage{11}
 
   \indexspace
 
-  \item {licz}
-    \subitem {dane}, \hyperpage{3}
+  \item {get\+\_\+max}
+    \subitem {C\+Tree}, \hyperpage{12}
+  \item {get\+\_\+min}
+    \subitem {C\+Tree}, \hyperpage{12}
+
+  \indexspace
+
+  \item {left}
+    \subitem {C\+Node}, \hyperpage{5}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\+cpp}, \hyperpage{7}
-  \item {main.\+cpp}, \hyperpage{6}
-    \subitem {main}, \hyperpage{7}
+    \subitem {main.\+cpp}, \hyperpage{13}
+  \item {main.\+cpp}, \hyperpage{13}
+    \subitem {main}, \hyperpage{13}
+  \item {max}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{9}
+  \item {min}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{9}
 
   \indexspace
 
-  \item {rozmiar}
-    \subitem {dane}, \hyperpage{5}
+  \item {node.\+cpp}, \hyperpage{13}
+  \item {node.\+hh}, \hyperpage{13}
 
   \indexspace
 
+  \item {performance\+Count\+End}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {performance\+Count\+Start}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {preorder}
+    \subitem {C\+Node}, \hyperpage{5}
+    \subitem {C\+Tree}, \hyperpage{12}
+  \item {put\+\_\+time\+\_\+to\+\_\+file}
+    \subitem {C\+Benchmark}, \hyperpage{3}
+
+  \indexspace
+
+  \item {Red\+\_\+black\+\_\+node.\+cpp}, \hyperpage{13}
+  \item {Red\+\_\+black\+\_\+node.\+hh}, \hyperpage{13}
+  \item {Red\+\_\+black\+\_\+tree.\+cpp}, \hyperpage{14}
+  \item {Red\+\_\+black\+\_\+tree.\+hh}, \hyperpage{14}
+  \item {right}
+    \subitem {C\+Node}, \hyperpage{5}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
+  \item {root}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{9}
+    \subitem {C\+Tree}, \hyperpage{12}
+  \item {rotate\+\_\+left}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{9}
+  \item {rotate\+\_\+right}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{9}
+
+  \indexspace
+
+  \item {S}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Tree}, \hyperpage{9}
+  \item {start\+\_\+timer}
+    \subitem {C\+Benchmark}, \hyperpage{3}
   \item {start\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {C\+Benchmark}, \hyperpage{3}
+  \item {stop\+\_\+timer}
+    \subitem {C\+Benchmark}, \hyperpage{4}
 
   \indexspace
 
-  \item {tablica}
-    \subitem {dane}, \hyperpage{5}
+  \item {tree.\+cpp}, \hyperpage{14}
+  \item {tree.\+hh}, \hyperpage{14}
 
   \indexspace
 
-  \item {Wez}
-    \subitem {dane}, \hyperpage{3}
-  \item {Wez\+Rozmiar}
-    \subitem {dane}, \hyperpage{3}
+  \item {up}
+    \subitem {C\+Node}, \hyperpage{5}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
 
   \indexspace
 
-  \item {Zapisz\+Do\+Pliku}
-    \subitem {dane}, \hyperpage{3}
+  \item {value}
+    \subitem {C\+Node}, \hyperpage{5}
+    \subitem {C\+Red\+\_\+\+Black\+\_\+\+Node}, \hyperpage{6}
 
 \end{theindex}
