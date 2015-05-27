@@ -1,0 +1,129 @@
+\hypertarget{classqueue}{}\subsection{Dokumentacja klasy queue}
+\label{classqueue}\index{queue@{queue}}
+
+
+definicja klasy queue definicja kolejki A\+D\+T, kolejka typu F\+I\+F\+O zimplementowaa na liscie  
+
+
+
+
+{\ttfamily \#include $<$queue.\+hh$>$}
+
+\subsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classqueue_a94621434051ab5f39a20e1ab8dd1fcc5}{push} (int element)
+\begin{DoxyCompactList}\small\item\em definicja metody push dodaje element na koniec kolejki \end{DoxyCompactList}\item 
+void \hyperlink{classqueue_a64eb1ff3abb18bc130ab7390c9743f80}{pop} ()
+\begin{DoxyCompactList}\small\item\em definicja metody pop usuwa element z poczatku kolejki \end{DoxyCompactList}\item 
+\hyperlink{classqueue_ae627ff3c7e0015717518229b43b023a1}{$\sim$queue} ()
+\begin{DoxyCompactList}\small\item\em definicja destruktora \end{DoxyCompactList}\item 
+\hyperlink{classqueue_a7d34ca890402e85d02107280b32ae73a}{queue} ()
+\begin{DoxyCompactList}\small\item\em desfinicja konstruktora bezparametrycznego ustawia wskazniki na N\+U\+L\+L \end{DoxyCompactList}\item 
+void \hyperlink{classqueue_aa0ab9e292d17a60504bfa72e6d48aee2}{print} () const 
+\begin{DoxyCompactList}\small\item\em definicja metody print wyswietla zawartosc kolejki \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classqueue__node}{queue\+\_\+node} $\ast$ \hyperlink{classqueue_a8ee8b1ac8ce013be020685f8731e45c9}{first}
+\item 
+\hyperlink{classqueue__node}{queue\+\_\+node} $\ast$ \hyperlink{classqueue_a6271d8d9ca79fbde8d114c0c155a6ffc}{last}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+
+
+Definicja w linii 29 pliku queue.\+hh.
+
+
+
+\subsubsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{classqueue_ae627ff3c7e0015717518229b43b023a1}{}\index{queue@{queue}!````~queue@{$\sim$queue}}
+\index{````~queue@{$\sim$queue}!queue@{queue}}
+\paragraph[{$\sim$queue}]{\setlength{\rightskip}{0pt plus 5cm}queue\+::$\sim$queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classqueue_ae627ff3c7e0015717518229b43b023a1}
+
+
+Definicja w linii 49 pliku queue.\+cpp.
+
+\hypertarget{classqueue_a7d34ca890402e85d02107280b32ae73a}{}\index{queue@{queue}!queue@{queue}}
+\index{queue@{queue}!queue@{queue}}
+\paragraph[{queue}]{\setlength{\rightskip}{0pt plus 5cm}queue\+::queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classqueue_a7d34ca890402e85d02107280b32ae73a}
+
+
+Definicja w linii 57 pliku queue.\+hh.
+
+
+
+\subsubsection{Dokumentacja funkcji składowych}
+\hypertarget{classqueue_a64eb1ff3abb18bc130ab7390c9743f80}{}\index{queue@{queue}!pop@{pop}}
+\index{pop@{pop}!queue@{queue}}
+\paragraph[{pop}]{\setlength{\rightskip}{0pt plus 5cm}void queue\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classqueue_a64eb1ff3abb18bc130ab7390c9743f80}
+
+
+Definicja w linii 23 pliku queue.\+cpp.
+
+\hypertarget{classqueue_aa0ab9e292d17a60504bfa72e6d48aee2}{}\index{queue@{queue}!print@{print}}
+\index{print@{print}!queue@{queue}}
+\paragraph[{print}]{\setlength{\rightskip}{0pt plus 5cm}void queue\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classqueue_aa0ab9e292d17a60504bfa72e6d48aee2}
+
+
+Definicja w linii 35 pliku queue.\+cpp.
+
+\hypertarget{classqueue_a94621434051ab5f39a20e1ab8dd1fcc5}{}\index{queue@{queue}!push@{push}}
+\index{push@{push}!queue@{queue}}
+\paragraph[{push}]{\setlength{\rightskip}{0pt plus 5cm}void queue\+::push (
+\begin{DoxyParamCaption}
+\item[{int}]{element}
+\end{DoxyParamCaption}
+)}\label{classqueue_a94621434051ab5f39a20e1ab8dd1fcc5}
+wskaznik na ostatni element
+
+
+\begin{DoxyParams}{Parametry}
+{\em element} & dodawany element \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 9 pliku queue.\+cpp.
+
+
+
+\subsubsection{Dokumentacja atrybutów składowych}
+\hypertarget{classqueue_a8ee8b1ac8ce013be020685f8731e45c9}{}\index{queue@{queue}!first@{first}}
+\index{first@{first}!queue@{queue}}
+\paragraph[{first}]{\setlength{\rightskip}{0pt plus 5cm}{\bf queue\+\_\+node}$\ast$ queue\+::first}\label{classqueue_a8ee8b1ac8ce013be020685f8731e45c9}
+
+
+Definicja w linii 31 pliku queue.\+hh.
+
+\hypertarget{classqueue_a6271d8d9ca79fbde8d114c0c155a6ffc}{}\index{queue@{queue}!last@{last}}
+\index{last@{last}!queue@{queue}}
+\paragraph[{last}]{\setlength{\rightskip}{0pt plus 5cm}{\bf queue\+\_\+node}$\ast$ queue\+::last}\label{classqueue_a6271d8d9ca79fbde8d114c0c155a6ffc}
+wskaznik na pierwszy element 
+
+Definicja w linii 32 pliku queue.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{queue_8hh}{queue.\+hh}\item 
+\hyperlink{queue_8cpp}{queue.\+cpp}\end{DoxyCompactItemize}

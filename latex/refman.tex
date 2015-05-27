@@ -75,8 +75,8 @@
 \fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
 \fancyfoot[LE]{\fancyplain{}{}}
 \fancyfoot[CE]{\fancyplain{}{}}
-\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 12\+:42\+:11 dla Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 programem Doxygen }}
-\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 18 mar 2015 12\+:42\+:11 dla Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 programem Doxygen }}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 27 maj 2015 13\+:06\+:26 dla Projektowanie algorytmów i metod sztucznej inteligencji. Laboratorium  9 -\/ Sprawozdanie programem Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano Śr, 27 maj 2015 13\+:06\+:26 dla Projektowanie algorytmów i metod sztucznej inteligencji. Laboratorium  9 -\/ Sprawozdanie programem Doxygen }}
 \fancyfoot[CO]{\fancyplain{}{}}
 \fancyfoot[RO]{\fancyplain{}{}}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -125,11 +125,11 @@
 \begin{titlepage}
 \vspace*{7cm}
 \begin{center}%
-{\Large Program sluzacy do pomiaru zlozonosci obliczeniowej -\/ Laboratorium 1 }\\
+{\Large Projektowanie algorytmów i metod sztucznej inteligencji. Laboratorium 9 -\/ Sprawozdanie \\[1ex]\large 1.\+0 }\\
 \vspace*{1cm}
 {\large Wygenerowano przez Doxygen 1.8.9.1}\\
 \vspace*{0.5cm}
-{\small Śr, 18 mar 2015 12:42:11}\\
+{\small Śr, 27 maj 2015 13:06:26}\\
 \end{center}
 \end{titlepage}
 \tableofcontents
@@ -137,39 +137,76 @@
 \hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
-\section{Program sluzacy do pomiaru zlozonosci obliczeniowej.}
+\section{Projektowanie algorytm�w i metod sztucznej inteligencji. Laboratorium 9 -\/ Sprawozdanie}
 \label{index}\hypertarget{index}{}\input{index}
+\section{Indeks hierarchiczny}
+\input{hierarchy}
 \section{Indeks klas}
 \input{annotated}
 \section{Indeks plików}
 \input{files}
 \section{Dokumentacja klas}
-\input{classdane}
+\input{class_c_benchmark}
+\input{class_c_edge}
+\input{class_c_graph}
+\input{class_c_node}
+\input{classqueue}
+\input{classqueue__node}
 \section{Dokumentacja plików}
-\input{generuj_8cpp}
-\input{generuj_8hh}
+\input{benchmark_8cpp}
+\input{benchmark_8hh}
+\input{graph_8cpp}
+\input{graph_8hh}
 \input{main_8cpp}
+\input{queue_8cpp}
+\input{queue_8hh}
+%\documentclass[11pt,a4paper]{article}
+%\usepackage{polski}
+%\usepackage[utf8]{inputenc}
+%\usepackage{graphicx}
 
-
+\title{Projektowanie algorytmów i metod sztucznej inteligencji. Laboratorium  9 - Sprawozdanie}
 \author{Wojciech Makuch}
-\title{Laboratorium 1 - Sprawozdanie}
+\date{}
 
-\begin{document}
+%\begin{document}
 	\maketitle
-	\section{Zadanie}
-			Napisać program generujący liczby psełdolosowe, a nastepnie liczący złożonosć obliczeniową wymnożenia każdego z tych elementów przez~2.
-		\section{Realizacja}
-		Program zawiera jedną klase przechowującą rozmiar oraz liczby psełdolowe. Klasa zawiera metody wypęłniające tablice, mnożące każdy z elementów przez 2, zliczając przy tym czas wykonania tej operacji. Ponadto program ma możliwość zapisania danych do pliku. Program nie posiada interfejsu z użytkownikiem.
-		\section{Działanie}
-		Główna funkcja programu w pętli wypelnia tablice liczbami psełdolosowymi z zakresu 10-10 000 000. Następnie zliczas czas wykonanych operacji i zapisuje w formie tabelki do pliku o nazwie Pomiar\_czasu2.txt.
-		\section{Wyniki}
-		Rysunek1 pokazuje wykres zaleznosci zlozonosci obliczeniowej w czasie. Z wykresu mozna zauwazyc, że złożoność obliczeniowa jest liniowa, czyli O(n).
-		 \begin{figure}
-	 	\centering
-	 	\includegraphics[width=14cm]{Wykres1.pdf}
-	 	\caption{Wykres złożoności obliczeniowej.}
-		 \end{figure}
-		\section{Komentarz}
-		Do utworzenia dokumentacji wykorzystano system Doxygen.
-		Funkcja pomiaru czasu dla systemu Windows pobrana ze strony dr. J. Mierzwy. Program skompilowano w środowisku Code::Blocks. Do stworzonia wykresu posłużono się pakietem MS Excel, sprawozdanie napisano uzywając systemu \LaTeX.
+	\section{Zadanie}\label{sec:Zadanie}
+	Implementacja grafu oraz zbadanie złożoności obliczeniowej algorytmów przeszukiwania w głąb(ang. \textsl{Depth-first search, DFS}) oraz przeszukiwania  wszerz(ang. \textsl{breadth-first search, BFS}).
+	
+	\section{Wstep}\label{sec:Wstep}
+	Graf – abstrakcyjna struktura danych. Jest zbudowana z wierzchołków i krawędzi. Wierzchołki grafu mogą być numerowane i czasem stanowią reprezentację jakichś obiektów, natomiast krawędzie mogą wówczas obrazować relacje między takimi obiektami. Wierzchołki należące do krawędzi nazywane są jej końcami. Krawędzie mogą mieć wyznaczony kierunek, a graf zawierający takie krawędzie nazywany jest grafem skierowanym. Krawędź grafu może posiadać wagę, to znaczy przypisaną liczbę, która określa, na przykład, odległość między wierzchołkami.
+	\\
+	\\
+	Przeszukiwanie w głąb - polega na badaniu wszystkich krawędzi wychodzących z podanego wierzchołka. Teoretyczna złożoność czasowa przeszukiwania w głąb wynosi $O(|V|+|E|)$, gdzie V-ilość wierzchołków, E – ilość krawędzi. Teoretyczna złożoność pamięciowa wynosi $O(h)$, gdzie h – długość najdłuższej prostej ścieżki.
+	\\
+	\\
+	Przeszukiwanie wszerz - przechodzenie grafu rozpoczyna się od zadanego wierzchołka i polega na odwiedzeniu wszystkich osiągalnych z niego wierzchołków. Teoretyczna złożoność czasowa wynosi również $O(|V|+|E|)$. Złożoność pamięciowa w tym przypadku też wynosi $O(|V|+|E|)$.
+	
+	\section{Graf - implementacja}\label{sec:Graf - implementacja}
+	Utworzono klasy przechowujące elementy grafu takie krawędzie i wierzchołki oraz klasę nadrzędną, która łączy je w jeden graf. Informacja o połączeniu wierzchołków i krawędzi jest zapisywana w macierzy sąsiedztwa. Do zaalokowania pamięci niezbędne jest wcześniejsze podanie rozmiaru. Głowna funkcja programu zawiera menu użytkownika pozwalające testować poprawność programu oraz testować złożoność obliczeniową badanych algorytmów.
+	
+	\section{Zlozonosci obliczeniowe usyskane}\label{sec:Zlozonosci obliczeniowe usyskane}
+	Na rys 1. pokazano uzyskane wyniki badania złożoności obliczeniowej dla algorytmu DFS, natomiast to samo dla algorytmu BFS przedstawiono na rys 2. Z obydwu rysunków wynika, że złożoność czasowa jest w przybliżeniu stała i oscyluje w granicy wartości 1000.  Z praktycznego punktu widzenia jest to złożoność zgodna z teoretyczną ponieważ zaimplementowana w programie metoda tworzenia losowych grafów tworzy również losowe krawędzie, przez co w większości wypadków nie wszystkie wierzchołki są połączone z grafem - tworzy się graf niepołączony/niespójny. W efekcie ilość krawędzi jest dużo mniejsza.
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.9]{1.png}
+	\caption{Dodawanie do drzewa binarnego.}
+	\label{fig:1}
+	\end{figure}
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.90]{2.png}
+	\caption{Prszeszukiwanie drzewa binarnego.}
+	\label{fig:2}
+	\end{figure}
+
+	\section{Komentarz}\label{sec:Komentarz}
+	Do utworzenia dokumentacji wykorzystano system Doxygen. Funkcja pomiaru czasu dla systemu Windows pobrana ze strony dr. J. Mierzwy. Program skompilowano w środowisku Code::Blocks. Do stworzenia wykresu posłużono się pakietem MS Excel, sprawozdanie napisano używając systemu \LaTeX.
+	
+\begin{thebibliography}{99}
+	\bibitem{1} http://pl.wikipedia.org/wiki/Przeszukiwanie\_w\_glab
+	\bibitem{2} http://pl.wikipedia.org/wiki/Przeszukiwanie\_wszerz
+\end{thebibliography}
+
 \end{document}

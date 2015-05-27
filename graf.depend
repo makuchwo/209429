@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1432207001 source:c:\users\1\desktop\graf\main.cpp
+	<iostream>
+
+1432721241 source:c:\users\1\desktop\graf - kopia\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cstdlib>
+	<iomanip>
+	"graph.hh"
+	"queue.hh"
+	"benchmark.hh"
+
+1432721241 source:c:\users\1\desktop\graf - kopia\graph.cpp
+	"graph.hh"
+	"queue.hh"
+	"benchmark.hh"
+	<iostream>
+
+1432721241 c:\users\1\desktop\graf - kopia\graph.hh
+	"benchmark.hh"
+
+1432581216 c:\users\1\desktop\graf - kopia\node.hh
+
+1432581247 c:\users\1\desktop\graf - kopia\edge.hh
+
+1432721241 c:\users\1\desktop\graf - kopia\queue.hh
+	<iostream>
+
+1432721241 source:c:\users\1\desktop\graf - kopia\queue.cpp
+	"queue.hh"
+	<iostream>
+
+1432721241 c:\users\1\desktop\graf - kopia\benchmark.hh
+	<windows.h>
+
+1432721241 source:c:\users\1\desktop\graf - kopia\benchmark.cpp
+	"benchmark.hh"
+	<windows.h>
+	<fstream>
+	<iostream>
+

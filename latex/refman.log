@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.5)  18 MAR 2015 12:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.5)  27 MAY 2015 13:06
 entering extended mode
 **refman
-(C:\Users\1\Desktop\lab1\latex\refman.tex
+("C:\Users\1\Desktop\graf - Kopia\latex\refman.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -47,7 +47,7 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count89
 \calc@Cskip=\skip45
 )
-(C:\Users\1\Desktop\lab1\latex\doxygen.sty
+("C:\Users\1\Desktop\graf - Kopia\latex\doxygen.sty"
 Package: doxygen 
 
 ("F:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
@@ -938,7 +938,27 @@ File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-(C:\Users\1\Desktop\lab1\latex\refman.aux)
+("C:\Users\1\Desktop\graf - Kopia\latex\refman.aux"
+
+LaTeX Warning: Label `index_utworz' multiply defined.
+
+
+LaTeX Warning: Label `index_benchmarkuj' multiply defined.
+
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+? 
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
 LaTeX Font Info:    ... okay on input line 116.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
@@ -954,8 +974,7 @@ LaTeX Font Info:    ... okay on input line 116.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 116.
 
-
-("F:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("F:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 116.
@@ -1036,8 +1055,8 @@ LaTeX Info: Redefining \ref on input line 116.
 LaTeX Info: Redefining \pageref on input line 116.
 LaTeX Info: Redefining \nameref on input line 116.
 
-(C:\Users\1\Desktop\lab1\latex\refman.out)
-(C:\Users\1\Desktop\lab1\latex\refman.out)
+("C:\Users\1\Desktop\graf - Kopia\latex\refman.out")
+("C:\Users\1\Desktop\graf - Kopia\latex\refman.out")
 \@outlinefile=\write4
 Package hyperref Info: Option `pageanchor' set `false' on input line 123.
 
@@ -1051,10 +1070,48 @@ Package hyperref Info: Option `unicode' set `true' on input line 123.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 128.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 130.
+(Font)              scaled to size 10.79993pt on input line 128.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 128.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 128.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
+File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 128
+.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
+File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 128
+.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
+File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <7> on input line 128.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <5> on input line 128.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 128.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 128.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 128.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 132.
-[1
+ [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
@@ -1064,54 +1121,55 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 135.
 
-(C:\Users\1\Desktop\lab1\latex\refman.toc
+("C:\Users\1\Desktop\graf - Kopia\latex\refman.toc"
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 1.
-LaTeX Font Info:    Try loading font information for OML+plm on input line 1.
 
-("F:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
-File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 1.
 
-("F:\Program Files\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
-File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 1.
+! Package inputenc Error: Unicode char \u 8:\GenericError {(inputenc)          
+      }{Package inputenc Error: Unicode char \u8:Ûwim not set up for use with L
+aTeX}{See the inputenc package documentation for explanation.}{Your command was
+ ignored.
+(inputenc) Type  I <command> <return>  to replace it with another command,
+(inputenc) or  <return>  to continue without it.} not set up for use with LaTeX
+.
 
-("F:\Program Files\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
-File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...oratorium 9 -\/ Sprawozdanie}{1}{section.1}
+                                                  
+? 
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <10> on input line 1.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 1.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 1.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 1.
 
-("F:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.22644pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-("F:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
-
-("F:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 23.
-)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 70.
+[2])
 \tf@toc=\write5
 Package hyperref Info: Option `pageanchor' set `true' on input line 137.
 
-(C:\Users\1\Desktop\lab1\latex\index.tex
+
+! Package inputenc Error: Unicode char \u8:Ûwim not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...igencji. Laboratorium 9 -\/ Sprawozdanie}
+                                                  
+? 
+("C:\Users\1\Desktop\graf - Kopia\latex\index.tex"
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 1.
 
@@ -1125,16 +1183,6 @@ Underfull \hbox (badness 10000) detected at line 4
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.22644pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 7.
-[1]
 Underfull \hbox (badness 10000) detected at line 7
 [][][]
  []
@@ -1145,177 +1193,252 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 10.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 10.
-) (C:\Users\1\Desktop\lab1\latex\annotated.tex)
-(C:\Users\1\Desktop\lab1\latex\files.tex)
-(C:\Users\1\Desktop\lab1\latex\classdane.tex
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 13.
+
+! Package inputenc Error: Unicode char \u8:Ûwim not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \hypertarget{index_BFS}{}\subsection{B\+F\+S}
+                                                  \label{index_BFS}
+? 
+[1pdfTeX warning (ext4): destination with the same identifier (name{index_utwor
+z}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.14 \hypertarget{index_BFS}{}\subsection{B\+F\+S}
+                                                  \label{index_BFS}])
+("C:\Users\1\Desktop\graf - Kopia\latex\hierarchy.tex")
+("C:\Users\1\Desktop\graf - Kopia\latex\annotated.tex")
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.22644pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2pdfTeX warning (ext4): destination with the same identifier (name{index_bench
+markuj}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.146 \section{Indeks plik√≥w}
+                              ]
+("C:\Users\1\Desktop\graf - Kopia\latex\files.tex")
+("C:\Users\1\Desktop\graf - Kopia\latex\class_c_benchmark.tex"
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
 
 ("F:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 10.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 14.
 
 ("F:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1phv.fd"
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 10.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 12.22644pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2]
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 47.
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 47.
-LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 47.
-
+(Font)              scaled to size 8.99994pt on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 15.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 15.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 15.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 15.
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 19.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 19.
+ [3]
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 47.
+(Font)              using `T1/pcr/m/n' instead on input line 50.
 
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 61.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 61.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 61.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 6.29996pt on input line 61.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 50.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 50.
+(Font)              scaled to size 8.99994pt on input line 64.
 
-Underfull \hbox (badness 10000) detected at line 89
+Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 108
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 122
-[][][]
- []
-
-[3]
+) ("C:\Users\1\Desktop\graf - Kopia\latex\class_c_edge.tex"
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.22644pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4]
-Underfull \hbox (badness 10000) detected at line 141
-[][][]
- []
-
-) (C:\Users\1\Desktop\lab1\latex\generuj_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 24
-[][][]
- []
-
-[5]
-Underfull \hbox (badness 10000) detected at line 38
-[][][]
- []
-
-) (C:\Users\1\Desktop\lab1\latex\generuj_8hh.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 26
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 40
-[][][]
- []
-
-) (C:\Users\1\Desktop\lab1\latex\main_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
- []
-
+[4]) ("C:\Users\1\Desktop\graf - Kopia\latex\class_c_graph.tex" [5]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 12.22644pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6])
+[6]
+Underfull \hbox (badness 10000) detected at line 186
+[][][]
+ []
 
-! LaTeX Error: Can be used only in preamble.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 \begin{document}
-                      
-? 
+Underfull \hbox (badness 10000) detected at line 216
+[][][]
+ []
+
 [7]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 15.55188pt on input line 159.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 159.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 159.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 159.
- <Wykres1.pdf, id=230, 421.21367pt x 227.6505pt>
-File: Wykres1.pdf Graphic file (type pdf)
- <use Wykres1.pdf>
-Package pdftex.def Info: Wykres1.pdf used on input line 169.
-(pdftex.def)             Requested size: 398.33858pt x 215.29758pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
- [8]
-[9 <C:/Users/1/Desktop/lab1/latex/Wykres1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
 
-(C:\Users\1\Desktop\lab1\latex\refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.22644pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]) ("C:\Users\1\Desktop\graf - Kopia\latex\class_c_node.tex" [9])
+("C:\Users\1\Desktop\graf - Kopia\latex\classqueue.tex"
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.22644pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]) ("C:\Users\1\Desktop\graf - Kopia\latex\classqueue__node.tex" [11])
+("C:\Users\1\Desktop\graf - Kopia\latex\benchmark_8cpp.tex")
+("C:\Users\1\Desktop\graf - Kopia\latex\benchmark_8hh.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) ("C:\Users\1\Desktop\graf - Kopia\latex\graph_8cpp.tex")
+("C:\Users\1\Desktop\graf - Kopia\latex\graph_8hh.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.22644pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]) ("C:\Users\1\Desktop\graf - Kopia\latex\main_8cpp.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+) ("C:\Users\1\Desktop\graf - Kopia\latex\queue_8cpp.tex")
+("C:\Users\1\Desktop\graf - Kopia\latex\queue_8hh.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[13])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.22644pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 15.55188pt on input line 174.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 174.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 174.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 174.
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
+
+ []
+
+<1.png, id=607, 366.61969pt x 219.06844pt>
+File: 1.png Graphic file (type png)
+ <use 1.png>
+Package pdftex.def Info: 1.png used on input line 193.
+(pdftex.def)             Requested size: 329.95467pt x 197.15976pt.
+
+<2.png, id=608, 366.61969pt x 219.06844pt>
+File: 2.png Graphic file (type png)
+ <use 2.png>
+Package pdftex.def Info: 2.png used on input line 199.
+(pdftex.def)             Requested size: 329.95467pt x 197.15976pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] ("C:\Users\1\Desktop\graf - Kopia\latex\refman.brf")
+\tf@brf=\write6
+)
+Runaway argument?
+ http://pl.wikipedia.org/wiki/Przeszukiwanie\_wszerz \end {thebibliog\ETC.
+! File ended while scanning use of \BR@@bibitem.
+<inserted text> 
+                \par 
+<*> refman
+          
+? 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 0.
+[16 <C:/Users/1/Desktop/graf - Kopia/latex/1.png> <C:/Users/1/Desktop/graf - Ko
+pia/latex/2.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 0.
+ ("C:\Users\1\Desktop\graf - Kopia\latex\refman.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 0.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 0.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 71AB569E9FE23340295734C6C239B383;4337.
+(rerunfilecheck)             Checksum: 5C6AED0A280372C90B50941B7B5B0E36;11464.
+Package rerunfilecheck Info: File `refman.brf' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
- )
-(\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 157 (\begingroup)
-### bottom level 
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 0.
+ 
 Here is how much of TeX's memory you used:
- 13188 strings out of 493921
- 183053 string characters out of 3147295
- 263952 words of memory out of 3000000
- 16136 multiletter control sequences out of 15000+200000
- 58325 words of font info for 85 fonts, out of 3000000 for 9000
+ 13445 strings out of 493921
+ 189580 string characters out of 3147295
+ 270408 words of memory out of 3000000
+ 16246 multiletter control sequences out of 15000+200000
+ 65188 words of font info for 90 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 48i,15n,43p,378b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
-{F:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{F
-:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{F:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/pl/plmi.enc}<F:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/pl/plmi10.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><
-F:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><F:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><F:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/helvetic/uhvb8ac.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/helvetic/uhvbo8ac.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/u
-hvr8a.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (10 pages, 194629 bytes).
+ 48i,15n,43p,812b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
+{F:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{F:/Program Files/MiKT
+eX 2.9/fonts/enc/dvips/pl/plms.enc}{F:/Program Files/MiKTeX 2.9/fonts/enc/dvips
+/fontname/8r.enc}{F:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}<F:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><F:/Program Files/MiKT
+eX 2.9/fonts/type1/public/pl/plmi7.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1
+/public/pl/plr10.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.
+pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy7.pfb><F:/Program Fi
+les/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><F:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/helvetic/uhvb8a.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/helvetic/uhvb8ac.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uh
+vbo8ac.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><F:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (18 pages, 213908 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 196 named destinations out of 1000 (max. 500000)
+ 459 words of extra memory for PDF output out of 10000 (max. 10000000)
 

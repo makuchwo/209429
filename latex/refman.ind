@@ -1,76 +1,168 @@
 \begin{theindex}
 
-  \item {$\sim$dane}
-    \subitem {dane}, \hyperpage{3}
+  \item {$\sim$\+C\+Graph}
+    \subitem {C\+Graph}, \hyperpage{6}
+  \item {$\sim$queue}
+    \subitem {queue}, \hyperpage{11}
 
   \indexspace
 
-  \item {dane}, \hyperpage{2}
-    \subitem {$\sim$dane}, \hyperpage{3}
-    \subitem {dane}, \hyperpage{3}
-    \subitem {generuj}, \hyperpage{3}
-    \subitem {licz}, \hyperpage{3}
-    \subitem {rozmiar}, \hyperpage{5}
-    \subitem {tablica}, \hyperpage{5}
-    \subitem {Wez}, \hyperpage{3}
-    \subitem {Wez\+Rozmiar}, \hyperpage{3}
-    \subitem {Zapisz\+Do\+Pliku}, \hyperpage{3}
+  \item {B\+F\+S}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {benchmark.\+cpp}, \hyperpage{12}
+  \item {benchmark.\+hh}, \hyperpage{12}
+  \item {benchmarking\+\_\+\+B\+F\+S}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {benchmarking\+\_\+\+D\+F\+S}
+    \subitem {C\+Graph}, \hyperpage{7}
 
   \indexspace
 
+  \item {C\+Benchmark}, \hyperpage{3}
+    \subitem {end\+Timer}, \hyperpage{4}
+    \subitem {performance\+Count\+End}, \hyperpage{4}
+    \subitem {performance\+Count\+Start}, \hyperpage{4}
+    \subitem {put\+\_\+time\+\_\+to\+\_\+file}, \hyperpage{4}
+    \subitem {start\+\_\+timer}, \hyperpage{4}
+    \subitem {start\+Timer}, \hyperpage{4}
+    \subitem {stop\+\_\+timer}, \hyperpage{4}
+  \item {C\+Edge}, \hyperpage{5}
+    \subitem {C\+Graph}, \hyperpage{5}
+    \subitem {C\+Node}, \hyperpage{10}
+    \subitem {next}, \hyperpage{5}
+    \subitem {prev}, \hyperpage{5}
+  \item {C\+Graph}, \hyperpage{5}
+    \subitem {$\sim$\+C\+Graph}, \hyperpage{6}
+    \subitem {B\+F\+S}, \hyperpage{7}
+    \subitem {benchmarking\+\_\+\+B\+F\+S}, \hyperpage{7}
+    \subitem {benchmarking\+\_\+\+D\+F\+S}, \hyperpage{7}
+    \subitem {C\+Edge}, \hyperpage{5}
+    \subitem {C\+Graph}, \hyperpage{6}
+    \subitem {C\+Node}, \hyperpage{10}
+    \subitem {D\+F\+S}, \hyperpage{7}
+    \subitem {D\+F\+Sing}, \hyperpage{7}
+    \subitem {E}, \hyperpage{9}
+    \subitem {List\+E}, \hyperpage{9}
+    \subitem {List\+V}, \hyperpage{9}
+    \subitem {make\+\_\+random\+\_\+graph}, \hyperpage{7}
+    \subitem {matrix}, \hyperpage{9}
+    \subitem {print\+\_\+matrix}, \hyperpage{7}
+    \subitem {search}, \hyperpage{7}
+    \subitem {set\+\_\+graph}, \hyperpage{7}
+    \subitem {V}, \hyperpage{9}
+    \subitem {visited}, \hyperpage{9}
+  \item {C\+Node}, \hyperpage{9}
+    \subitem {C\+Edge}, \hyperpage{10}
+    \subitem {C\+Graph}, \hyperpage{10}
+    \subitem {value}, \hyperpage{10}
+
+  \indexspace
+
+  \item {D\+F\+S}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {D\+F\+Sing}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {data}
+    \subitem {queue\+\_\+node}, \hyperpage{12}
+
+  \indexspace
+
+  \item {E}
+    \subitem {C\+Graph}, \hyperpage{9}
   \item {end\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {C\+Benchmark}, \hyperpage{4}
 
   \indexspace
 
-  \item {generuj}
-    \subitem {dane}, \hyperpage{3}
-  \item {generuj.\+cpp}, \hyperpage{5}
-    \subitem {end\+Timer}, \hyperpage{5}
-    \subitem {start\+Timer}, \hyperpage{5}
-  \item {generuj.\+hh}, \hyperpage{6}
-    \subitem {end\+Timer}, \hyperpage{6}
-    \subitem {start\+Timer}, \hyperpage{6}
+  \item {first}
+    \subitem {queue}, \hyperpage{11}
 
   \indexspace
 
-  \item {licz}
-    \subitem {dane}, \hyperpage{3}
+  \item {graph.\+cpp}, \hyperpage{12}
+  \item {graph.\+hh}, \hyperpage{13}
+
+  \indexspace
+
+  \item {last}
+    \subitem {queue}, \hyperpage{11}
+  \item {List\+E}
+    \subitem {C\+Graph}, \hyperpage{9}
+  \item {List\+V}
+    \subitem {C\+Graph}, \hyperpage{9}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\+cpp}, \hyperpage{7}
-  \item {main.\+cpp}, \hyperpage{6}
-    \subitem {main}, \hyperpage{7}
+    \subitem {main.\+cpp}, \hyperpage{13}
+  \item {main.\+cpp}, \hyperpage{13}
+    \subitem {main}, \hyperpage{13}
+  \item {make\+\_\+random\+\_\+graph}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {matrix}
+    \subitem {C\+Graph}, \hyperpage{9}
 
   \indexspace
 
-  \item {rozmiar}
-    \subitem {dane}, \hyperpage{5}
+  \item {next}
+    \subitem {C\+Edge}, \hyperpage{5}
+    \subitem {queue\+\_\+node}, \hyperpage{12}
 
   \indexspace
 
+  \item {performance\+Count\+End}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {performance\+Count\+Start}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {pop}
+    \subitem {queue}, \hyperpage{11}
+  \item {prev}
+    \subitem {C\+Edge}, \hyperpage{5}
+  \item {print}
+    \subitem {queue}, \hyperpage{11}
+  \item {print\+\_\+matrix}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {push}
+    \subitem {queue}, \hyperpage{11}
+  \item {put\+\_\+time\+\_\+to\+\_\+file}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+
+  \indexspace
+
+  \item {queue}, \hyperpage{10}
+    \subitem {$\sim$queue}, \hyperpage{11}
+    \subitem {first}, \hyperpage{11}
+    \subitem {last}, \hyperpage{11}
+    \subitem {pop}, \hyperpage{11}
+    \subitem {print}, \hyperpage{11}
+    \subitem {push}, \hyperpage{11}
+    \subitem {queue}, \hyperpage{11}
+  \item {queue.\+cpp}, \hyperpage{13}
+  \item {queue.\+hh}, \hyperpage{13}
+  \item {queue\+\_\+node}, \hyperpage{11}
+    \subitem {data}, \hyperpage{12}
+    \subitem {next}, \hyperpage{12}
+
+  \indexspace
+
+  \item {search}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {set\+\_\+graph}
+    \subitem {C\+Graph}, \hyperpage{7}
+  \item {start\+\_\+timer}
+    \subitem {C\+Benchmark}, \hyperpage{4}
   \item {start\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+    \subitem {C\+Benchmark}, \hyperpage{4}
+  \item {stop\+\_\+timer}
+    \subitem {C\+Benchmark}, \hyperpage{4}
 
   \indexspace
 
-  \item {tablica}
-    \subitem {dane}, \hyperpage{5}
-
-  \indexspace
-
-  \item {Wez}
-    \subitem {dane}, \hyperpage{3}
-  \item {Wez\+Rozmiar}
-    \subitem {dane}, \hyperpage{3}
-
-  \indexspace
-
-  \item {Zapisz\+Do\+Pliku}
-    \subitem {dane}, \hyperpage{3}
+  \item {V}
+    \subitem {C\+Graph}, \hyperpage{9}
+  \item {value}
+    \subitem {C\+Node}, \hyperpage{10}
+  \item {visited}
+    \subitem {C\+Graph}, \hyperpage{9}
 
 \end{theindex}
