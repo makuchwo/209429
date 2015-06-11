@@ -1,0 +1,225 @@
+\hypertarget{class_c_graph}{}\subsection{Dokumentacja klasy C\+Graph}
+\label{class_c_graph}\index{C\+Graph@{C\+Graph}}
+
+
+definicja klasy \hyperlink{class_c_graph}{C\+Graph} definije graf skierowany bez wagowaych krawedzi dziedzicy po klasie C\+Benchmark  
+
+
+
+
+{\ttfamily \#include $<$graph.\+hh$>$}
+
+\subsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_graph_a6568f9df5401061719c6b31111092df2}{C\+Graph} (int v, int e)
+\begin{DoxyCompactList}\small\item\em definicja konstruktora parametrycznego alokuje pamiec dla tablic wezlow krawdzi oraz dla macierzy sasiedztwa \end{DoxyCompactList}\item 
+\hyperlink{class_c_graph_af939e78d0fef6cea7711ae44f58f5a16}{$\sim$\+C\+Graph} ()
+\begin{DoxyCompactList}\small\item\em definicja destruktora \end{DoxyCompactList}\item 
+void \hyperlink{class_c_graph_ab400ede6f6abdb683b4f099df1f05edd}{set\+\_\+graph} (int vertice1, int vertice2)
+\begin{DoxyCompactList}\small\item\em definicja metody set\+\_\+graph wiaze wezly wskaznikami krawdziom ustawia odpowiednie wezly wypelnia macierz sasiedztwa \end{DoxyCompactList}\item 
+void \hyperlink{class_c_graph_a173a387b56acf5035e120f7ec4d144ae}{print\+\_\+matrix} () const 
+\begin{DoxyCompactList}\small\item\em definicja metody print\+\_\+maatrix wyswietla macierz sasiedztwa \end{DoxyCompactList}\item 
+void \hyperlink{class_c_graph_a995e1f160b774b1d0c73dc1e3d6df5a4}{D\+F\+S} (int v)
+\begin{DoxyCompactList}\small\item\em definicja metody D\+F\+Sing przeszukuje graf algorytmem D\+F\+S (przeszukiwanie w glab) zaimplementowana rekuencyjnie wykorzystana w metodzie D\+F\+S wyposarzonej w timery \end{DoxyCompactList}\item 
+void \hyperlink{class_c_graph_a7959dedbebc0e036672eae63e25e96eb}{B\+F\+S} (int v)
+\begin{DoxyCompactList}\small\item\em definicja metody D\+F\+S wywoluje metode D\+F\+Sing posiada timery zapisujace zmierzony czas do pliku \end{DoxyCompactList}\item 
+void \hyperlink{class_c_graph_a3af9d81bcc5baf54d713a78713d164de}{save\+\_\+matrix} (std\+::fstream \&file) const 
+\begin{DoxyCompactList}\small\item\em definicja metody save\+\_\+matrix zapsiuje macierz saciedztwa do pliku \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_graph_a34997383af6ab4eb69372f7f1259f2e8}{B\+F\+S\+Path} (int start, int meta, \hyperlink{class_lista}{Lista}$<$ int $>$ $\ast$L)
+\begin{DoxyCompactList}\small\item\em definicja metody B\+F\+S\+Path Oblicza najszybsza sciezke w grafie miedzy punktem startowym, a koncowym i zapisuje ja na stosie \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_graph_a76914f22c12c93e293c392342a4a233c}{V}
+\item 
+int \hyperlink{class_c_graph_a2bd3b0ae57901636d327bc7a6fdab545}{E}
+\item 
+int $\ast$$\ast$ \hyperlink{class_c_graph_a53c8f8a69d4d041b8b7557b5fece2f58}{matrix}
+\item 
+bool $\ast$ \hyperlink{class_c_graph_a8478f38bd0487246450f933dc4403227}{visited}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Opis szczegółowy}
+
+
+Definicja w linii 42 pliku graph.\+hh.
+
+
+
+\subsubsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_c_graph_a6568f9df5401061719c6b31111092df2}{}\index{C\+Graph@{C\+Graph}!C\+Graph@{C\+Graph}}
+\index{C\+Graph@{C\+Graph}!C\+Graph@{C\+Graph}}
+\paragraph[{C\+Graph}]{\setlength{\rightskip}{0pt plus 5cm}C\+Graph\+::\+C\+Graph (
+\begin{DoxyParamCaption}
+\item[{int}]{v, }
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_a6568f9df5401061719c6b31111092df2}
+lista odwiedzonych elementow grafu
+
+
+\begin{DoxyParams}{Parametry}
+{\em v} & ilosc wezlow \\
+\hline
+{\em e} & ilosc krawedzi \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 25 pliku graph.\+cpp.
+
+\hypertarget{class_c_graph_af939e78d0fef6cea7711ae44f58f5a16}{}\index{C\+Graph@{C\+Graph}!````~C\+Graph@{$\sim$\+C\+Graph}}
+\index{````~C\+Graph@{$\sim$\+C\+Graph}!C\+Graph@{C\+Graph}}
+\paragraph[{$\sim$\+C\+Graph}]{\setlength{\rightskip}{0pt plus 5cm}C\+Graph\+::$\sim$\+C\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_af939e78d0fef6cea7711ae44f58f5a16}
+
+
+Definicja w linii 41 pliku graph.\+cpp.
+
+
+
+\subsubsection{Dokumentacja funkcji składowych}
+\hypertarget{class_c_graph_a7959dedbebc0e036672eae63e25e96eb}{}\index{C\+Graph@{C\+Graph}!B\+F\+S@{B\+F\+S}}
+\index{B\+F\+S@{B\+F\+S}!C\+Graph@{C\+Graph}}
+\paragraph[{B\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Graph\+::\+B\+F\+S (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_a7959dedbebc0e036672eae63e25e96eb}
+
+\begin{DoxyParams}{Parametry}
+{\em v} & element poczatkowy od ktorego algorytm D\+F\+S rozpoczyna przeszukiwanie \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 80 pliku graph.\+cpp.
+
+\hypertarget{class_c_graph_a34997383af6ab4eb69372f7f1259f2e8}{}\index{C\+Graph@{C\+Graph}!B\+F\+S\+Path@{B\+F\+S\+Path}}
+\index{B\+F\+S\+Path@{B\+F\+S\+Path}!C\+Graph@{C\+Graph}}
+\paragraph[{B\+F\+S\+Path}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+::\+B\+F\+S\+Path (
+\begin{DoxyParamCaption}
+\item[{int}]{start, }
+\item[{int}]{meta, }
+\item[{{\bf Lista}$<$ int $>$ $\ast$}]{L}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_a34997383af6ab4eb69372f7f1259f2e8}
+
+\begin{DoxyParams}{Parametry}
+{\em start} & punkt startowy \\
+\hline
+{\em meta} & punkt koncowy \\
+\hline
+{\em $\ast$\+L} & wskaznik do stosu, na ktorym sa zapisane elementy \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 109 pliku graph.\+cpp.
+
+\hypertarget{class_c_graph_a995e1f160b774b1d0c73dc1e3d6df5a4}{}\index{C\+Graph@{C\+Graph}!D\+F\+S@{D\+F\+S}}
+\index{D\+F\+S@{D\+F\+S}!C\+Graph@{C\+Graph}}
+\paragraph[{D\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Graph\+::\+D\+F\+S (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_a995e1f160b774b1d0c73dc1e3d6df5a4}
+
+\begin{DoxyParams}{Parametry}
+{\em v} & element poczatkowy od ktorego algorytm rozpoczyna przeszukiwanie \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 68 pliku graph.\+cpp.
+
+\hypertarget{class_c_graph_a173a387b56acf5035e120f7ec4d144ae}{}\index{C\+Graph@{C\+Graph}!print\+\_\+matrix@{print\+\_\+matrix}}
+\index{print\+\_\+matrix@{print\+\_\+matrix}!C\+Graph@{C\+Graph}}
+\paragraph[{print\+\_\+matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Graph\+::print\+\_\+matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_c_graph_a173a387b56acf5035e120f7ec4d144ae}
+
+
+Definicja w linii 58 pliku graph.\+cpp.
+
+\hypertarget{class_c_graph_a3af9d81bcc5baf54d713a78713d164de}{}\index{C\+Graph@{C\+Graph}!save\+\_\+matrix@{save\+\_\+matrix}}
+\index{save\+\_\+matrix@{save\+\_\+matrix}!C\+Graph@{C\+Graph}}
+\paragraph[{save\+\_\+matrix}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Graph\+::save\+\_\+matrix (
+\begin{DoxyParamCaption}
+\item[{std\+::fstream \&}]{file}
+\end{DoxyParamCaption}
+) const}\label{class_c_graph_a3af9d81bcc5baf54d713a78713d164de}
+
+\begin{DoxyParams}{Parametry}
+{\em file} & uchwyt do pliku \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 15 pliku graph.\+cpp.
+
+\hypertarget{class_c_graph_ab400ede6f6abdb683b4f099df1f05edd}{}\index{C\+Graph@{C\+Graph}!set\+\_\+graph@{set\+\_\+graph}}
+\index{set\+\_\+graph@{set\+\_\+graph}!C\+Graph@{C\+Graph}}
+\paragraph[{set\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Graph\+::set\+\_\+graph (
+\begin{DoxyParamCaption}
+\item[{int}]{vertice1, }
+\item[{int}]{vertice2}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_ab400ede6f6abdb683b4f099df1f05edd}
+
+\begin{DoxyParams}{Parametry}
+{\em edge1} & krawdz do ktorej przypisujemy poszczegolne wierzcholki \\
+\hline
+{\em vertice1} & przypisywany pierwszy wierzcholek \\
+\hline
+{\em vertice2} & przypisywany drugi wierzcholek \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 52 pliku graph.\+cpp.
+
+
+
+\subsubsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_c_graph_a2bd3b0ae57901636d327bc7a6fdab545}{}\index{C\+Graph@{C\+Graph}!E@{E}}
+\index{E@{E}!C\+Graph@{C\+Graph}}
+\paragraph[{E}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Graph\+::\+E}\label{class_c_graph_a2bd3b0ae57901636d327bc7a6fdab545}
+ilosc wezlow 
+
+Definicja w linii 45 pliku graph.\+hh.
+
+\hypertarget{class_c_graph_a53c8f8a69d4d041b8b7557b5fece2f58}{}\index{C\+Graph@{C\+Graph}!matrix@{matrix}}
+\index{matrix@{matrix}!C\+Graph@{C\+Graph}}
+\paragraph[{matrix}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ C\+Graph\+::matrix}\label{class_c_graph_a53c8f8a69d4d041b8b7557b5fece2f58}
+ilosc krawedzi 
+
+Definicja w linii 47 pliku graph.\+hh.
+
+\hypertarget{class_c_graph_a76914f22c12c93e293c392342a4a233c}{}\index{C\+Graph@{C\+Graph}!V@{V}}
+\index{V@{V}!C\+Graph@{C\+Graph}}
+\paragraph[{V}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Graph\+::\+V}\label{class_c_graph_a76914f22c12c93e293c392342a4a233c}
+
+
+Definicja w linii 44 pliku graph.\+hh.
+
+\hypertarget{class_c_graph_a8478f38bd0487246450f933dc4403227}{}\index{C\+Graph@{C\+Graph}!visited@{visited}}
+\index{visited@{visited}!C\+Graph@{C\+Graph}}
+\paragraph[{visited}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ C\+Graph\+::visited}\label{class_c_graph_a8478f38bd0487246450f933dc4403227}
+macierz sasiedztwa 
+
+Definicja w linii 48 pliku graph.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{graph_8hh}{graph.\+hh}\item 
+\hyperlink{graph_8cpp}{graph.\+cpp}\end{DoxyCompactItemize}

@@ -1,76 +1,282 @@
 \begin{theindex}
 
-  \item {$\sim$dane}
-    \subitem {dane}, \hyperpage{3}
+  \item {$\sim$\+C\+Graph}
+    \subitem {C\+Graph}, \hyperpage{4}
+  \item {$\sim$\+Lista}
+    \subitem {Lista}, \hyperpage{8}
+  \item {$\sim$queue}
+    \subitem {queue}, \hyperpage{9}
 
   \indexspace
 
-  \item {dane}, \hyperpage{2}
-    \subitem {$\sim$dane}, \hyperpage{3}
-    \subitem {dane}, \hyperpage{3}
-    \subitem {generuj}, \hyperpage{3}
-    \subitem {licz}, \hyperpage{3}
-    \subitem {rozmiar}, \hyperpage{5}
-    \subitem {tablica}, \hyperpage{5}
-    \subitem {Wez}, \hyperpage{3}
-    \subitem {Wez\+Rozmiar}, \hyperpage{3}
-    \subitem {Zapisz\+Do\+Pliku}, \hyperpage{3}
+  \item {B\+F\+S}
+    \subitem {C\+Graph}, \hyperpage{4}
+  \item {B\+F\+S\+Path}
+    \subitem {C\+Graph}, \hyperpage{4}
 
   \indexspace
 
-  \item {end\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+  \item {C}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {C\+Edge}, \hyperpage{2}
+    \subitem {C\+Graph}, \hyperpage{3}
+    \subitem {C\+Node}, \hyperpage{7}
+    \subitem {next}, \hyperpage{3}
+    \subitem {prev}, \hyperpage{3}
+  \item {C\+Graph}, \hyperpage{3}
+    \subitem {$\sim$\+C\+Graph}, \hyperpage{4}
+    \subitem {B\+F\+S}, \hyperpage{4}
+    \subitem {B\+F\+S\+Path}, \hyperpage{4}
+    \subitem {C\+Edge}, \hyperpage{3}
+    \subitem {C\+Graph}, \hyperpage{4}
+    \subitem {C\+Node}, \hyperpage{7}
+    \subitem {D\+F\+S}, \hyperpage{4}
+    \subitem {E}, \hyperpage{6}
+    \subitem {matrix}, \hyperpage{6}
+    \subitem {print\+\_\+matrix}, \hyperpage{4}
+    \subitem {save\+\_\+matrix}, \hyperpage{4}
+    \subitem {set\+\_\+graph}, \hyperpage{6}
+    \subitem {V}, \hyperpage{6}
+    \subitem {visited}, \hyperpage{6}
+  \item {C\+Node}, \hyperpage{6}
+    \subitem {C\+Edge}, \hyperpage{7}
+    \subitem {C\+Graph}, \hyperpage{7}
+    \subitem {value}, \hyperpage{7}
+  \item {Command\+Line\+Buf}
+    \subitem {global.\+h}, \hyperpage{13}
 
   \indexspace
 
-  \item {generuj}
-    \subitem {dane}, \hyperpage{3}
-  \item {generuj.\+cpp}, \hyperpage{5}
-    \subitem {end\+Timer}, \hyperpage{5}
-    \subitem {start\+Timer}, \hyperpage{5}
-  \item {generuj.\+hh}, \hyperpage{6}
-    \subitem {end\+Timer}, \hyperpage{6}
-    \subitem {start\+Timer}, \hyperpage{6}
+  \item {D\+F\+S}
+    \subitem {C\+Graph}, \hyperpage{4}
+  \item {dane}
+    \subitem {Lista}, \hyperpage{8}
+  \item {data}
+    \subitem {queue\+\_\+node}, \hyperpage{10}
 
   \indexspace
 
-  \item {licz}
-    \subitem {dane}, \hyperpage{3}
+  \item {E}
+    \subitem {C\+Graph}, \hyperpage{6}
+  \item {end\+\_\+path}
+    \subitem {global.\+h}, \hyperpage{13}
 
   \indexspace
 
-  \item {main}
-    \subitem {main.\+cpp}, \hyperpage{7}
-  \item {main.\+cpp}, \hyperpage{6}
-    \subitem {main}, \hyperpage{7}
+  \item {first}
+    \subitem {queue}, \hyperpage{10}
+  \item {format.\+h}, \hyperpage{11}
+    \subitem {int\+To\+Str}, \hyperpage{11}
+    \subitem {Zamien\+Format}, \hyperpage{11}
+  \item {front}
+    \subitem {queue}, \hyperpage{9}
+
+  \indexspace
+
+  \item {G}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {global.\+h}, \hyperpage{12}
+    \subitem {C}, \hyperpage{13}
+    \subitem {Command\+Line\+Buf}, \hyperpage{13}
+    \subitem {end\+\_\+path}, \hyperpage{13}
+    \subitem {G}, \hyperpage{13}
+    \subitem {h\+Command\+Line}, \hyperpage{13}
+    \subitem {h\+Command\+Line2}, \hyperpage{13}
+    \subitem {h\+Command\+Line3}, \hyperpage{13}
+    \subitem {h\+Exec\+Button}, \hyperpage{13}
+    \subitem {h\+Exec\+Button2}, \hyperpage{14}
+    \subitem {h\+Exec\+Button3}, \hyperpage{14}
+    \subitem {h\+Static\+Debug\+Box}, \hyperpage{14}
+    \subitem {h\+Static\+Debug\+Box2}, \hyperpage{14}
+    \subitem {h\+Static\+Debug\+Box3}, \hyperpage{14}
+    \subitem {hwnd}, \hyperpage{14}
+    \subitem {i}, \hyperpage{14}
+    \subitem {I\+D\+\_\+\+B\+U\+T\+T\+O\+N1}, \hyperpage{12}
+    \subitem {I\+D\+\_\+\+B\+U\+T\+T\+O\+N2}, \hyperpage{12}
+    \subitem {I\+D\+\_\+\+B\+U\+T\+T\+O\+N3}, \hyperpage{13}
+    \subitem {I\+D\+\_\+\+C\+O\+M\+A\+N\+D\+L\+I\+N\+E}, \hyperpage{13}
+    \subitem {I\+D\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+B\+O\+X1}, 
+		\hyperpage{13}
+    \subitem {I\+D\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+B\+O\+X2}, 
+		\hyperpage{13}
+    \subitem {I\+D\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+B\+O\+X3}, 
+		\hyperpage{13}
+    \subitem {j}, \hyperpage{14}
+    \subitem {licznik}, \hyperpage{14}
+    \subitem {plik}, \hyperpage{14}
+    \subitem {start\+\_\+path}, \hyperpage{14}
+    \subitem {sz\+Class\+Name}, \hyperpage{14}
+    \subitem {tmp\+\_\+string}, \hyperpage{14}
+    \subitem {Window\+Procedure}, \hyperpage{13}
+  \item {graph.\+cpp}, \hyperpage{14}
+  \item {graph.\+hh}, \hyperpage{15}
+
+  \indexspace
+
+  \item {h\+Command\+Line}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {h\+Command\+Line2}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {h\+Command\+Line3}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {h\+Exec\+Button}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {h\+Exec\+Button2}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {h\+Exec\+Button3}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {h\+Static\+Debug\+Box}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {h\+Static\+Debug\+Box2}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {h\+Static\+Debug\+Box3}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {hwnd}
+    \subitem {global.\+h}, \hyperpage{14}
+
+  \indexspace
+
+  \item {i}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {I\+D\+\_\+\+B\+U\+T\+T\+O\+N1}
+    \subitem {global.\+h}, \hyperpage{12}
+  \item {I\+D\+\_\+\+B\+U\+T\+T\+O\+N2}
+    \subitem {global.\+h}, \hyperpage{12}
+  \item {I\+D\+\_\+\+B\+U\+T\+T\+O\+N3}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {I\+D\+\_\+\+C\+O\+M\+A\+N\+D\+L\+I\+N\+E}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {I\+D\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+B\+O\+X1}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {I\+D\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+B\+O\+X2}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {I\+D\+\_\+\+S\+T\+A\+T\+I\+C\+T\+E\+X\+T\+B\+O\+X3}
+    \subitem {global.\+h}, \hyperpage{13}
+  \item {int\+To\+Str}
+    \subitem {format.\+h}, \hyperpage{11}
+  \item {is\+\_\+empty}
+    \subitem {queue}, \hyperpage{9}
+
+  \indexspace
+
+  \item {j}
+    \subitem {global.\+h}, \hyperpage{14}
+
+  \indexspace
+
+  \item {last}
+    \subitem {queue}, \hyperpage{10}
+  \item {licznik}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {Lista}
+    \subitem {$\sim$\+Lista}, \hyperpage{8}
+    \subitem {dane}, \hyperpage{8}
+    \subitem {Lista}, \hyperpage{8}
+    \subitem {nastepny}, \hyperpage{8}
+    \subitem {pop}, \hyperpage{8}
+    \subitem {push}, \hyperpage{8}
+    \subitem {rozmiar}, \hyperpage{8}
+    \subitem {size}, \hyperpage{8}
+    \subitem {wyswietl}, \hyperpage{8}
+  \item {Lista$<$ typ $>$}, \hyperpage{7}
+
+  \indexspace
+
+  \item {main.\+cpp}, \hyperpage{15}
+    \subitem {Win\+Main}, \hyperpage{15}
+    \subitem {Window\+Procedure}, \hyperpage{15}
+  \item {matrix}
+    \subitem {C\+Graph}, \hyperpage{6}
+
+  \indexspace
+
+  \item {nastepny}
+    \subitem {Lista}, \hyperpage{8}
+  \item {next}
+    \subitem {C\+Edge}, \hyperpage{3}
+    \subitem {queue\+\_\+node}, \hyperpage{10}
+
+  \indexspace
+
+  \item {plik}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {pop}
+    \subitem {Lista}, \hyperpage{8}
+    \subitem {queue}, \hyperpage{9}
+  \item {prev}
+    \subitem {C\+Edge}, \hyperpage{3}
+  \item {print}
+    \subitem {queue}, \hyperpage{10}
+  \item {print\+\_\+matrix}
+    \subitem {C\+Graph}, \hyperpage{4}
+  \item {push}
+    \subitem {Lista}, \hyperpage{8}
+    \subitem {queue}, \hyperpage{10}
+
+  \indexspace
+
+  \item {queue}, \hyperpage{9}
+    \subitem {$\sim$queue}, \hyperpage{9}
+    \subitem {first}, \hyperpage{10}
+    \subitem {front}, \hyperpage{9}
+    \subitem {is\+\_\+empty}, \hyperpage{9}
+    \subitem {last}, \hyperpage{10}
+    \subitem {pop}, \hyperpage{9}
+    \subitem {print}, \hyperpage{10}
+    \subitem {push}, \hyperpage{10}
+    \subitem {queue}, \hyperpage{9}
+  \item {queue.\+cpp}, \hyperpage{16}
+  \item {queue.\+hh}, \hyperpage{16}
+  \item {queue\+\_\+node}, \hyperpage{10}
+    \subitem {data}, \hyperpage{10}
+    \subitem {next}, \hyperpage{10}
 
   \indexspace
 
   \item {rozmiar}
-    \subitem {dane}, \hyperpage{5}
+    \subitem {Lista}, \hyperpage{8}
 
   \indexspace
 
-  \item {start\+Timer}
-    \subitem {generuj.\+cpp}, \hyperpage{5}
-    \subitem {generuj.\+hh}, \hyperpage{6}
+  \item {save\+\_\+matrix}
+    \subitem {C\+Graph}, \hyperpage{4}
+  \item {set\+\_\+graph}
+    \subitem {C\+Graph}, \hyperpage{6}
+  \item {size}
+    \subitem {Lista}, \hyperpage{8}
+  \item {stack.\+hh}, \hyperpage{16}
+  \item {start\+\_\+path}
+    \subitem {global.\+h}, \hyperpage{14}
+  \item {sz\+Class\+Name}
+    \subitem {global.\+h}, \hyperpage{14}
 
   \indexspace
 
-  \item {tablica}
-    \subitem {dane}, \hyperpage{5}
+  \item {tmp\+\_\+string}
+    \subitem {global.\+h}, \hyperpage{14}
 
   \indexspace
 
-  \item {Wez}
-    \subitem {dane}, \hyperpage{3}
-  \item {Wez\+Rozmiar}
-    \subitem {dane}, \hyperpage{3}
+  \item {V}
+    \subitem {C\+Graph}, \hyperpage{6}
+  \item {value}
+    \subitem {C\+Node}, \hyperpage{7}
+  \item {visited}
+    \subitem {C\+Graph}, \hyperpage{6}
 
   \indexspace
 
-  \item {Zapisz\+Do\+Pliku}
-    \subitem {dane}, \hyperpage{3}
+  \item {Win\+Main}
+    \subitem {main.\+cpp}, \hyperpage{15}
+  \item {Window\+Procedure}
+    \subitem {global.\+h}, \hyperpage{13}
+    \subitem {main.\+cpp}, \hyperpage{15}
+  \item {wyswietl}
+    \subitem {Lista}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Zamien\+Format}
+    \subitem {format.\+h}, \hyperpage{11}
 
 \end{theindex}

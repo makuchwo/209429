@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1433984916 source:c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\graph.cpp
+	"graph.hh"
+	"queue.hh"
+	"stack.hh"
+	<iostream>
+	<fstream>
+	<windows.h>
+
+1434008812 c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\graph.hh
+	<fstream>
+	"stack.hh"
+
+1433934772 c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\stack.hh
+	<iostream>
+
+1433934652 c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\queue.hh
+	<iostream>
+
+1433934685 source:c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\queue.cpp
+	"queue.hh"
+	<iostream>
+
+1433985276 source:c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+	"graph.hh"
+	"queue.hh"
+	"stack.hh"
+	"format.h"
+	"global.h"
+
+1433985570 c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\format.h
+	<string>
+	<windows.h>
+
+1433984660 c:\users\1\desktop\projektow. algorytmów i metod. sztucznej intelig\pamsi-projekt\global.h
+	<windows.h>
+	<tchar.h>
+	<windows.h>
+	<iostream>
+
